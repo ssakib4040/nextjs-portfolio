@@ -48,6 +48,10 @@ function App() {
     });
   }, []);
 
+  useEffect(() => {
+    document.title = "My Portfolio";
+  }, []);
+
   return (
     <div className="container-fluid ">
       {/* sidebar button  */}
@@ -150,6 +154,24 @@ function App() {
           <div className="container">
             <div className="row">
               <Portfolio
+                image="./mern-todo-app.png"
+                name="React Todo App"
+                projectUrl="https://mern-todo-4040.netlify.app/"
+              />
+
+              <Portfolio
+                image="./react-emoji-directory.png"
+                name="React Emoji Directory"
+                projectUrl="https://react-emoji-directory.netlify.app/"
+              />
+
+              <Portfolio
+                image="./react-ttt.png"
+                name="React Tic Tac Toe"
+                projectUrl="https://ssakib4040.github.io/react-tic-tac-toe/"
+              />
+
+              <Portfolio
                 image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/authentication.png?alt=media&token=954688ca-1a5b-44f4-8a13-d80c741255fe"
                 name="Mern Authentication"
                 projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
@@ -165,18 +187,6 @@ function App() {
                 image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/ecommerce.png?alt=media&token=00b332d6-9e47-4ab3-b655-21fe433bec79"
                 name="Mern Ecommerce"
                 projectUrl="https://mern-ecommerce-ssakib4040.herokuapp.com/"
-              />
-
-              <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/mern-todo-app.png?alt=media&token=b4fbcbad-1868-4dbb-8b51-fef66c7640e3"
-                name="Mern Todo App"
-                projectUrl="https://mern-todo-app-ssakib4040.herokuapp.com/"
-              />
-
-              <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/tic-tac-toe.png?alt=media&token=8a167ee3-af77-47d0-8a1e-f8bc2876c952"
-                name="React Tic Tac Toe"
-                projectUrl="https://ssakib4040.github.io/react-tic-tac-toe/"
               />
             </div>
           </div>
