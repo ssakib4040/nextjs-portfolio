@@ -199,16 +199,16 @@ function App() {
           <div className="container">
             <div className="row">
               <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/npm-logo.webp?alt=media&token=8e1054cb-29cf-4fdb-ab5b-59da586a54c5"
+                image="./npm-logo-placeholder.webp"
                 name="Mongoose Error Beautify"
-                projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
+                projectUrl="https://www.npmjs.com/package/mongoose-error-beautify"
                 btnText="Link"
               />
 
               <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/npm-logo.webp?alt=media&token=8e1054cb-29cf-4fdb-ab5b-59da586a54c5"
+                image="./npm-logo-placeholder.webp"
                 name="Math Dumb"
-                projectUrl="https://mern-authentication-2.herokuapp.com/"
+                projectUrl="https://www.npmjs.com/package/math-dumb"
                 btnText="Link"
               />
             </div>
