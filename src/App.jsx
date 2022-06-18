@@ -172,6 +172,12 @@ function App() {
               />
 
               <Portfolio
+                image="./react-counter.png"
+                name="React Counter"
+                projectUrl="https://react-counter-ssakib4040.netlify.app/"
+              />
+
+              <Portfolio
                 image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/authentication.png?alt=media&token=954688ca-1a5b-44f4-8a13-d80c741255fe"
                 name="Mern Authentication"
                 projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
