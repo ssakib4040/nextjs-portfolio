@@ -178,6 +178,12 @@ function App() {
               />
 
               <Portfolio
+                image="./react-password-generator.png"
+                name="React Password Generator"
+                projectUrl="https://react-password-generator-4040.netlify.app/"
+              />
+
+              <Portfolio
                 image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/authentication.png?alt=media&token=954688ca-1a5b-44f4-8a13-d80c741255fe"
                 name="Mern Authentication"
                 projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
