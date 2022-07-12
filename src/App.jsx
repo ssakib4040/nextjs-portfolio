@@ -48,6 +48,7 @@ function App() {
     });
   }, []);
 
+  // setting the title
   useEffect(() => {
     document.title = "My Portfolio";
   }, []);
@@ -213,13 +214,23 @@ function App() {
               <Portfolio
                 image="./npm-logo-placeholder.webp"
                 name="Mongoose Error Beautify"
+                subtitle="A package to simplify the error message"
                 projectUrl="https://www.npmjs.com/package/mongoose-error-beautify"
                 btnText="Link"
               />
 
               <Portfolio
                 image="./npm-logo-placeholder.webp"
+                name="CSS Helicopter"
+                subtitle="A small css library"
+                projectUrl="https://www.npmjs.com/package/css-helicopter"
+                btnText="Link"
+              />
+
+              <Portfolio
+                image="./npm-logo-placeholder.webp"
                 name="Math Dumb"
+                subtitle="A small math dumb library"
                 projectUrl="https://www.npmjs.com/package/math-dumb"
                 btnText="Link"
               />
@@ -269,9 +280,10 @@ function Portfolio(props) {
         <img src={props.image} className="card-img-top" alt="" />
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
+          <p className="text-muted">{props.subtitle}</p>
           <a
             href={props.projectUrl}
-            className="btn btn-primary mt-3"
+            className="btn btn-primary"
             target="_blank"
             rel="noreferrer"
           >
