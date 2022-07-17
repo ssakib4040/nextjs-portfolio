@@ -206,15 +206,23 @@ function App() {
           <hr />
         </div>
 
-        {/* npm package */}
+        {/* npm packages */}
         <div className="portfolio mt-5" id="portfolio">
           <h2>NPM Package</h2>
           <div className="container">
             <div className="row">
               <Portfolio
                 image="./npm-logo-placeholder.webp"
+                name="React Dark State"
+                subtitle="React Dark State a custom react hook to detect dark mode"
+                projectUrl="https://www.npmjs.com/package/react-dark-state"
+                btnText="Link"
+              />
+
+              <Portfolio
+                image="./npm-logo-placeholder.webp"
                 name="Mongoose Error Beautify"
-                subtitle="A package to simplify the error message"
+                subtitle="A package to simplify mongoose error"
                 projectUrl="https://www.npmjs.com/package/mongoose-error-beautify"
                 btnText="Link"
               />
