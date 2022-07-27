@@ -229,6 +229,14 @@ function App() {
 
               <Portfolio
                 image="./npm-logo-placeholder.webp"
+                name="Is Leap"
+                subtitle="A simple lightweight module to detect leap year."
+                projectUrl="https://www.npmjs.com/package/is-leap"
+                btnText="Link"
+              />
+
+              <Portfolio
+                image="./npm-logo-placeholder.webp"
                 name="CSS Helicopter"
                 subtitle="A small css library"
                 projectUrl="https://www.npmjs.com/package/css-helicopter"
