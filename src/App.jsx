@@ -213,6 +213,14 @@ function App() {
             <div className="row">
               <Portfolio
                 image="./npm-logo-placeholder.webp"
+                name="Imposter.js"
+                subtitle="An npm package to generate fake/dummy data for testing"
+                projectUrl="https://www.npmjs.com/package/imposterjs"
+                btnText="Link"
+              />
+
+              <Portfolio
+                image="./npm-logo-placeholder.webp"
                 name="React Dark State"
                 subtitle="React Dark State a custom react hook to detect dark mode"
                 projectUrl="https://www.npmjs.com/package/react-dark-state"
