@@ -11,8 +11,8 @@ function App() {
     if (typeof status == "boolean") {
       if (status) {
         sidebar.current.classList.remove("active");
-        button.current.style.left = "300px";
-        mainContainer.current.style.marginLeft = "300px";
+        button.current.style.left = "280px";
+        mainContainer.current.style.marginLeft = "280px";
       } else {
         sidebar.current.classList.add("active");
         button.current.style.left = "0px";
@@ -23,8 +23,8 @@ function App() {
 
     if (sidebar.current.classList.contains("active")) {
       sidebar.current.classList.remove("active");
-      button.current.style.left = "300px";
-      mainContainer.current.style.marginLeft = "300px";
+      button.current.style.left = "280px";
+      mainContainer.current.style.marginLeft = "280px";
     } else {
       sidebar.current.classList.add("active");
       button.current.style.left = "0px";
@@ -54,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container-fluid ">
+    <div className="container ">
       {/* sidebar button  */}
       <button
         className="navbar-button btn btn-primary"
@@ -67,7 +67,7 @@ function App() {
       {/* sidebar  */}
       <div className="sidebar  border active" ref={sidebar}>
         <div className="sidebar__top ">
-          <div className="sidebar__top_img_wrap">
+          <div className="sidebar__img_wrap">
             <img
               src="./portfolio.png"
               className="img-fluid sidebar__img"
@@ -75,7 +75,7 @@ function App() {
             />
           </div>
         </div>
-        <hr className="border border-dark" />
+        <hr className="border border-dark my-0" />
         <div className="sidebar__middle ">
           <ul>
             <li>
@@ -94,7 +94,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <hr className="border border-dark" />
+        <hr className="border border-dark my-0" />
         <div className="sidebar__bottom mb-3 fw-bolder">
           &copy;Copyright 2022. All Rights reserved
         </div>
