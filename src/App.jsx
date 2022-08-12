@@ -65,7 +65,7 @@ function App() {
       </button>
 
       {/* sidebar  */}
-      <div className="sidebar  border active" ref={sidebar}>
+      <div className="sidebar  active" ref={sidebar}>
         <div className="sidebar__top ">
           <div className="sidebar__img_wrap">
             <img
@@ -75,7 +75,7 @@ function App() {
             />
           </div>
         </div>
-        <hr className="border border-dark my-0" />
+        <hr className="border my-0" />
         <div className="sidebar__middle ">
           <ul>
             <li>
@@ -94,7 +94,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <hr className="border border-dark my-0" />
+        <hr className="border my-0" />
         <div className="sidebar__bottom mb-3 fw-bolder">
           &copy;Copyright 2022. All Rights reserved
         </div>

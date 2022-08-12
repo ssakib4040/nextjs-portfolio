@@ -30,6 +30,7 @@ body {
   top: 0;
   left: 0;
   background: #e6ecf0;
+  border-right: 1px solid #bdc3c7!important;
 }
 
 .sidebar.active {
