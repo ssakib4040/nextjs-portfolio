@@ -30,7 +30,7 @@ body {
   top: 0;
   left: 0;
   background: #e6ecf0;
-  border-right: 1px solid #bdc3c7!important;
+  border-right: 1px solid #bdc3c7 !important;
 }
 
 .sidebar.active {
@@ -48,12 +48,16 @@ body {
 .sidebar__img_wrap {
   height: 180px;
   width: 180px;
+  border: 5px solid #0d6efd;
+  border-radius: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar__img {
   border-radius: 50rem;
   height: 100% !important;
-  border: 5px solid #0d6efd;
   padding: 5px;
 }
 
