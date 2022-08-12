@@ -69,7 +69,7 @@ function App() {
         <div className="sidebar__top ">
           <div className="sidebar__top_img_wrap">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/29249326_548922835491216_4695470664184758272_n.webp?alt=media&token=d3a53c04-3d68-41bd-b3a8-3e390121e8ac"
+              src="./portfolio.png"
               className="img-fluid sidebar__img"
               alt=""
             />
@@ -185,19 +185,19 @@ function App() {
               />
 
               <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/authentication.png?alt=media&token=954688ca-1a5b-44f4-8a13-d80c741255fe"
+                image="mern-auth.png"
                 name="Mern Authentication"
                 projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
               />
 
               <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/authentication-2.0.png?alt=media&token=7951396f-2e52-471c-9bc2-82710af3b8bf"
+                image="mern-auth-2.0.png"
                 name="Mern Authentication 2.0"
                 projectUrl="https://mern-authentication-2.herokuapp.com/"
               />
 
               <Portfolio
-                image="https://firebasestorage.googleapis.com/v0/b/production-portfolio-9a395.appspot.com/o/ecommerce.png?alt=media&token=00b332d6-9e47-4ab3-b655-21fe433bec79"
+                image="./react-ecommerce.png"
                 name="Mern Ecommerce"
                 projectUrl="https://mern-ecommerce-ssakib4040.herokuapp.com/"
               />
