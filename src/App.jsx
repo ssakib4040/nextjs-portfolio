@@ -132,13 +132,18 @@ function App() {
               <li>Html</li>
               <li>CSS</li>
               <li>Javascript</li>
-              <li>Jquery</li>
+              <li>Typescript</li>
+              <li>Git</li>
+              <li>Github</li>
               <li>Bootstrap</li>
+              <li>Tailwind</li>
               <li>NodeJS</li>
               <li>Express</li>
               <li>React</li>
               <li>Redux</li>
               <li>MongoDB</li>
+              <li>Graphql</li>
+              <li>Azure (Basic)</li>
             </ul>
           </div>
 
@@ -182,6 +187,12 @@ function App() {
                 image="./react-password-generator.png"
                 name="React Password Generator"
                 projectUrl="https://react-password-generator-4040.netlify.app/"
+              />
+
+              <Portfolio
+                image="./bloghub.png"
+                name="Bloghub"
+                projectUrl="https://bloghub-red.vercel.app"
               />
 
               <Portfolio
