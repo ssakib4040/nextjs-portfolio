@@ -147,7 +147,6 @@ function App() {
             </ul>
           </div>
 
-          <p>Please hire me If you like my portfolio</p>
           <p className="fw-bold">
             [ Note: I didn't used any fancy css animations because most of the
             time HR avoid such website ]
