@@ -121,9 +121,9 @@ function App() {
           <p>Hi, My name is Sadman Sakib. I am a full stack web developer.</p>
 
           <p>
-            I am looking for Intern/Junior Job(remote). I am still learning web
-            development & I want to take my career to next level & improve my
-            skills with the Junior position jobs/internship.
+            I am looking for web development jobs(remote). I am still learning
+            web development & I want to take my career to next level & improve
+            my skills.
           </p>
 
           <div>
