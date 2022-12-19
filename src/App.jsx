@@ -54,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container ">
+    <div className="container-fluid dev">
       {/* sidebar button  */}
       <button
         className="navbar-button btn btn-primary"
@@ -185,13 +185,13 @@ function App() {
               <Portfolio
                 image="./react-password-generator.png"
                 name="React Password Generator"
-                projectUrl="https://react-password-generator-4040.netlify.app/"
+                projectUrl="https://react-password-generator1.netlify.app/"
               />
 
               <Portfolio
                 image="./bloghub.png"
                 name="Bloghub"
-                projectUrl="https://bloghub-red.vercel.app"
+                projectUrl="https://bloghub-red.vercel.app/"
               />
 
               <Portfolio
