@@ -54,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container-fluid dev">
+    <div className="container-fluid">
       {/* sidebar button  */}
       <button
         className="navbar-button btn btn-primary"
