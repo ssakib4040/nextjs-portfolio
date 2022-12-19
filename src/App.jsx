@@ -148,8 +148,8 @@ function App() {
           </div>
 
           <p className="fw-bold">
-            [ Note: I didn't used any fancy css animations because most of the
-            time HR avoid such website ]
+            [Note: I intentionally didn't added any fancy css animations because
+            sometime HR dislike such website]
           </p>
         </div>
 
