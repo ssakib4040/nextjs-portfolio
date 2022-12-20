@@ -165,21 +165,27 @@ function App() {
               />
 
               <Portfolio
-                image="./react-emoji-directory.png"
-                name="React Emoji Directory"
-                projectUrl="https://react-emoji-directory.netlify.app/"
-              />
-
-              <Portfolio
                 image="./react-ttt.png"
                 name="React Tic Tac Toe"
                 projectUrl="https://ssakib4040.github.io/react-tic-tac-toe/"
               />
 
               <Portfolio
+                image="./react-rock-paper-scissors.png"
+                name="React Rock Paper Scissors"
+                projectUrl="https://react-rock-paper-scissors1.netlify.app/"
+              />
+
+              <Portfolio
                 image="./react-counter.png"
                 name="React Counter"
                 projectUrl="https://react-counter-ssakib4040.netlify.app/"
+              />
+
+              <Portfolio
+                image="./react-emoji-directory.png"
+                name="React Emoji Directory"
+                projectUrl="https://react-emoji-directory.netlify.app/"
               />
 
               <Portfolio
