@@ -161,7 +161,7 @@ function App() {
               <Portfolio
                 image="./mern-todo-app.png"
                 name="React Todo App"
-                projectUrl="https://mern-todo-4040.netlify.app/"
+                projectUrl="https://mern-todo-slg.netlify.app/"
               />
 
               <Portfolio
