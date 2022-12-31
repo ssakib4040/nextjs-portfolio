@@ -322,7 +322,8 @@ function Portfolio(props) {
   return (
     <div className="col-xl-3 mb-3">
       <div className="card ">
-        <img src={props.image} className="card-img-top" alt="" />
+        <LazyLoadImage src={props.image} className="card-img-top" />
+        {/* <img src={props.image} className="card-img-top" alt="" /> */}
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="text-muted">{props.subtitle}</p>
