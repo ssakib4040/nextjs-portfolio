@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./App.css";
 
 function App() {
@@ -68,11 +69,15 @@ function App() {
       <div className="sidebar  active" ref={sidebar}>
         <div className="sidebar__top ">
           <div className="sidebar__img_wrap">
-            <img
+            <LazyLoadImage
+              src="./portfolio.png"
+              className="img-fluid sidebar__img"
+            />
+            {/* <img
               src="./portfolio.png"
               className="img-fluid sidebar__img"
               alt=""
-            />
+            /> */}
           </div>
         </div>
         <hr className="border my-0" />
