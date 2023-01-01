@@ -206,17 +206,17 @@ function App() {
               <Portfolio
                 image="mern-auth.png"
                 name="Mern Authentication"
-                projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
+                projectUrl="https://github.com/ssakib4040/mern-authentication"
               />
               <Portfolio
                 image="mern-auth-2.0.png"
                 name="Mern Authentication 2.0"
-                projectUrl="https://mern-authentication-2.herokuapp.com/"
+                projectUrl="https://github.com/ssakib4040/mern-authentication-2.0"
               />
               <Portfolio
                 image="./react-ecommerce.png"
                 name="Mern Ecommerce"
-                projectUrl="https://mern-ecommerce-ssakib4040.herokuapp.com/"
+                projectUrl="https://github.com/ssakib4040/mern-ecommerce"
               />
             </div>
           </div>
