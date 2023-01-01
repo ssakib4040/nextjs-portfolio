@@ -1,5 +1,10 @@
 ## Projects
 
+<!-- Project 0 -->
+[Nextjs Tailwind Auth](https://mern-todo-slg.netlify.app/) - A simple authentication app built with Nextjs, Tailwind, Node, and MongoDB.
+
+![alt text](https://github.com/ssakib4040/portfolio/blob/master/public/nextjs-tailwind-auth.png?raw=true)
+
 <!-- Project 1 -->
 [React Todo App](https://mern-todo-slg.netlify.app/) - A simple todo app built with React (Vite), Node, Express, and MongoDB.
 

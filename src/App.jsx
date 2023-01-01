@@ -164,59 +164,55 @@ function App() {
           <div className="container">
             <div className="row">
               <Portfolio
+                image="./nextjs-tailwind-auth.png"
+                name="Nextjs Tailwind Auth"
+                projectUrl="https://nextjs-tailwind-auth-lake.vercel.app/"
+              />
+              <Portfolio
                 image="./mern-todo-app.png"
                 name="React Todo App"
                 projectUrl="https://mern-todo-slg.netlify.app/"
               />
-
               <Portfolio
                 image="./react-ttt.png"
                 name="React Tic Tac Toe"
                 projectUrl="https://ssakib4040.github.io/react-tic-tac-toe/"
               />
-
               <Portfolio
                 image="./react-rock-paper-scissors.png"
                 name="React Rock Paper Scissors"
                 projectUrl="https://react-rock-paper-scissors1.netlify.app/"
               />
-
               <Portfolio
                 image="./react-counter.png"
                 name="React Counter"
                 projectUrl="https://react-counter-ssakib4040.netlify.app/"
               />
-
               <Portfolio
                 image="./react-emoji-directory.png"
                 name="React Emoji Directory"
                 projectUrl="https://react-emoji-directory.netlify.app/"
               />
-
               <Portfolio
                 image="./react-password-generator.png"
                 name="React Password Generator"
                 projectUrl="https://react-password-generator1.netlify.app/"
               />
-
               <Portfolio
                 image="./bloghub.png"
                 name="Bloghub"
                 projectUrl="https://bloghub-red.vercel.app/"
               />
-
               <Portfolio
                 image="mern-auth.png"
                 name="Mern Authentication"
                 projectUrl="https://mern-authentication-ssakib4040.herokuapp.com/"
               />
-
               <Portfolio
                 image="mern-auth-2.0.png"
                 name="Mern Authentication 2.0"
                 projectUrl="https://mern-authentication-2.herokuapp.com/"
               />
-
               <Portfolio
                 image="./react-ecommerce.png"
                 name="Mern Ecommerce"
