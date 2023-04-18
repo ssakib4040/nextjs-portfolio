@@ -11,9 +11,7 @@ export default function Layout({ children }: { children: any }) {
   return (
     <>
       <Sidebar sidebar={sidebar.isOpen} />
-      <div
-        className={`${sidebar.isOpen && "ml-[250px]"} transition-all p-3 dev`}
-      >
+      <div className={`${sidebar.isOpen && "ml-[250px]"} transition-all`}>
         {/* <h1>Home</h1> */}
 
         {/* <button onClick={toggleSidebar}>Toggle Sidebar</button> */}
