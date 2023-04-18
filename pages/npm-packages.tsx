@@ -25,7 +25,7 @@ export default function NpmPackages() {
               <div className="my-3 mx-4">
                 <h3 className="text-xl font-medium mb-3">NPM Package Item</h3>
                 <button className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-2 px-4 rounded">
-                  Demo
+                  Link
                 </button>
               </div>
             </div>
