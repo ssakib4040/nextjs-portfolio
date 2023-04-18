@@ -6,7 +6,7 @@ import React from "react";
 export default function Sidebar({ sidebar }: { sidebar: boolean }) {
   const router = useRouter();
 
-  const sidebarImage = "https://dummyimage.com/200x200";
+  const sidebarImage = "/profile-image.jpg";
 
   const menus: any[] = [
     {
@@ -37,7 +37,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
         sidebar ? "left-0" : "left-[-250px]"
       } left-0 flex flex-col justify-between py-8 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300`}
     >
-      <div className="sidebar_top p-4 flex justify-center items-center">
+      <div className="sidebar_top p-8 flex justify-center items-center">
         <Image
           className="border-[5px] border-[#0D6EFD] rounded-full p-2"
           src={sidebarImage}
