@@ -14,7 +14,6 @@ export function SidebarProvider({ children }: any) {
   };
 
   useEffect(() => {
-    console.log(window.innerWidth);
     // set sidebar false if window is less then 768px
     if (window.innerWidth < 768) {
       setIsOpen(false);
