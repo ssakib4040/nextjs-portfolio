@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Index() {
   const [sidebar, setSidebar] = useState<boolean>(true);
@@ -8,15 +8,16 @@ export default function Index() {
     setSidebar(!sidebar);
   };
 
+  useEffect(() => {
+    // set sidebar false if window is less then 768px
+    if (window.innerWidth < 768) {
+      setSidebar(false);
+    }
+  }, []);
+
   return (
     <div className="dev">
-      <div
-        className={`${
-          sidebar ? "left-0" : "left-[-250px]"
-        } left-0 flex transition-all fixed top-0 bottom-0 w-[250px] p-3 dev2`}
-      >
-        This is a cute sidebar
-      </div>
+      <Sidebar sidebar={sidebar} />
 
       <div className={`${sidebar && "ml-[250px]"} transition-all  p-3 dev`}>
         <h1>Home</h1>
