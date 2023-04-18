@@ -6,8 +6,6 @@ import React from "react";
 export default function Sidebar({ sidebar }: { sidebar: boolean }) {
   const router = useRouter();
 
-  console.log(router);
-
   const sidebarImage = "https://dummyimage.com/200x200";
 
   const menus: any[] = [
