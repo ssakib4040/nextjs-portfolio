@@ -37,9 +37,9 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
     <div
       className={`${
         sidebar ? "left-0" : "left-[-250px]"
-      } left-0 flex flex-col justify-between py-8 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300 dev2`}
+      } left-0 flex flex-col justify-between py-8 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300`}
     >
-      <div className="sidebar_top p-4 flex justify-center items-center dev">
+      <div className="sidebar_top p-4 flex justify-center items-center">
         <Image
           className="border-[5px] border-[#0D6EFD] rounded-full p-2"
           src={sidebarImage}
@@ -49,13 +49,13 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
         />
       </div>
 
-      <div className="sidebar_menu dev">
+      <div className="sidebar_menu">
         <hr className="my-3 border-t-2 border-gray-300" />
         <ul>
           {menus.map((menu, index) => (
             <li
               key={index}
-              className="text-center py-2 text-[#0D6EFD] font-medium hover:bg-[#0D6EFD] hover:text-white transition cursor-pointer dev2"
+              className="text-center py-2 text-[#0D6EFD] font-medium hover:bg-[#0D6EFD] hover:text-white transition cursor-pointer"
               onClick={() => router.push(menu.path)}
             >
               <a>{menu.name}</a>
@@ -65,7 +65,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
         <hr className="my-3 border-t-2 border-gray-300" />
       </div>
 
-      <div className="sidebar_footer dev">
+      <div className="sidebar_footer">
         <p className="text-center font-medium">
           &copy; Copyright 2023. All Rights reserved
         </p>
