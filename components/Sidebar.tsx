@@ -56,8 +56,9 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
             <li
               key={index}
               className="text-center py-2 text-[#0D6EFD] font-medium hover:bg-[#0D6EFD] hover:text-white transition cursor-pointer dev2"
+              onClick={() => router.push(menu.path)}
             >
-              <Link href={menu.path}>{menu.name}</Link>
+              <a>{menu.name}</a>
             </li>
           ))}
         </ul>
