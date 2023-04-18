@@ -6,7 +6,7 @@ import React from "react";
 export default function Sidebar({ sidebar }: { sidebar: boolean }) {
   const router = useRouter();
 
-  // console.log(router);
+  console.log(router);
 
   const sidebarImage = "https://dummyimage.com/200x200";
 
@@ -55,7 +55,9 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
           {menus.map((menu, index) => (
             <li
               key={index}
-              className="text-center py-2 text-[#0D6EFD] font-medium hover:bg-[#0D6EFD] hover:text-white transition cursor-pointer"
+              className={`${
+                router.pathname === menu.path && "bg-[#0D6EFD] text-white"
+              } text-center py-2 text-[#0D6EFD] font-medium hover:bg-[#0D6EFD] hover:text-white transition cursor-pointer`}
               onClick={() => router.push(menu.path)}
             >
               <a>{menu.name}</a>
