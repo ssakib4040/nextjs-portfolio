@@ -11,8 +11,6 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
   const router = useRouter();
   const s: any = useSidebar();
 
-  console.log(s);
-
   const sidebarImage = "/profile-image.jpg";
 
   const menus: any[] = [
