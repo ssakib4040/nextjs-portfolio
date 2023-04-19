@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Portfolio() {
   const portfolios = [
     {
-      title: "react-counter",
+      title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://nextjs-tailwind-auth-lake.vercel.app/",
     },
