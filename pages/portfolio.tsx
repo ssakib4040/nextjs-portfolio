@@ -5,7 +5,7 @@ export default function Portfolio() {
     {
       title: "React Counter",
       image: "/projects/react-counter.png",
-      link: "https://nextjs-tailwind-auth-lake.vercel.app/",
+      link: "https://react-counter-zeta.vercel.app/",
     },
 
     {
