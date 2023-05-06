@@ -1,6 +1,24 @@
 import React from "react";
 
 export default function Resume() {
+  const resumeItems: string[] = [
+    "HTML 5",
+    "CSS 3",
+    "JavaScript",
+    "Typescript",
+    "Git & Github",
+    "Bootstrap",
+    "Tailwind css",
+    "React Js",
+    "Next Js",
+    "Node Js",
+    "Express Js",
+    "MongoDB",
+    "GraphQL",
+    "Python (Basic)",
+    "Azure (Basic)",
+  ];
+
   return (
     <div className="px-8 py-10">
       <h2 className="text-3xl font-medium">Resume</h2>
@@ -19,20 +37,9 @@ export default function Resume() {
       </p>
 
       <ul className="list-disc ml-5 mb-3">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>Git</li>
-        <li>Github</li>
-        <li>Bootstrap</li>
-        <li>Tailwind</li>
-        <li>NodeJS</li>
-        <li>Express JS</li>
-        <li>React JS</li>
-        <li>MongoDB</li>
-        <li>Python</li>
-        <li>Azure</li>
+        {resumeItems.map((item, index) => {
+          return <li key={index}>{item}</li>;
+        })}
       </ul>
 
       <p className="mb-3">
