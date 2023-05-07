@@ -28,6 +28,6 @@ Feel free to explore the repositories to view the project details, source code, 
 
 ## Contact
 
-If you would like to get in touch, you can reach me via email at [your-email@example.com](mailto:your-email@example.com). You can also connect with me on [LinkedIn](link-to-your-linkedin-profile).
+If you would like to get in touch, you can reach me via email at [ssakib4040@gmail.com](mailto:ssakib4040@gmail.com). You can also connect with me on [LinkedIn](https://linkedin.com/in/ssakib4040).
 
 Thank you for visiting my portfolio!
