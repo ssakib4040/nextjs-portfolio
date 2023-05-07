@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+Welcome to my portfolio! This repository showcases my work and provides an overview of my projects. Feel free to explore and get in touch if you have any questions or collaboration opportunities.
 
-First, run the development server:
+## Projects
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+This section highlights some of the notable projects I have worked on. Each project includes a brief description, an image, and a link to the project repository or live demo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### React Counter
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![React Counter](https://dummyimage.com/480x360)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Repository: [https://react-counter-zeta.vercel.app/](link-to-project-1)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### React Todo App
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![React Todo App](https://dummyimage.com/480x360)
 
-## Learn More
+Repository: [https://mern-todo-slg.netlify.app/](link-to-project-2)
 
-To learn more about Next.js, take a look at the following resources:
+### React Tic Tac Toe
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![React Tic Tac Toe](https://dummyimage.com/480x360)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Repository: [https://ssakib4040.github.io/react-tic-tac-toe/](link-to-project-3)
 
-## Deploy on Vercel
+Feel free to explore the repositories to view the project details, source code, and any additional information provided.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you would like to get in touch, you can reach me via email at [your-email@example.com](mailto:your-email@example.com). You can also connect with me on [LinkedIn](link-to-your-linkedin-profile).
+
+Thank you for visiting my portfolio!
