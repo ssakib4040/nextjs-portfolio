@@ -10,7 +10,7 @@ This section highlights some of the notable projects I have worked on. Each proj
 
 ![React Counter](./public/projects/react-counter.png)
 
-Repository: [https://react-counter-zeta.vercel.app/](link-to-project-1)
+Repository: [https://react-counter-zeta.vercel.app/](https://react-counter-zeta.vercel.app/)
 
 ### React Todo App
 
