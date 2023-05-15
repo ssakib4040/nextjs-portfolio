@@ -50,7 +50,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
       <div
         className={`${
           sidebar ? "left-0" : "left-[-250px]"
-        } left-0 flex flex-col justify-between py-8 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300`}
+        } left-0 flex flex-col justify-between py-4 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300`}
       >
         <div className="sidebar_top p-8 flex justify-center items-center">
           <Image
@@ -62,7 +62,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
           />
         </div>
 
-        <div className="sidebar_menu">
+        <div className="sidebar_menu mb-8">
           <hr className="my-3 border-t-2 border-gray-300" />
           <ul>
             {menus.map((menu, index) => (
@@ -80,7 +80,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
           <hr className="my-3 border-t-2 border-gray-300" />
         </div>
 
-        <div className="sidebar_footer">
+        <div className="sidebar_footer mb-8">
           <p className="text-center font-medium">
             &copy; Copyright 2023. All Rights reserved
           </p>
