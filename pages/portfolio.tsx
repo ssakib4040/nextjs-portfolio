@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Portfolio() {
-  const portfolios = [
+  const portfolios: any[] = [
     {
       title: "React Counter",
       image: "/projects/react-counter.png",
@@ -80,6 +80,7 @@ export default function Portfolio() {
             <div
               className="flex flex-col rounded-sm border border-gray-300 cursor-pointer"
               key={index}
+              onClick={() => window.open(eachItem.link)}
             >
               <Image
                 className=""
@@ -88,6 +89,8 @@ export default function Portfolio() {
                 width="1080"
                 height="720"
               />
+
+              <hr />
 
               <div className="my-3 mx-4">
                 <h3 className="text-xl font-medium mb-3">{eachItem.title}</h3>

@@ -59,11 +59,11 @@ export default function NpmPackages() {
 
       <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {npmPackages.map((_package, index) => {
-          console.log(_package);
           return (
             <div
               className="flex flex-col rounded-sm border border-gray-300 cursor-pointer"
               key={index}
+              onClick={() => window.open(_package.link, "_blank")}
             >
               <Image
                 className=""
