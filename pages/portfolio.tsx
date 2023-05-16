@@ -17,6 +17,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "Awesome App Landing Page",
+      image: "/projects/app-landing.png",
+      link: "http://app-landing-black.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/app-landing",
+    },
+
+    {
       title: "Optimiza Landing Page",
       image: "/projects/optimiza.png",
       link: "https://optimiza.vercel.app/",
@@ -126,9 +133,11 @@ export default function Portfolio() {
                   alt="portfolio image"
                   fill
                   sizes="100vw"
-                  style={{
-                    objectFit: "contain",
-                  }}
+                  style={
+                    {
+                      // objectFit: "contain",
+                    }
+                  }
                 />
               </div>
 
@@ -147,7 +156,7 @@ export default function Portfolio() {
                 <a
                   href={eachItem.githubUrl}
                   target="_blank"
-                  className="border-[#0D6EFD] border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
+                  className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
                 >
                   Github
                 </a>
