@@ -1,7 +1,19 @@
 import Image from "next/image";
 
 export default function Portfolio() {
-  const portfolios: any[] = [
+  interface Portfolio {
+    title: string;
+    image: string;
+    link: string;
+  }
+
+  const portfolios: Portfolio[] = [
+    {
+      title: "Marketing Agency",
+      image: "/projects/marketing-house.png",
+      link: "https://marketing-house.vercel.app/",
+    },
+
     {
       title: "React Counter",
       image: "/projects/react-counter.png",
@@ -82,13 +94,24 @@ export default function Portfolio() {
               key={index}
               onClick={() => window.open(eachItem.link)}
             >
-              <Image
-                className=""
-                src={eachItem.image}
-                alt="avatar"
-                width="1080"
-                height="720"
-              />
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: "180px",
+                }}
+              >
+                <Image
+                  className=""
+                  src={eachItem.image}
+                  alt="portfolio image"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
 
               <hr />
 
