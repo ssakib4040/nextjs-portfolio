@@ -1,22 +1,65 @@
 import React from "react";
 
 export default function Resume() {
-  const resumeItems: string[] = [
-    "HTML 5",
-    "CSS 3",
-    "JavaScript",
-    "Typescript",
-    "Git & Github",
-    "Bootstrap",
-    "Tailwind css",
-    "React Js",
-    "Next Js",
-    "Node Js",
-    "Express Js",
-    "MongoDB",
-    "GraphQL",
-    "Python (Basic)",
-    "Azure (Basic)",
+  // const resumeItems: string[] = [
+  //   "HTML 5, CSS 3, JavaScript, Typescript, Git & Github, Bootstrap, Tailwind css, React Js, Next Js, Node Js, Express Js, MongoDB, GraphQL, Python (Basic), Azure (Basic)",
+  // ];
+
+  interface ResumeItem {
+    category: string;
+    skills: string[];
+  }
+
+  const resumeItems: ResumeItem[] = [
+    {
+      category: "Front End",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "TypeScript",
+        "Bootstrap",
+        "Tailwind CSS",
+        "React JS",
+        "Next JS",
+      ],
+    },
+
+    {
+      category: "Back End",
+      skills: [
+        "Node JS",
+        "Express JS",
+        "GraphQL",
+        "Python (Basic)",
+        "Azure (Basic)",
+      ],
+    },
+
+    {
+      category: "Tools & Technologies",
+      skills: [
+        "Git (VCS)",
+        "Github",
+        "Visual Studio Code",
+        "Chrome Dev Tools",
+        "NPM",
+        "Yarn",
+        "RESTful APIs",
+        "JSON",
+        "JWT",
+        "Cypress",
+        "Mocha",
+        "Postman",
+        "Netlify",
+        "Vercel",
+      ],
+    },
+
+    {
+      category: "Database",
+      skills: ["MongoDB", "MySQL", "Firebase"],
+    },
   ];
 
   return (
@@ -36,10 +79,13 @@ export default function Resume() {
         possess a diverse range of skills, including:
       </p>
 
-      <ul className="list-disc ml-5 mb-3">
-        {resumeItems.map((item, index) => {
-          return <li key={index}>{item}</li>;
-        })}
+      <ul className="list-disc ml-5 mb-3 max-w-[1000px] resume">
+        {resumeItems.map((item: any) => (
+          <li key={item.category}>
+            <span className="font-bold">{item.category}: </span>
+            {item.skills.join(", ")}
+          </li>
+        ))}
       </ul>
 
       <p className="mb-3">
