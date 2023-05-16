@@ -31,6 +31,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "NextJS Bloghub",
+      image: "/projects/nextjs-bloghub.png",
+      link: "https://bloghub-red.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/bloghub",
+    },
+
+    {
       title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
@@ -77,13 +84,6 @@ export default function Portfolio() {
       image: "/projects/react-emoji-directory.png",
       link: "https://react-emoji-directory.netlify.app/",
       githubUrl: "https://github.com/ssakib4040/react-emoji-search",
-    },
-
-    {
-      title: "NextJS Bloghub",
-      image: "/projects/nextjs-bloghub.png",
-      link: "https://bloghub-red.vercel.app/",
-      githubUrl: "https://github.com/ssakib4040/bloghub",
     },
 
     {
