@@ -17,6 +17,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "Optimiza Landing Page",
+      image: "/projects/optimiza.png",
+      link: "https://optimiza.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/optimiza",
+    },
+
+    {
       title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
