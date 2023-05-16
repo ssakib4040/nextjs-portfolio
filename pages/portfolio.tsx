@@ -5,6 +5,7 @@ export default function Portfolio() {
     title: string;
     image: string;
     link: string;
+    githubUrl: string;
   }
 
   const portfolios: Portfolio[] = [
@@ -12,72 +13,84 @@ export default function Portfolio() {
       title: "Marketing Agency",
       image: "/projects/marketing-house.png",
       link: "https://marketing-house.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Todo App",
       image: "/projects/mern-todo-app.png",
       link: "https://mern-todo-slg.netlify.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Tic Tac Toe",
       image: "/projects/react-ttt.png",
       link: "https://ssakib4040.github.io/react-tic-tac-toe/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Rock Paper Scissors",
       image: "/projects/react-rock-paper-scissors.png",
       link: "https://react-rock-paper-scissors1.netlify.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "Nextjs Tailwind Auth",
       image: "/projects/nextjs-tailwind-auth.png",
       link: "https://nextjs-tailwind-auth-lake.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Password Generator",
       image: "/projects/react-password-generator.png",
       link: "https://react-password-generator1.netlify.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "React Emoji Directory",
       image: "/projects/react-emoji-directory.png",
       link: "https://react-emoji-directory.netlify.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "NextJS Bloghub",
       image: "/projects/nextjs-bloghub.png",
       link: "https://bloghub-red.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "Mern Authentication",
       image: "/projects/mern-auth.png",
       link: "https://github.com/ssakib4040/mern-authentication",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "Mern Authentication 2.0",
       image: "/projects/mern-auth-2.0.png",
       link: "https://github.com/ssakib4040/mern-authentication-2.0",
+      githubUrl: "https://github.com/ssakib4040/",
     },
 
     {
       title: "Mern Ecommerce",
       image: "/projects/react-ecommerce.png",
       link: "https://github.com/ssakib4040/mern-ecommerce",
+      githubUrl: "https://github.com/ssakib4040/",
     },
   ];
 
@@ -92,7 +105,6 @@ export default function Portfolio() {
             <div
               className="flex flex-col rounded-sm border border-gray-300 cursor-pointer"
               key={index}
-              onClick={() => window.open(eachItem.link)}
             >
               <div
                 style={{
@@ -116,13 +128,21 @@ export default function Portfolio() {
               <hr />
 
               <div className="my-3 mx-4">
-                <h3 className="text-xl font-medium mb-3">{eachItem.title}</h3>
+                <h3 className="text-xl font-medium mb-4">{eachItem.title}</h3>
                 <a
                   href={eachItem.link}
                   target="_blank"
                   className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-2 px-4 rounded"
                 >
                   Demo
+                </a>
+
+                <a
+                  href={eachItem.githubUrl}
+                  target="_blank"
+                  className="border-[#0D6EFD] border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
+                >
+                  Github
                 </a>
               </div>
             </div>
