@@ -41,7 +41,7 @@ export default function Portfolio() {
       title: "Plant Shop",
       image: "/projects/plant.png",
       link: "https://nextjs-plant.vercel.app/",
-      githubUrl: "https://github.com/ssakib4040/bloghub",
+      githubUrl: "https://github.com/ssakib4040/nextjs-plant",
     },
 
     {
