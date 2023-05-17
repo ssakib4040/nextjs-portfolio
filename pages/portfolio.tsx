@@ -17,10 +17,10 @@ export default function Portfolio() {
     },
 
     {
-      title: "Awesome App Landing Page",
-      image: "/projects/app-landing.png",
-      link: "http://app-landing-black.vercel.app/",
-      githubUrl: "https://github.com/ssakib4040/app-landing",
+      title: "Bloghub Platform",
+      image: "/projects/nextjs-bloghub.png",
+      link: "https://bloghub-red.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/bloghub",
     },
 
     {
@@ -31,9 +31,16 @@ export default function Portfolio() {
     },
 
     {
-      title: "NextJS Bloghub",
-      image: "/projects/nextjs-bloghub.png",
-      link: "https://bloghub-red.vercel.app/",
+      title: "Awesome App Landing",
+      image: "/projects/app-landing.png",
+      link: "http://app-landing-black.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/app-landing",
+    },
+
+    {
+      title: "Plant Shop",
+      image: "/projects/plant.png",
+      link: "https://nextjs-plant.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/bloghub",
     },
 
@@ -145,21 +152,24 @@ export default function Portfolio() {
 
               <div className="my-3 mx-4">
                 <h3 className="text-xl font-medium mb-4">{eachItem.title}</h3>
-                <a
-                  href={eachItem.link}
-                  target="_blank"
-                  className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-2 px-4 rounded"
-                >
-                  Demo
-                </a>
 
-                <a
-                  href={eachItem.githubUrl}
-                  target="_blank"
-                  className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
-                >
-                  Github
-                </a>
+                <div>
+                  <a
+                    href={eachItem.link}
+                    target="_blank"
+                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-2 px-4 rounded"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href={eachItem.githubUrl}
+                    target="_blank"
+                    className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
+                  >
+                    Github
+                  </a>
+                </div>
               </div>
             </div>
           );

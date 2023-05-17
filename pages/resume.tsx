@@ -1,10 +1,6 @@
 import React from "react";
 
 export default function Resume() {
-  // const resumeItems: string[] = [
-  //   "HTML 5, CSS 3, JavaScript, Typescript, Git & Github, Bootstrap, Tailwind css, React Js, Next Js, Node Js, Express Js, MongoDB, GraphQL, Python (Basic), Azure (Basic)",
-  // ];
-
   interface ResumeItem {
     category: string;
     skills: string[];

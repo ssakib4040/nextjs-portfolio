@@ -50,7 +50,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
       <div
         className={`${
           sidebar ? "left-0" : "left-[-250px]"
-        } left-0 flex flex-col justify-between py-4 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300`}
+        } left-0 flex flex-col justify-between py-4 transition-all fixed top-0 bottom-0 w-[250px] bg-[#E6ECF0] overflow-auto border-r-2 border-gray-300 z-50`}
       >
         <div className="sidebar_top p-8 flex justify-center items-center">
           <Image
