@@ -44,6 +44,7 @@ export default function Resume() {
         "RESTful APIs",
         "JSON",
         "JWT",
+        "Parcel JS",
         "Cypress",
         "Mocha",
         "Postman",
