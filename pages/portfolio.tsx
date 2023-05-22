@@ -52,6 +52,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "Gym Website",
+      image: "/projects/gym-website.png",
+      link: "https://nextjs-gym.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/nextjs-gym",
+    },
+
+    {
       title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
