@@ -52,6 +52,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "Ecommerce Website",
+      image: "/projects/ecommerce.png",
+      link: "https://nextjs-ecommerce-silk-beta.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/nextjs-ecommerce",
+    },
+
+    {
       title: "Gym Website",
       image: "/projects/gym-website.png",
       link: "https://nextjs-gym.vercel.app/",
