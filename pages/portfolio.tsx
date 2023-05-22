@@ -45,6 +45,13 @@ export default function Portfolio() {
     },
 
     {
+      title: "Chat UI",
+      image: "/projects/chat-ui.png",
+      link: "https://chat-ui-smoky.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/chat-ui",
+    },
+
+    {
       title: "React Counter",
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
