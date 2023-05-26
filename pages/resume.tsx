@@ -28,7 +28,7 @@ export default function Resume() {
         "Express JS",
         "GraphQL",
         "Python (Basic)",
-        "Azure (Basic)",
+        "Azure",
       ],
     },
 
@@ -55,7 +55,7 @@ export default function Resume() {
 
     {
       category: "Database",
-      skills: ["MongoDB", "MySQL", "Firebase"],
+      skills: ["MongoDB", "Mongoose(ODM)","MySQL", "Firebase"],
     },
   ];
 
