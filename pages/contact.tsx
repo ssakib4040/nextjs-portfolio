@@ -24,6 +24,24 @@ export default function Contact() {
 
       <a
         className="text-[#0D6EFD] cursor-pointer mx-2"
+        href={urls.cv}
+        title="CV"
+        target="_blank"
+      >
+        <AiFillFileText className="text-6xl" />
+      </a>
+
+      <a
+        className="text-[#0D6EFD] cursor-pointer mx-2"
+        href={urls.mailto}
+        title="Email"
+        target="_blank"
+      >
+        <FaAt className="text-6xl" />
+      </a>
+
+      <a
+        className="text-[#0D6EFD] cursor-pointer mx-2"
         href={urls.facebook}
         title="Facebook"
         target="_blank"
@@ -38,24 +56,6 @@ export default function Contact() {
         target="_blank"
       >
         <FaTwitter className="text-6xl" />
-      </a>
-
-      <a
-        className="text-[#0D6EFD] cursor-pointer mx-2"
-        href={urls.mailto}
-        title="Email"
-        target="_blank"
-      >
-        <FaAt className="text-6xl" />
-      </a>
-
-      <a
-        className="text-[#0D6EFD] cursor-pointer mx-2"
-        href={urls.cv}
-        title="CV"
-        target="_blank"
-      >
-        <AiFillFileText className="text-6xl" />
       </a>
     </div>
   );
