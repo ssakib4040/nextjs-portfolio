@@ -1,11 +1,7 @@
-// components/layout.js
-
-import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import { useSidebar } from "@/contexts/Sidebar-ctx";
 
 export default function Layout({ children }: { children: any }) {
-  // const [sidebar, setSidebar] = useState<boolean>(true);
   const sidebar: any = useSidebar();
 
   return (
