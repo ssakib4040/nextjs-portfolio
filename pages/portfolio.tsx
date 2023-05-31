@@ -6,6 +6,7 @@ export default function Portfolio() {
     image: string;
     link: string;
     githubUrl: string;
+    skills?: string[];
   }
 
   const portfolios: Portfolio[] = [
@@ -14,6 +15,14 @@ export default function Portfolio() {
       image: "/projects/marketing-house.png",
       link: "https://marketing-house.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/marketing-house",
+      skills: [
+        "Html 5",
+        "Css 3",
+        "Tailwind Css",
+        "Javascrpt",
+        "React js",
+        "Next js",
+      ],
     },
 
     {
@@ -172,9 +181,22 @@ export default function Portfolio() {
               <hr />
 
               <div className="my-3 mx-4">
-                <h3 className="text-xl font-medium mb-4">{eachItem.title}</h3>
+                <h3 className="text-xl font-medium mb-3">{eachItem.title}</h3>
 
-                <div>
+                <div className="mb-3 flex flex-wrap gap-x-1 gap-y-2">
+                  {eachItem.skills?.map((skill: any, index: any) => {
+                    return (
+                      <div
+                        className="border border-[#0D6EFD] text-xs text-[#0D6EFD] px-1 rounded inline font-medium"
+                        key={index}
+                      >
+                        {skill}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="flex">
                   <a
                     href={eachItem.link}
                     target="_blank"
