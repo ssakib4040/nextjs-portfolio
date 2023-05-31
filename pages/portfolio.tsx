@@ -16,8 +16,8 @@ export default function Portfolio() {
       link: "https://marketing-house.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/marketing-house",
       skills: [
-        "Html 5",
-        "Css 3",
+        "HTML 5",
+        "CSS 3",
         "Tailwind Css",
         "Javascrpt",
         "React js",
@@ -200,7 +200,7 @@ export default function Portfolio() {
                   <a
                     href={eachItem.link}
                     target="_blank"
-                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-2 px-4 rounded"
+                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-1 px-3 rounded"
                   >
                     Demo
                   </a>
@@ -208,7 +208,7 @@ export default function Portfolio() {
                   <a
                     href={eachItem.githubUrl}
                     target="_blank"
-                    className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-2 px-4 rounded ml-2"
+                    className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-1 px-3 rounded ml-2"
                   >
                     Github
                   </a>

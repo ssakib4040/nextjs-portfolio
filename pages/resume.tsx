@@ -23,13 +23,7 @@ export default function Resume() {
 
     {
       category: "Back End",
-      skills: [
-        "Node JS",
-        "Express JS",
-        "GraphQL",
-        "Python (Basic)",
-        "Azure",
-      ],
+      skills: ["Node JS", "Express JS", "GraphQL", "Python (Basic)", "Azure"],
     },
 
     {
@@ -55,7 +49,7 @@ export default function Resume() {
 
     {
       category: "Database",
-      skills: ["MongoDB", "Mongoose(ODM)","MySQL", "Firebase"],
+      skills: ["MongoDB", "Mongoose(ODM)", "MySQL", "Firebase"],
     },
   ];
 
@@ -78,7 +72,7 @@ export default function Resume() {
 
       <ul className="list-disc ml-5 mb-3 max-w-[1000px] resume">
         {resumeItems.map((item: any) => (
-          <li key={item.category}>
+          <li key={item.category} className="mb-3">
             <span className="font-bold">{item.category}: </span>
             {item.skills.join(", ")}
           </li>
