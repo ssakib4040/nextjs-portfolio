@@ -78,7 +78,7 @@ export default function Portfolio() {
       image: "/projects/css-helicopter.png",
       link: "https://css-helicopter.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/CSS-Helicopter",
-      skills: ["HTML 5", "CSS 3", "React js", "Next js", "Docusaurus"],
+      skills: ["HTML 5", "CSS 3", "Sass", "React js", "Next js", "Docusaurus"],
     },
 
     {
@@ -94,6 +94,7 @@ export default function Portfolio() {
       image: "/projects/gym-website.png",
       link: "https://nextjs-gym.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/nextjs-gym",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
@@ -101,6 +102,7 @@ export default function Portfolio() {
       image: "/projects/react-counter.png",
       link: "https://react-counter-zeta.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/react-counter",
+      skills: ["HTML 5", "CSS 3", "Bootstrap", "Vite js", "React js"],
     },
 
     {
@@ -108,6 +110,14 @@ export default function Portfolio() {
       image: "/projects/mern-todo-app.png",
       link: "https://mern-todo-slg.netlify.app/",
       githubUrl: "https://github.com/ssakib4040/react-todo",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Bootstrap",
+        "React js",
+        "Node js",
+        "MongoDB",
+      ],
     },
 
     {
@@ -115,6 +125,7 @@ export default function Portfolio() {
       image: "/projects/react-ttt.png",
       link: "https://ssakib4040.github.io/react-tic-tac-toe/",
       githubUrl: "https://github.com/ssakib4040/react-tic-tac-toe",
+      skills: ["HTML 5", "CSS 3", "Bootstrap", "React js"],
     },
 
     {
@@ -122,6 +133,7 @@ export default function Portfolio() {
       image: "/projects/react-rock-paper-scissors.png",
       link: "https://react-rock-paper-scissors1.netlify.app/",
       githubUrl: "https://github.com/ssakib4040/react-rock-paper-scissors",
+      skills: ["HTML 5", "CSS 3", "Bootstrap", "React js"],
     },
 
     {
@@ -129,6 +141,14 @@ export default function Portfolio() {
       image: "/projects/nextjs-tailwind-auth.png",
       link: "https://nextjs-tailwind-auth-lake.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/nextjs-tailwind-auth",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Tailwind Css",
+        "React js",
+        "Next js",
+        "next-auth",
+      ],
     },
 
     {
@@ -136,6 +156,7 @@ export default function Portfolio() {
       image: "/projects/react-password-generator.png",
       link: "https://react-password-generator1.netlify.app/",
       githubUrl: "https://github.com/ssakib4040/react-password-generator",
+      skills: ["HTML 5", "CSS 3", "Bootstrap", "React js"],
     },
 
     {
@@ -143,6 +164,7 @@ export default function Portfolio() {
       image: "/projects/react-emoji-directory.png",
       link: "https://react-emoji-directory.netlify.app/",
       githubUrl: "https://github.com/ssakib4040/react-emoji-search",
+      skills: ["HTML 5", "CSS 3", "Bootstrap", "React js"],
     },
 
     {
@@ -150,6 +172,14 @@ export default function Portfolio() {
       image: "/projects/mern-auth.png",
       link: "https://github.com/ssakib4040/mern-authentication",
       githubUrl: "https://github.com/ssakib4040/mern-authentication",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Bootstrap",
+        "React js",
+        "Node js",
+        "MongoDB",
+      ],
     },
 
     {
@@ -157,6 +187,14 @@ export default function Portfolio() {
       image: "/projects/mern-auth-2.0.png",
       link: "https://github.com/ssakib4040/mern-authentication-2.0",
       githubUrl: "https://github.com/ssakib4040/mern-authentication-2.0",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "React js",
+        "Node js",
+        "MongoDB",
+      ],
     },
 
     {
@@ -164,6 +202,7 @@ export default function Portfolio() {
       image: "/projects/react-ecommerce.png",
       link: "https://github.com/ssakib4040/mern-ecommerce",
       githubUrl: "https://github.com/ssakib4040/mern-ecommerce",
+      skills: ["HTML 5", "CSS 3", "React js", "Node js", "MongoDB"],
     },
   ];
 
