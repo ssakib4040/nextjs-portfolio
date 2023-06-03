@@ -41,7 +41,7 @@ export default function Sidebar({ sidebar }: { sidebar: boolean }) {
       <button
         className={`${
           s.isOpen ? "left-[250px]" : "left-[0px]"
-        } absolute top-0 bg-[#0D6EFD] text-white px-2 py-1 rounded-sm transition-all`}
+        } absolute top-0 bg-[#0D6EFD] text-white px-2 py-1 rounded-sm transition-all lg:hidden`}
         onClick={() => s.setIsOpen(!s.isOpen)}
       >
         <FaBars className="text-2xl" />

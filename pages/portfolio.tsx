@@ -172,7 +172,7 @@ export default function Portfolio() {
       <h2 className="text-3xl font-medium">Portfolio</h2>
       <hr className="my-3 border-gray-400 border-1" />
 
-      <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {portfolios.map((eachItem, index) => {
           return (
             <div
