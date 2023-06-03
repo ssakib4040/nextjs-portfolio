@@ -30,6 +30,7 @@ export default function Portfolio() {
       image: "/projects/nextjs-bloghub.png",
       link: "https://bloghub-red.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/bloghub",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
@@ -37,6 +38,7 @@ export default function Portfolio() {
       image: "/projects/optimiza.png",
       link: "https://optimiza.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/optimiza",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
@@ -44,6 +46,7 @@ export default function Portfolio() {
       image: "/projects/app-landing.png",
       link: "http://app-landing-black.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/app-landing",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
@@ -51,6 +54,7 @@ export default function Portfolio() {
       image: "/projects/plant.png",
       link: "https://nextjs-plant.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/nextjs-plant",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
@@ -58,6 +62,15 @@ export default function Portfolio() {
       image: "/projects/chat-ui.png",
       link: "https://chat-ui-smoky.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/chat-ui",
+      skills: [
+        "HTML 5",
+        "CSS 3",
+        "Flexbox",
+        "Grid",
+        "Tailwind Css",
+        "React js",
+        "Next js",
+      ],
     },
 
     {
@@ -73,6 +86,7 @@ export default function Portfolio() {
       image: "/projects/ecommerce.png",
       link: "https://nextjs-ecommerce-silk-beta.vercel.app/",
       githubUrl: "https://github.com/ssakib4040/nextjs-ecommerce",
+      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
     {
