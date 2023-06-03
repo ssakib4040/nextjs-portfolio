@@ -61,6 +61,14 @@ export default function Portfolio() {
     },
 
     {
+      title: "CSS Helicopter",
+      image: "/projects/css-helicopter.png",
+      link: "https://css-helicopter.vercel.app/",
+      githubUrl: "https://github.com/ssakib4040/CSS-Helicopter",
+      skills: ["HTML 5", "CSS 3", "React js", "Next js", "Docusaurus"],
+    },
+
+    {
       title: "Ecommerce Website",
       image: "/projects/ecommerce.png",
       link: "https://nextjs-ecommerce-silk-beta.vercel.app/",

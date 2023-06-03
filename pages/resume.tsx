@@ -39,6 +39,7 @@ export default function Resume() {
         "JSON",
         "JWT",
         "Parcel JS",
+        "Docusaurus",
         "Cypress",
         "Mocha",
         "Postman",
@@ -70,7 +71,7 @@ export default function Resume() {
         possess a diverse range of skills, including:
       </p>
 
-      <ul className="list-disc ml-5 mb-3 max-w-[1000px] resume">
+      <ul className="list-disc ml-5 mb-3 resume">
         {resumeItems.map((item: any) => (
           <li key={item.category} className="mb-3">
             <span className="font-bold">{item.category}: </span>
