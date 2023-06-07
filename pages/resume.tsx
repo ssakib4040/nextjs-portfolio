@@ -11,7 +11,7 @@ export default function Resume() {
       category: "Front End",
       skills: [
         "HTML 5",
-        "CSS 3  (Grid, Flexbox, Media Queries)",
+        "CSS 3  (Grid, Flexbox, Media Queries & Sass)",
         "Javascript (ES6+)",
         "TypeScript",
         "React JS",
@@ -74,6 +74,11 @@ export default function Resume() {
     },
 
     {
+      category: "Bundlers",
+      skills: ["Parcel JS"],
+    },
+
+    {
       category: "Tools & Technologies",
       skills: [
         "Visual Studio Code",
@@ -81,7 +86,6 @@ export default function Resume() {
         "RESTful APIs",
         "JSON",
         "JWT",
-        "Parcel JS",
         "Docusaurus",
         "Postman",
       ],
