@@ -94,7 +94,7 @@ export default function Resume() {
 
       <p className="mb-3">
         Hello! My name is Sadman Sakib, and I am a dedicated full-stack web
-        developer seeking new remote opportunities to enhance my skills and take
+        developer seeking new opportunities to enhance my skills and take
         my career to the next level.
       </p>
 
@@ -104,9 +104,9 @@ export default function Resume() {
         possess a diverse range of skills, including:
       </p>
 
-      <ul className="ml-5 mb-3 resume dev">
+      <ul className="ml-5 mb-3 resume">
         {resumeItems.map((item: any) => (
-          <li key={item.category} className="mb-3 dev">
+          <li key={item.category} className="mb-3">
             <span className="font-bold">{item.category}: </span>
 
             <ul className="list-disc ms-8">

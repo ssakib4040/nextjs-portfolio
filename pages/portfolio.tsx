@@ -258,7 +258,7 @@ export default function Portfolio() {
                         className="border border-[#0D6EFD] text-xs text-[#0D6EFD] px-1 rounded inline font-medium"
                         key={index}
                       >
-                        {skill}
+                        #{skill}
                       </div>
                     );
                   })}

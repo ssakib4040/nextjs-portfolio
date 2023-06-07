@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { FaGithub, FaRocket } from "react-icons/fa";
 
 export default function NpmPackages() {
   const npmPackages = [
@@ -74,14 +75,15 @@ export default function NpmPackages() {
               />
 
               <div className="my-3 mx-4">
-                <h3 className="text-xl font-medium mb-3">{_package.name}</h3>
-                <p className="mb-3 text-gray-600">{_package.desc}</p>
+                <h3 className="text-lg font-medium mb-2">{_package.name}</h3>
+                <p className="mb-3 text-sm text-gray-500">{_package.desc}</p>
                 <div className="flex">
                   <a
                     href={_package.link}
                     target="_blank"
-                    className="bg-[#0D6EFD] flex focus:ring-4 transition text-white font-bold py-2 px-4 rounded"
+                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-1 px-3 rounded flex items-center justify-center"
                   >
+                    <FaRocket className="mr-1 mt-[2px]" />
                     Link
                   </a>
                 </div>
