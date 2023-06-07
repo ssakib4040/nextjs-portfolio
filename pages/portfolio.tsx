@@ -247,8 +247,7 @@ export default function Portfolio() {
 
                 <p className="mb-3 text-sm text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  dolorem nisi quibusdam et quis ullam veniam ea eius nihil
-                  quod.
+                  dolorem nisi quibusdam et quis ullam veniam ea ei.
                 </p>
 
                 <div className="mb-3 flex flex-wrap gap-x-1 gap-y-2">

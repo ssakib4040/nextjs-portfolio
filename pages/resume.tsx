@@ -45,7 +45,7 @@ export default function Resume() {
 
     {
       category: "Back End",
-      skills: ["Node JS", "Python (Basic)", "Azure"],
+      skills: ["Node JS", "Python (Basic)"],
     },
 
     {
@@ -69,6 +69,11 @@ export default function Resume() {
     },
 
     {
+      category: "Testing Libraries",
+      skills: ["React Testing Library", "Cypress", "Mocha"],
+    },
+
+    {
       category: "Tools & Technologies",
       skills: [
         "Visual Studio Code",
@@ -78,13 +83,41 @@ export default function Resume() {
         "JWT",
         "Parcel JS",
         "Docusaurus",
-        "Cypress",
-        "Mocha",
         "Postman",
-        "Netlify",
-        "Vercel",
       ],
     },
+
+    {
+      category: "Deployment",
+      skills: ["Azure", "Vercel", "Netlify", "Github Pages"],
+    },
+
+    // {
+    //   category: "Skills",
+    //   skills: [
+    //     "Problem Solving",
+    //     "Critical Thinking",
+    //     "Teamwork",
+    //     "Communication",
+    //     "Time Management",
+    //     "Leadership",
+    //     "Creativity",
+    //     "Adaptability",
+    //     "Work Ethic",
+    //     "Interpersonal Skills",
+    //     "Active Listening",
+    //     "Positive Attitude",
+    //     "Patience",
+    //     "Self-Confidence",
+    //     "Flexibility",
+    //     "Self-Motivation",
+    //     "Ability to Accept and Learn From Criticism",
+    //     "Conflict Resolution",
+    //     "Negotiation",
+    //     "Persuasion",
+    //     "Decision Making",
+    //   ],
+    // },
   ];
 
   return (
@@ -94,8 +127,8 @@ export default function Resume() {
 
       <p className="mb-3">
         Hello! My name is Sadman Sakib, and I am a dedicated full-stack web
-        developer seeking new opportunities to enhance my skills and take
-        my career to the next level.
+        developer seeking new opportunities to enhance my skills and take my
+        career to the next level.
       </p>
 
       <p className="mb-3">
