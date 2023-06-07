@@ -11,30 +11,68 @@ export default function Resume() {
       category: "Front End",
       skills: [
         "HTML 5",
-        "CSS 3",
-        "Javascript",
+        "CSS 3  (Grid, Flexbox, Media Queries)",
+        "Javascript (ES6+)",
         "TypeScript",
-        "Bootstrap",
-        "Tailwind CSS",
         "React JS",
         "Next JS",
       ],
     },
 
     {
+      category: "CSS Frameworks",
+      skills: ["Bootstrap", "Tailwind CSS"],
+    },
+
+    {
+      category: "React UI Libraries",
+      skills: [
+        // "Material UI",
+        // "Chakra UI",
+        // "Ant Design",
+        "React Bootstrap",
+        // "Reactstrap",
+        // "Styled Components",
+        // "Emotion",
+      ],
+    },
+
+    {
+      category: "React State Management",
+      // "React Query", "Zustand", "Recoil", "Jotai",
+      skills: ["Redux", "MobX", "React Context API"],
+    },
+
+    {
       category: "Back End",
-      skills: ["Node JS", "Express JS", "GraphQL", "Python (Basic)", "Azure"],
+      skills: ["Node JS", "Python (Basic)", "Azure"],
+    },
+
+    {
+      category: "Version Control",
+      skills: ["Git", "Github"],
+    },
+
+    {
+      category: "Back End Frameworks",
+      skills: ["Express JS", "GraphQL", "Apollo Server"],
+    },
+
+    {
+      category: "Database",
+      skills: ["MongoDB & Mongoose(ODM)", "MySQL", "Firebase"],
+    },
+
+    {
+      category: "Package Managers",
+      skills: ["NPM", "Yarn"],
     },
 
     {
       category: "Tools & Technologies",
       skills: [
-        "Git (VCS)",
-        "Github",
         "Visual Studio Code",
         "Chrome Dev Tools",
-        "NPM",
-        "Yarn",
         "RESTful APIs",
         "JSON",
         "JWT",
@@ -46,11 +84,6 @@ export default function Resume() {
         "Netlify",
         "Vercel",
       ],
-    },
-
-    {
-      category: "Database",
-      skills: ["MongoDB", "Mongoose(ODM)", "MySQL", "Firebase"],
     },
   ];
 
@@ -71,11 +104,16 @@ export default function Resume() {
         possess a diverse range of skills, including:
       </p>
 
-      <ul className="list-disc ml-5 mb-3 resume">
+      <ul className="ml-5 mb-3 resume dev">
         {resumeItems.map((item: any) => (
-          <li key={item.category} className="mb-3">
+          <li key={item.category} className="mb-3 dev">
             <span className="font-bold">{item.category}: </span>
-            {item.skills.join(", ")}
+
+            <ul className="list-disc ms-8">
+              {item.skills.map((skill: any) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>
