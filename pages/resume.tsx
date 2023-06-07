@@ -84,10 +84,10 @@ export default function Resume() {
         "Visual Studio Code",
         "Chrome Dev Tools",
         "RESTful APIs",
-        "JSON",
-        "JWT",
         "Docusaurus",
         "Postman",
+        "JSON",
+        "JWT",
       ],
     },
 
