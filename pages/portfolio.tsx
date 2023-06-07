@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub, FaRocket } from "react-icons/fa";
 
 export default function Portfolio() {
   interface Portfolio {
@@ -242,7 +243,13 @@ export default function Portfolio() {
               <hr />
 
               <div className="my-3 mx-4">
-                <h3 className="text-xl font-medium mb-3">{eachItem.title}</h3>
+                <h3 className="text-lg font-medium mb-1">{eachItem.title}</h3>
+
+                <p className="mb-3 text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  dolorem nisi quibusdam et quis ullam veniam ea eius nihil
+                  quod.
+                </p>
 
                 <div className="mb-3 flex flex-wrap gap-x-1 gap-y-2">
                   {eachItem.skills?.map((skill: any, index: any) => {
@@ -261,16 +268,18 @@ export default function Portfolio() {
                   <a
                     href={eachItem.link}
                     target="_blank"
-                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-1 px-3 rounded"
+                    className="bg-[#0D6EFD] focus:ring-4 transition text-white font-bold py-1 px-3 rounded flex items-center justify-center"
                   >
+                    <FaRocket className="mr-1 mt-[2px]" />
                     Demo
                   </a>
 
                   <a
                     href={eachItem.githubUrl}
                     target="_blank"
-                    className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-1 px-3 rounded ml-2"
+                    className="border-[#0D6EFD] focus:ring-4 border-[1px] transition text-[#0D6EFD] font-bold py-1 px-3 rounded ml-2  flex items-center justify-center"
                   >
+                    <FaGithub className="mr-1 mt-[2px]" />
                     Github
                   </a>
                 </div>
