@@ -243,21 +243,14 @@ export default function Portfolio() {
               <div
                 style={{
                   position: "relative",
-                  width: "100%",
-                  height: "180px",
                 }}
               >
                 <Image
-                  className=""
+                  className="aspect-video "
                   src={eachItem.image}
                   alt="portfolio image"
-                  fill
-                  sizes="100vw"
-                  style={
-                    {
-                      // objectFit: "contain",
-                    }
-                  }
+                  width={1921}
+                  height={948}
                 />
               </div>
 
