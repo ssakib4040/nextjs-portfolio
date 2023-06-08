@@ -38,14 +38,14 @@ export default function Portfolio() {
       skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
     },
 
-    {
-      title: "Optimiza Landing Page",
-      description: `Landing page for a digital marketing agency, showcasing services and attracting clients with a modern design.`,
-      image: "/projects/optimiza.png",
-      link: "https://optimiza.vercel.app/",
-      githubUrl: "https://github.com/ssakib4040/optimiza",
-      skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
-    },
+    // {
+    //   title: "Optimiza Landing Page",
+    //   description: `Landing page for a digital marketing agency, showcasing services and attracting clients with a modern design.`,
+    //   image: "/projects/optimiza.png",
+    //   link: "https://optimiza.vercel.app/",
+    //   githubUrl: "https://github.com/ssakib4040/optimiza",
+    //   skills: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js"],
+    // },
 
     {
       title: "Awesome App Landing",
