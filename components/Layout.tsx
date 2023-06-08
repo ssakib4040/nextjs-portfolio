@@ -6,6 +6,7 @@ export default function Layout({ children }: { children: any }) {
 
   return (
     <>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       <Sidebar sidebar={sidebar.isOpen} />
       <div className={`${sidebar.isOpen && "lg:ml-[250px]"} transition-all`}>
         {children}
