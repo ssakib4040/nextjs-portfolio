@@ -1,65 +1,36 @@
-# Portfolio
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Welcome to my portfolio! This repository showcases my work and provides an overview of my projects. Feel free to explore and get in touch if you have any questions or collaboration opportunities.
+## Getting Started
 
-## Projects
+First, run the development server:
 
-This section highlights some of the notable projects I have worked on. Each project includes a brief description, an image, and a link to the project repository or live demo.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### React Counter
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-![React Counter](./public/projects/react-counter.png)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Repository: <a href="https://react-counter-zeta.vercel.app/" target="_blank">https://react-counter-zeta.vercel.app/</a>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### React Todo App
+## Learn More
 
-![React Todo App](./public/projects/mern-todo-app.png)
+To learn more about Next.js, take a look at the following resources:
 
-Repository: [https://mern-todo-slg.netlify.app/](link-to-project-2)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### React Tic Tac Toe
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-![React Tic Tac Toe](./public/projects/react-ttt.png)
+## Deploy on Vercel
 
-Repository: [https://ssakib4040.github.io/react-tic-tac-toe/](link-to-project-3)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### React Rock Paper Scissors
-
-![React Rock Paper Scissors](./public/projects/react-rock-paper-scissors.png)
-
-Repository: [https://react-rock-paper-scissors1.netlify.app/](link-to-project-4)
-
-<!--  -->
-
-### Nextjs Tailwind Auth
-
-![Nextjs Tailwind Auth](./public/projects/nextjs-tailwind-auth.png)
-
-Repository: [https://nextjs-tailwind-auth-lake.vercel.app/](link-to-project-5)
-
-### React Password Generator
-
-![React Password Generator](./public/projects/react-password-generator.png)
-
-Repository: [https://react-password-generator1.netlify.app/](link-to-project-4)
-
-### React Emoji Directory
-
-![React Emoji Directory](./public/projects/react-emoji-directory.png)
-
-Repository: [https://react-emoji-directory.netlify.app/](link-to-project-4)
-
-### NextJS Bloghub
-
-![NextJS Bloghub](./public/projects/nextjs-bloghub.png)
-
-Repository: [https://bloghub-red.vercel.app/](link-to-project-4)
-
-Feel free to explore the repositories to view the project details, source code, and any additional information provided.
-
-## Contact
-
-If you would like to get in touch, you can reach me via email at [ssakib4040@gmail.com](mailto:ssakib4040@gmail.com). You can also connect with me on [LinkedIn](https://linkedin.com/in/ssakib4040).
-
-Thank you for visiting my portfolio!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
