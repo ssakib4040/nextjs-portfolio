@@ -3,7 +3,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* title */}
       <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-        Next.js + TypeScript + Tailwind CSS
+        MD Sadman Sakib
       </h1>
 
       {/* description */}
