@@ -44,7 +44,7 @@ export default function RootLayout({
   const router = usePathname();
 
   function isActive(href: string) {
-    return router === href ? "active" : "";
+    return router === href
   }
 
   return (
