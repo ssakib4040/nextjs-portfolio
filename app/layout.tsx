@@ -1,17 +1,12 @@
 "use client";
 
-// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
-// export const metadata: Metadata = {
-//   title: "Portfolio",
-//   description: "Portfolio of my work",
-// };
+const inter = Inter({ subsets: ["latin"] });
 
 interface MenuInterface {
   name: string;
