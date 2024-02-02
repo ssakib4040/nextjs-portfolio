@@ -27,6 +27,22 @@ export default function page() {
                 <p className="text-gray-600 mt-2">
                   A simple NPM package to generate a random number.
                 </p>
+
+                {/* tags */}
+
+                <div className="flex flex-wrap gap-1">
+                  {Array(6)
+                    .fill(0)
+                    .map((_, i) => (
+                      <span
+                        className="bg-white text-[#0D6EFD] border-[1px] border-[#0D6EFD] text-xs px-2 py-1 rounded-md inline-block"
+                        key={i}
+                      >
+                        #HTML 5
+                      </span>
+                    ))}
+                </div>
+
                 <a
                   href="https://www.npmjs.com/package/random-number-generator-123"
                   target="_blank"
