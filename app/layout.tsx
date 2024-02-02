@@ -28,7 +28,7 @@ const menus: MenuInterface[] = [
   },
   {
     name: "NPM Package",
-    href: "/npmpackage",
+    href: "/npm-package",
   },
   {
     name: "Contact",
