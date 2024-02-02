@@ -23,16 +23,7 @@ export default function Home() {
 
       {/* description */}
       <TypeAnimation
-        sequence={[
-          "I am a web developer",
-          1000,
-          "I am a frontend developer",
-          1000,
-          "I am a backend developer",
-          1000,
-          "We produce food for Chinchillas",
-          1000,
-        ]}
+        sequence={typeAnimationSequence}
         speed={40}
         repeat={Infinity}
         className="text-2xl font-bold text-center text-[#6b7280]"
