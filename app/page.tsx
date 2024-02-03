@@ -1,23 +1,33 @@
+"use client";
+
+import { TypeAnimation } from "react-type-animation";
+
+const typeAnimationSequence = [
+  "I am a web developer",
+  1000,
+  "I am a front-end developer",
+  1000,
+  "I am a back-end developer",
+  1000,
+  "I am a full stack developer",
+  1000,
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* title */}
-      <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-        MD Sadman Sakib
+      <h1 className="text-4xl font-bold text-center mb-3">
+        My name is <span className="text-[#0D6EFD]">MD Sadman Sakib</span>
       </h1>
 
       {/* description */}
-      <p className="mt-3 text-2xl text-center text-gray-300">
-        with{" "}
-        <a
-          className="text-blue-400"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Next.js
-        </a>
-      </p>
+      <TypeAnimation
+        sequence={typeAnimationSequence}
+        speed={40}
+        repeat={Infinity}
+        className="text-2xl font-bold text-center text-[#6b7280]"
+      />
     </div>
   );
 }

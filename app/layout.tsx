@@ -28,7 +28,7 @@ const menus: MenuInterface[] = [
   },
   {
     name: "NPM Package",
-    href: "/npmpackage",
+    href: "/npm-package",
   },
   {
     name: "Contact",
@@ -76,7 +76,7 @@ export default function RootLayout({
                     <li key={index}>
                       <Link
                         href={menu.href}
-                        className={`text-center block ${
+                        className={`text-center block active:!bg-[#0d6efd] focus:!bg-[#0d6efd] focus:!text-white ${
                           isActive(menu.href) ? "bg-[#0D6EFD] text-white" : ""
                         }`}
                       >
