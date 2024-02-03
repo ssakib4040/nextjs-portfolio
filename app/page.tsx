@@ -5,11 +5,11 @@ import { TypeAnimation } from "react-type-animation";
 const typeAnimationSequence = [
   "I am a web developer",
   1000,
-  "I am a frontend developer",
+  "I am a front-end developer",
   1000,
-  "I am a backend developer",
+  "I am a back-end developer",
   1000,
-  "We produce food for Chinchillas",
+  "I am a full stack developer",
   1000,
 ];
 
