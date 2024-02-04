@@ -53,6 +53,7 @@ export default function page() {
 
                 <Link
                   href={portfolio.source}
+                  target="_blank"
                   className="bg-[#0D6EFD] text-white px-2 py-1 rounded-md flex items-center text-sm font-bold"
                 >
                   <svg
@@ -72,6 +73,7 @@ export default function page() {
 
                 <Link
                   href={portfolio.demo}
+                  target="_blank"
                   className="bg-white border-[1px] border-[#0D6EFD] text-[#0D6EFD] px-3 py-2 rounded-md flex items-center font-bold"
                 >
                   <svg
