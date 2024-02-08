@@ -7,3 +7,9 @@
     margin-bottom: 0.8rem;
   }
 }
+
+.sidebar-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
