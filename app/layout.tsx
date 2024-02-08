@@ -52,15 +52,30 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="drawer lg:drawer-open">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+
           <div className="drawer-content">
             {/* Page content here */}
+
             {children}
-            {/* <label
+            <label
               htmlFor="my-drawer-2"
-              className="btn btn-primary drawer-button lg:hidden"
+              className="btn btn-primary drawer-button lg:hidden sidebar-button"
             >
-              Open drawer
-            </label> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </label>
           </div>
           <div className="drawer-side">
             <label
@@ -68,6 +83,7 @@ export default function RootLayout({
               aria-label="close sidebar"
               className="drawer-overlay"
             ></label>
+
             <div className="menu justify-center items-center flex  bg-base-200 min-h-full">
               <ul className="w-80 text-base-content">
                 {/* Sidebar content here */}
