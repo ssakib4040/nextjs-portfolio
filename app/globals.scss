@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.sidebar-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 1rem;
+  margin: 0;
+  padding: 10px;
+  height: initial;
+  min-height: 0;
+  background-color: #0d6efd;
+
+  &:hover {
+    background-color: #0b5ed7;
+  }
+}
