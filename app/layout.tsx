@@ -47,6 +47,11 @@ export default function RootLayout({
     return router === href ? "active" : "";
   }
 
+  const handleCloseSIdebar = () => {
+    const checkbox = document.getElementById("my-drawer-2") as HTMLInputElement;
+    checkbox.checked = false;
+  };
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -95,6 +100,7 @@ export default function RootLayout({
                         className={`text-center block active:!bg-[#0d6efd] focus:!bg-[#0d6efd] focus:!text-white ${
                           isActive(menu.href) ? "bg-[#0D6EFD] text-white" : ""
                         }`}
+                        onClick={handleCloseSIdebar}
                       >
                         {menu.name}
                       </Link>
