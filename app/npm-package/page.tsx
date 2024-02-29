@@ -111,7 +111,7 @@ export default function page() {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     className="mr-1 mt-[2px]"
                     height="1em"
@@ -127,7 +127,7 @@ export default function page() {
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 496 512"
                       className="mr-1 mt-[2px]"
                       height="1em"

@@ -48,18 +48,18 @@ export default function page() {
                 ))}
               </div>
 
-              <div className="flex gap-1">
+              <div className="flex flex-wrap gap-1">
                 {/* two button here  */}
 
                 <Link
                   href={portfolio.source}
                   target="_blank"
-                  className="bg-[#0D6EFD] text-white px-2 py-1 rounded-md flex items-center text-sm font-bold"
+                  className="bg-[#0D6EFD] text-white rounded-md flex px-3 py-2 items-center font-bold"
                 >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     className="mr-1 mt-[2px]"
                     height="1em"
@@ -79,7 +79,7 @@ export default function page() {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 496 512"
                     className="mr-1 mt-[2px]"
                     height="1em"
