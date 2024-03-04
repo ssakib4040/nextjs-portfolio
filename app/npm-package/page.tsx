@@ -81,7 +81,7 @@ export default function page() {
               width={1600}
               height={900}
             />
-            <div className="p-6">
+            <div className="p-4">
               <h2 className="text-xl font-bold text-gray-800">{npm.title}</h2>
               <p className="text-gray-600 mt-2">{npm.description}</p>
 
@@ -111,7 +111,7 @@ export default function page() {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    strokeWidth="0"
                     viewBox="0 0 512 512"
                     className="mr-1 mt-[2px]"
                     height="1em"
@@ -127,7 +127,7 @@ export default function page() {
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 496 512"
                       className="mr-1 mt-[2px]"
                       height="1em"
