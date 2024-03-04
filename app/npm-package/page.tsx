@@ -81,7 +81,7 @@ export default function page() {
               width={1600}
               height={900}
             />
-            <div className="p-6">
+            <div className="p-4">
               <h2 className="text-xl font-bold text-gray-800">{npm.title}</h2>
               <p className="text-gray-600 mt-2">{npm.description}</p>
 
