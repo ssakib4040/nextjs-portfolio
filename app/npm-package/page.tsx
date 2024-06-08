@@ -65,7 +65,7 @@ export default function page() {
       <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
         {npmPackageList.map((npm, i) => (
           <div
-            className="bg-white shadow-md rounded-md overflow-hidden"
+            className="bg-white shadow-md rounded-md overflow-hidden flex flex-col"
             key={i}
           >
             <Image
@@ -81,7 +81,7 @@ export default function page() {
               width={1600}
               height={900}
             />
-            <div className="p-4">
+            <div className="p-4 flex flex-col h-full">
               <h2 className="text-xl font-bold text-gray-800">{npm.title}</h2>
               <p className="text-gray-600 mt-2">{npm.description}</p>
 
@@ -91,7 +91,7 @@ export default function page() {
                   {Array(6)
                     .fill(0)
                     .map((_, i) => (
-                      <span
+                      <span 
                         className="bg-white text-[#0D6EFD] border-[1px] border-[#0D6EFD] text-xs px-2 py-1 rounded-md inline-block"
                         key={i}
                       >
@@ -100,7 +100,7 @@ export default function page() {
                     ))}
                 </div> */}
 
-              <div className="flex gap-1">
+              <div className="flex gap-1 mt-auto">
                 {/* two button here  */}
 
                 <Link
