@@ -17,16 +17,22 @@ const npmPackageList = [
   },
 
   {
-    title: "Mongodb Backup Toolkit",
-    description:
-      "Node.js library to easily backup and restore MongoDB databases using Mongoose and the filesystem module.",
-    link: "https://www.npmjs.com/package/mongodb-backup-toolkit",
+    title: "Repo Stats Tool",
+    description: "A cli to get stats, words and line counts of project",
+    link: "https://www.npmjs.com/package/rude-filter",
   },
 
   {
     title: "Rude Filter",
     description: "A simple module that filters rude words from a given text.",
     link: "https://www.npmjs.com/package/rude-filter",
+  },
+
+  {
+    title: "Mongodb Backup Toolkit",
+    description:
+      "Node.js library to easily backup and restore MongoDB databases using Mongoose and the filesystem module.",
+    link: "https://www.npmjs.com/package/mongodb-backup-toolkit",
   },
 
   {
