@@ -1,8 +1,15 @@
+import { shimmer, toBase64 } from "@/utils/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const npmPackageList = [
+interface npmPackageList {
+  title: string;
+  description: string;
+  link: string;
+}
+
+const npmPackageList: npmPackageList[] = [
   {
     title: "Imposter.js",
     description:
@@ -64,19 +71,13 @@ export default function page() {
       {/* grid with 4 card */}
       <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
         {npmPackageList.map((npm, i) => (
-          <div
-            className="bg-white shadow-md rounded-md overflow-hidden"
-            key={i}
-          >
+          <div className="bg-white border rounded-md overflow-hidden" key={i}>
             <Image
               src="/npm-placeholder.webp"
+              className="object-cover w-full h-48"
               placeholder={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
               alt=""
               width={1600}
               height={900}
@@ -101,8 +102,6 @@ export default function page() {
                 </div> */}
 
               <div className="flex gap-1">
-                {/* two button here  */}
-
                 <Link
                   href={npm.link}
                   target="_blank"
@@ -146,22 +145,3 @@ export default function page() {
     </div>
   );
 }
-
-const shimmer = (w: number, h: number) => `
-<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <linearGradient id="g">
-      <stop stop-color="#333" offset="20%" />
-      <stop stop-color="#222" offset="50%" />
-      <stop stop-color="#333" offset="70%" />
-    </linearGradient>
-  </defs>
-  <rect width="${w}" height="${h}" fill="#333" />
-  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-</svg>`;
-
-const toBase64 = (str: string) =>
-  typeof window === "undefined"
-    ? Buffer.from(str).toString("base64")
-    : window.btoa(str);

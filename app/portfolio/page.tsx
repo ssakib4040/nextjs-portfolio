@@ -1,3 +1,4 @@
+import { shimmer, toBase64 } from "@/utils/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -209,11 +210,17 @@ export default function page() {
       {/* grid with 4 card */}
       <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
         {portfolioList.map((portfolio, i) => (
-          <div
-            className="bg-white shadow-md rounded-md overflow-hidden"
-            key={i}
-          >
-            <Image src={portfolio.image} alt="" width={1080} height={480} />
+          <div className="bg-white border rounded-md overflow-hidden" key={i}>
+            <Image
+              src={portfolio.image}
+              alt=""
+              width={1600}
+              height={900}
+              className="object-cover h-44"
+              placeholder={`data:image/svg+xml;base64,${toBase64(
+                shimmer(700, 475)
+              )}`}
+            />
             <hr />
             <div className="p-4">
               <h2 className="text-xl font-bold text-gray-800">
@@ -222,7 +229,6 @@ export default function page() {
               <p className="text-gray-600 mt-2">{portfolio.description}</p>
 
               {/* tags */}
-
               <div className="flex flex-wrap gap-1 mb-3">
                 {portfolio.tags &&
                   portfolio.tags.map((tag, i) => (
@@ -236,12 +242,10 @@ export default function page() {
               </div>
 
               <div className="flex flex-wrap gap-1">
-                {/* two button here  */}
-
                 <Link
                   href={portfolio.source}
                   target="_blank"
-                  className="bg-[#0D6EFD] text-white rounded-md flex px-3 py-2 items-center font-bold"
+                  className="bg-[#0D6EFD] text-white px-3 py-2 rounded-md flex items-center text-sm font-bold"
                 >
                   <svg
                     stroke="currentColor"
@@ -261,7 +265,8 @@ export default function page() {
                 <Link
                   href={portfolio.demo}
                   target="_blank"
-                  className="bg-white border-[1px] border-[#0D6EFD] text-[#0D6EFD] px-3 py-2 rounded-md flex items-center font-bold"
+                  className="bg-white border-[1px] border-[#0D6EFD] text-[#0D6EFD]  px-3 py-2 rounded-md flex items-center text-sm font-bold"
+                  // className="bg-[#0D6EFD] text-white px-3 py-2 rounded-md flex items-center text-sm font-bold"
                 >
                   <svg
                     stroke="currentColor"
