@@ -12,7 +12,7 @@ const urls = {
 
 export default function page() {
   return (
-    <div className="h-screen flex justify-center items-center gap-3">
+    <div className="h-screen flex justify-center items-center gap-3 flex-wrap">
       <a
         href={urls.github}
         target="_blank"
