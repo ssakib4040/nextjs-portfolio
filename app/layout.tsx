@@ -1,7 +1,7 @@
 "use client";
 
-import { Inter } from "next/font/google";
 import Link from "next/link";
+import { Inter } from "next/font/google";
 import { usePathname } from "next/navigation";
 
 import "./globals.scss";
@@ -23,8 +23,12 @@ const menus: MenuInterface[] = [
     href: "/resume",
   },
   {
-    name: "Portfolio",
-    href: "/portfolio",
+    name: "Professional Portfolio",
+    href: "/professional-portfolio",
+  },
+  {
+    name: "Personal Portfolio",
+    href: "/personal-portfolio",
   },
   {
     name: "NPM Package",
@@ -44,7 +48,7 @@ export default function RootLayout({
   const router = usePathname();
 
   function isActive(href: string) {
-    return router === href
+    return router === href;
   }
 
   const handleCloseSIdebar = () => {
