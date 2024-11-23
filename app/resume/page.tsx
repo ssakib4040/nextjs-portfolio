@@ -30,6 +30,7 @@ const resumeItems: ResumeItem[] = [
       // "Chakra UI",
       // "Ant Design",
       "React Bootstrap",
+      "Daishi UI",
       // "Reactstrap",
       // "Styled Components",
       // "Emotion",
