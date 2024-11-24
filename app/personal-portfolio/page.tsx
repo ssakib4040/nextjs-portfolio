@@ -76,14 +76,14 @@ const portfolioList: Portfolio[] = [
     ],
   },
 
-  {
-    title: "CSS Helicopter",
-    description: `CSS Helicopter is a small CSS library for creating a helicopter with pure CSS and HTML only.`,
-    image: "/projects/css-helicopter.png",
-    demo: "https://css-helicopter.vercel.app/",
-    source: "https://github.com/ssakib4040/CSS-Helicopter",
-    tags: ["HTML 5", "CSS 3", "Sass", "React js", "Next js", "Docusaurus"],
-  },
+  // {
+  //   title: "CSS Helicopter",
+  //   description: `CSS Helicopter is a small CSS library for creating a helicopter with pure CSS and HTML only.`,
+  //   image: "/projects/css-helicopter.png",
+  //   demo: "https://css-helicopter.vercel.app/",
+  //   source: "https://github.com/ssakib4040/CSS-Helicopter",
+  //   tags: ["HTML 5", "CSS 3", "Sass", "React js", "Next js", "Docusaurus"],
+  // },
 
   {
     title: "Ecommerce Website",
@@ -215,8 +215,8 @@ export default function page() {
               src={portfolio.image}
               alt=""
               width={1600}
-              height={900}
-              className="object-cover h-44"
+              height={1200}
+              className="object-fill h-52"
               placeholder={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}
