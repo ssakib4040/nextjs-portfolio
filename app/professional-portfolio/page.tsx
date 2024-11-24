@@ -20,8 +20,14 @@ const portfolioList: Portfolio[] = [
     description:
       "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
     tags: [
+      { name: "Next", image: "/projects/skills/next.svg" },
+      { name: "NextAuth", image: "/projects/skills/next-auth.png" },
       { name: "React", image: "/projects/skills/react.svg" },
       { name: "React Native", image: "/projects/skills/react.svg" },
+      { name: "RTK Query", image: "/projects/skills/redux.svg" },
+      { name: "DaisyUI", image: "/projects/skills/daisyui.svg" },
+      { name: "TailwindCSS", image: "/projects/skills/tailwindcss.svg" },
+
       { name: "Echo", image: "/projects/skills/laravel.svg" },
     ],
     image: "/projects/professional/swapshop.png",
