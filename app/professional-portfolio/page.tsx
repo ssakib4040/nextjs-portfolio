@@ -40,7 +40,7 @@ const portfolioList: Portfolio[] = [
       "A full-stack email marketing platform where users can create email campaigns, manage subscribers, and track email campaigns. Admin can manage users, manage email templates, and manage email campaigns.",
     tags: [{ name: "React", image: "/projects/skills/react.svg" }],
     image: "/projects/professional/growtoro.png",
-    source: "https://swapshopnow.com/",
+    source: "https://growtoro.com/",
   },
 ];
 
