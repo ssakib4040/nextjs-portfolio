@@ -226,7 +226,9 @@ export default function page() {
               <h2 className="text-xl font-bold text-gray-800">
                 {portfolio.title}
               </h2>
-              <p className="text-gray-600 mt-2">{portfolio.description}</p>
+              <p className="text-gray-600 text-sm mt-2">
+                {portfolio.description}
+              </p>
 
               {/* tags */}
               <div className="flex flex-wrap gap-1 mb-3">

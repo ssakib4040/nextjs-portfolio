@@ -27,6 +27,15 @@ const portfolioList: Portfolio[] = [
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
   },
+
+  {
+    title: "Growtoro - Email Marketing Platform",
+    description:
+      "A full-stack email marketing platform where users can create email campaigns, manage subscribers, and track email campaigns. Admin can manage users, manage email templates, and manage email campaigns.",
+    tags: [{ name: "React", image: "/projects/skills/react.svg" }],
+    image: "/projects/professional/growtoro.png",
+    source: "https://swapshopnow.com/",
+  },
 ];
 
 export default function page() {
@@ -56,7 +65,9 @@ export default function page() {
               <h2 className="text-xl font-bold text-gray-800">
                 {portfolio.title}
               </h2>
-              <p className="text-gray-600 mt-2">{portfolio?.description}</p>
+              <p className="text-gray-600 text-sm mt-2">
+                {portfolio?.description}
+              </p>
 
               {/* tags */}
               <div className="flex flex-wrap gap-1 mb-3">
