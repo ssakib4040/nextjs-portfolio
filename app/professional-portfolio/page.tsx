@@ -3,15 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+interface PortfolioTags {
+  name: string;
+  image?: string;
+}
+
 interface Portfolio {
   title: string;
   description?: string;
   image: string;
   source: string;
-  tags?: {
-    name: string;
-    image?: string;
-  }[];
+  tags?: PortfolioTags[];
+  duration?: string;
 }
 
 const portfolioList: Portfolio[] = [
@@ -32,6 +35,7 @@ const portfolioList: Portfolio[] = [
     ],
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
+    duration: "2023 - Present",
   },
 
   {
@@ -41,6 +45,7 @@ const portfolioList: Portfolio[] = [
     tags: [{ name: "React", image: "/projects/skills/react.svg" }],
     image: "/projects/professional/growtoro.png",
     source: "https://growtoro.com/",
+    duration: "July 2023 - October 2023",
   },
 ];
 
@@ -67,12 +72,27 @@ export default function page() {
               )}`}
             />
             <hr />
+
+            {/* content */}
             <div className="p-4">
+              {/* title */}
               <h2 className="text-xl font-bold text-gray-800">
                 {portfolio.title}
               </h2>
+
+              {/* description */}
               <p className="text-gray-600 text-sm mt-2">
                 {portfolio?.description}
+              </p>
+
+              {/* duration */}
+              <p className="text-gray-600 text-sm mt-2">
+                {portfolio?.duration && (
+                  <>
+                    <span className="font-bold">Duration:</span>{" "}
+                    {portfolio?.duration}
+                  </>
+                )}
               </p>
 
               {/* tags */}
