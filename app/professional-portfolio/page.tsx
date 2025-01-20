@@ -35,7 +35,22 @@ const portfolioList: Portfolio[] = [
     ],
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
-    duration: "2023 - Present",
+    duration: "Nov 2023 - Dec 2023",
+  },
+
+  {
+    title: "Mediusware.com",
+    description: "A Custom Software and Web Development Company in Bangladesh.",
+    tags: [
+      { name: "Next", image: "/projects/skills/next.svg" },
+      { name: "React", image: "/projects/skills/react.svg" },
+      { name: "Sass", image: "/projects/skills/sass.svg" },
+      { name: "DaisyUI", image: "/projects/skills/daisyui.svg" },
+      { name: "Typescript", image: "/projects/skills/ts.svg" },
+    ],
+    image: "/projects/professional/mediusware.png",
+    source: "https://mediusware.com/",
+    duration: "July 2023 - October 2023",
   },
 
   {
@@ -85,7 +100,10 @@ export default function page() {
               </h2>
 
               {/* description */}
-              <p className="text-gray-600 text-sm mt-2">
+              <p
+                className="text-gray-600 text-sm mt-2 line-clamp-4"
+                title={portfolio?.description}
+              >
                 {portfolio?.description}
               </p>
 
