@@ -1,4 +1,5 @@
 import { shimmer, toBase64 } from "@/utils/utils";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -54,6 +55,21 @@ const portfolioList: Portfolio[] = [
   },
 
   {
+    title: "Wiggle - Dating App",
+    description:
+      "A Swiden based dating app where users can swipe left or right to like or dislike. Users can chat with each other. Admin can manage users, manage chat, and manage users.",
+    tags: [
+      { name: "Next", image: "/projects/skills/next.svg" },
+      { name: "React", image: "/projects/skills/react.svg" },
+      { name: "Redux", image: "/projects/skills/redux.svg" },
+      { name: "Netlify", image: "/projects/skills/netlify.svg" },
+    ],
+    image: "/projects/professional/wiggle.png",
+    source: "https://swapshopnow.com/",
+    duration: "Dec 2023 - Dec 2023",
+  },
+
+  {
     title: "Mediusware Jobs",
     description:
       "Job portal for Mediusware.com where users can apply for jobs.",
@@ -97,6 +113,10 @@ const portfolioList: Portfolio[] = [
     duration: "July 2023 - October 2023",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Professional Portfolio",
+};
 
 export default function page() {
   return (
