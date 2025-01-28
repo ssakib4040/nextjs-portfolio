@@ -30,7 +30,7 @@ const portfolioList: Portfolio[] = [
       { name: "TailwindCSS", image: "/projects/skills/tailwindcss.svg" },
     ],
     image: "/projects/professional/clerkal.png",
-    source: "https://swapshopnow.com/",
+    source: "",
     duration: "Jan 2024 - Current",
   },
 
@@ -65,7 +65,7 @@ const portfolioList: Portfolio[] = [
       { name: "Netlify", image: "/projects/skills/netlify.svg" },
     ],
     image: "/projects/professional/wiggle.png",
-    source: "https://swapshopnow.com/",
+    source: "https://thewiggleapp.com/",
     duration: "Dec 2023 - Dec 2023",
   },
 

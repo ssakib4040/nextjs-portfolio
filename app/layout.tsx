@@ -58,6 +58,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
       <body className={inter.className}>
         <div className="drawer lg:drawer-open">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
