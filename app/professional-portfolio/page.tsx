@@ -19,6 +19,21 @@ interface Portfolio {
 
 const portfolioList: Portfolio[] = [
   {
+    title: "Clerkal AI",
+    description:
+      "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
+    tags: [
+      { name: "Next", image: "/projects/skills/next.svg" },
+      { name: "React", image: "/projects/skills/react.svg" },
+      { name: "Shadcn", image: "/projects/skills/shadcn.svg" },
+      { name: "TailwindCSS", image: "/projects/skills/tailwindcss.svg" },
+    ],
+    image: "/projects/professional/clerkal.png",
+    source: "https://swapshopnow.com/",
+    duration: "Jan 2024 - Current",
+  },
+
+  {
     title: "Swapshop - E-commerce Website",
     description:
       "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
@@ -36,6 +51,21 @@ const portfolioList: Portfolio[] = [
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
     duration: "Nov 2023 - Dec 2023",
+  },
+
+  {
+    title: "Mediusware Jobs",
+    description:
+      "Job portal for Mediusware.com where users can apply for jobs.",
+    tags: [
+      { name: "Vue", image: "/projects/skills/vue.svg" },
+      { name: "Redux", image: "/projects/skills/redux.svg" },
+      { name: "Lottie", image: "/projects/skills/lottie.svg" },
+      { name: "Sass", image: "/projects/skills/sass.svg" },
+    ],
+    image: "/projects/professional/mw-jobs.png",
+    source: "https://mediusware.com/",
+    duration: "July 2023 - October 2023",
   },
 
   {
@@ -79,13 +109,13 @@ export default function page() {
       {/* grid with 4 card */}
       <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
         {portfolioList.map((portfolio, i) => (
-          <div className="bg-white border rounded-md overflow-hidden" key={i}>
+          <div className="bg-white border rounded-md flex flex-col" key={i}>
             <Image
               src={portfolio.image}
               alt=""
               width={1600}
               height={1200}
-              className="object-fill aspect-video"
+              className="object-fill aspect-video rounded-t-lg"
               placeholder={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}
@@ -93,15 +123,15 @@ export default function page() {
             <hr />
 
             {/* content */}
-            <div className="p-4">
+            <div className="p-4 flex flex-col h-[-webkit-fill-available]">
               {/* title */}
-              <h2 className="text-xl font-bold text-gray-800">
+              <h2 className="text-xl font-bold text-gray-800 mb-3">
                 {portfolio.title}
               </h2>
 
               {/* description */}
               <p
-                className="text-gray-600 text-sm mt-2 line-clamp-4"
+                className="text-gray-600 text-sm line-clamp-3 mt-0 tooltip text-left"
                 title={portfolio?.description}
               >
                 {portfolio?.description}
@@ -139,11 +169,11 @@ export default function page() {
               </div>
 
               {/* links  */}
-              <div>
+              <div className="mt-auto">
                 <Link
                   href={portfolio.source}
                   target="_blank"
-                  className="bg-[#0D6EFD] text-white px-3 py-2 rounded-md flex items-center text-sm font-bold justify-center"
+                  className="bg-[#0D6EFD] text-white px-3 py-2 rounded-lg flex items-center text-sm font-bold justify-center btn min-h-10 h-10"
                 >
                   <svg
                     stroke="currentColor"
@@ -164,6 +194,14 @@ export default function page() {
           </div>
         ))}
       </div>
+    </div>
+  );
+}
+
+function RenderFrameworks() {
+  return (
+    <div>
+      <h1>Frameworks</h1>
     </div>
   );
 }
