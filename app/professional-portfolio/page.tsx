@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 import { shimmer, toBase64 } from "@/utils/utils";
-import { portfolios, skills } from "../static/professional";
+import { portfolios, skills } from "../../static/professional";
 
 export const metadata: Metadata = {
   title: "Professional Portfolio",

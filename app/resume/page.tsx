@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import { resumeItems } from "../static/resume";
+import { resumeItems } from "../../static/resume";
 
 export const metadata: Metadata = {
   title: "Resume",
