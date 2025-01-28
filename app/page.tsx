@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const typeAnimationSequence = [
@@ -14,6 +15,10 @@ const typeAnimationSequence = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home Page";
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* title */}

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 
 interface ResumeItem {
@@ -96,6 +97,10 @@ const resumeItems: ResumeItem[] = [
     skills: ["Azure", "Vercel", "Netlify", "Github Pages"],
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Resume",
+};
 
 export default function page() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaFacebook, FaTwitter, FaAt } from "react-icons/fa";
 import { AiFillFileText } from "react-icons/ai";
+import { Metadata } from "next";
 
 const urls = {
   github: "https://github.com/ssakib4040",
@@ -8,6 +9,10 @@ const urls = {
   twitter: "https://twitter.com/ssakib4040",
   mailto: "mailto:ssakib4040@gmail.com",
   cv: "https://drive.google.com/file/d/1ZU5D0XJFrVzwk__eDZZXfg8w0bFxyU5T/view?usp=share_link",
+};
+
+export const metadata: Metadata = {
+  title: "Contact Me",
 };
 
 export default function page() {

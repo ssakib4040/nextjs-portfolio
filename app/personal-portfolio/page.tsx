@@ -1,4 +1,5 @@
 import { shimmer, toBase64 } from "@/utils/utils";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -200,6 +201,10 @@ const portfolioList: Portfolio[] = [
     tags: ["HTML 5", "CSS 3", "React js", "Node js", "MongoDB"],
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Personal Portfolio",
+};
 
 export default function page() {
   return (

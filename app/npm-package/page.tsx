@@ -1,4 +1,5 @@
 import { shimmer, toBase64 } from "@/utils/utils";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -61,6 +62,10 @@ const npmPackageList: npmPackageList[] = [
     link: "https://www.npmjs.com/package/is-leap",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "NPM Package",
+};
 
 export default function page() {
   return (
