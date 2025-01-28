@@ -1,8 +1,9 @@
-import { shimmer, toBase64 } from "@/utils/utils";
+import React from "react";
+import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+
+import { shimmer, toBase64 } from "@/utils/utils";
 
 interface PortfolioTags {
   name: string;
@@ -80,7 +81,7 @@ const portfolioList: Portfolio[] = [
       { name: "Sass", image: "/projects/skills/sass.svg" },
     ],
     image: "/projects/professional/mw-jobs.png",
-    source: "https://mediusware.com/",
+    source: "https://job.mediusware.com",
     duration: "July 2023 - October 2023",
   },
 
