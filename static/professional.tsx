@@ -56,6 +56,34 @@ export const portfolios: Portfolio[] = [
   },
 
   {
+    title: "Success.ai",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
+    tags: ["React", "MUI", "Typescript", "Node.js", "Express.js", "MongoDB"],
+    image: "/projects/professional/successai.png",
+    source: "https://success.ai/",
+    duration: "Jan 2024 - Jan 2024",
+  },
+
+  {
+    title: "Bulk.ly",
+    description:
+      "A Social Media Management Platform where users can schedule posts, manage social media accounts, and track social media performance.",
+    tags: [
+      "Next",
+      "React",
+      "Redux",
+      "Netlify",
+      "NextAuth",
+      "Lottie",
+      "Bootstrap",
+    ],
+    image: "/projects/professional/bulkly.png",
+    source: "https://bulk.ly/",
+    duration: "Jan 2024 - Jan 2024",
+  },
+
+  {
     title: "Smugglers Alcohol",
     description:
       "Admin dashboard for Smugglers Alcohol where admin can manage products, manage orders, and manage users.",
@@ -70,6 +98,7 @@ export const portfolios: Portfolio[] = [
       "NextAuth",
       "Sass",
       "React Hook Form",
+      "Lottie",
     ],
     image: "/projects/professional/smugglers.png",
     source: "#",
@@ -89,7 +118,7 @@ export const portfolios: Portfolio[] = [
   {
     title: "Mediusware.com",
     description: "A Custom Software and Web Development Company in Bangladesh.",
-    tags: ["Next", "React", "Sass", "DaisyUI", "Typescript"],
+    tags: ["Next", "React", "Sass", "DaisyUI", "Typescript", "Lottie"],
     image: "/projects/professional/mediusware.png",
     source: "https://mediusware.com/",
     duration: "July 2023 - Oct 2023",
@@ -140,4 +169,6 @@ export const skills = [
   { name: "Bootstrap", image: "/projects/skills/bootstrap.svg" },
   { name: "Ant Design", image: "/projects/skills/ant-design.svg" },
   { name: "React Hook Form", image: "/projects/skills/react-hook-form.svg" },
+  { name: "Node.js", image: "/projects/skills/node-js.svg" },
+  { name: "Express.js", image: "/projects/skills/express-js.svg" },
 ];
