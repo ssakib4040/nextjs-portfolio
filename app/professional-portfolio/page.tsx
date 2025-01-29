@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Professional Portfolio",
 };
 
-export default function page() {
+export default function ProfessionalPage() {
   return (
     <div className="lg:px-8 lg:py-12 px-6 py-8">
       <h1 className=" text-4xl font-bold text-gray-800 ">
@@ -114,14 +114,6 @@ export default function page() {
           );
         })}
       </div>
-    </div>
-  );
-}
-
-function RenderFrameworks() {
-  return (
-    <div>
-      <h1>Frameworks</h1>
     </div>
   );
 }
