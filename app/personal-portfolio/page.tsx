@@ -24,7 +24,7 @@ export default function page() {
               alt=""
               width={1600}
               height={1200}
-              className="object-fill h-52"
+              className="object-fill aspect-video"
               placeholder={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}

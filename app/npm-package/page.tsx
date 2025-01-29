@@ -21,7 +21,7 @@ export default function page() {
           <div className="bg-white border rounded-md overflow-hidden" key={i}>
             <Image
               src="/npm-placeholder.webp"
-              className="object-cover w-full h-48"
+              className="object-cover w-full aspect-video"
               placeholder={`data:image/svg+xml;base64,${toBase64(
                 shimmer(700, 475)
               )}`}
