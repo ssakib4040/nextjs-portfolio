@@ -56,13 +56,43 @@ export const portfolios: Portfolio[] = [
   },
 
   {
+    title: "Envoc",
+    description:
+      "A Software Developmeny Company in USA. They provide custom software development, web development, and mobile app development services.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
+    image: "/projects/professional/envoc.png",
+    source: "https://envoc.com/",
+    duration: "Mar 2024 - Apr 2024",
+  },
+
+  {
+    title: "Soflyy",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    image: "/projects/professional/soflyy.png",
+    source: "https://success.ai/",
+    duration: "Mar 2024 - Apr 2024",
+  },
+
+  {
+    title: "Korra.ai",
+    description:
+      "AI powered i18n search engine where users can search for anything and get the best results.",
+    tags: ["React", "Preact", "Redux", "Enzyme.js", "Sass"],
+    image: "/projects/professional/korraai.png",
+    source: "https://success.ai/",
+    duration: "Jan 2024 - Mar 2024",
+  },
+
+  {
     title: "Success.ai",
     description:
       "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
     tags: ["React", "MUI", "Typescript", "Node.js", "Express.js", "MongoDB"],
     image: "/projects/professional/successai.png",
     source: "https://success.ai/",
-    duration: "Jan 2024 - Jan 2024",
+    duration: "Jan 2024 - Mar 2024",
   },
 
   {
@@ -171,4 +201,6 @@ export const skills = [
   { name: "React Hook Form", image: "/projects/skills/react-hook-form.svg" },
   { name: "Node.js", image: "/projects/skills/node-js.svg" },
   { name: "Express.js", image: "/projects/skills/express-js.svg" },
+  { name: "Enzyme.js", image: "/projects/skills/enzyme-js.svg" },
+  { name: "JQuery", image: "/projects/skills/jquery.svg" },
 ];
