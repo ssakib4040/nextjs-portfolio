@@ -243,4 +243,5 @@ export const skills = [
   { name: "Express.js", image: "/projects/skills/express-js.svg" },
   { name: "Enzyme.js", image: "/projects/skills/enzyme-js.svg" },
   { name: "JQuery", image: "/projects/skills/jquery.svg" },
+  { name: "React Router", image: "/projects/skills/rrd.svg" },
 ];
