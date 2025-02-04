@@ -42,7 +42,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
-    duration: "Nov 2023 - Dec 2023",
+    duration: "Apr 2024 - Current",
   },
 
   {
@@ -52,8 +52,48 @@ export const portfolios: Portfolio[] = [
     tags: ["Next", "React", "Redux", "Netlify"],
     image: "/projects/professional/wiggle.png",
     source: "https://thewiggleapp.com/",
-    duration: "Dec 2023 - Dec 2023",
+    duration: "Dec 2024 - Dec 2024",
   },
+
+  {
+    title: "ServiceBolt",
+    description:
+      "Simple pricing & all-inclusive solution for your HVAC, Plumbing, Electrical, lawn care, or other field service business. We take care of all the heavy lifting in set-up & training to make the transition from another platform or no platform easy.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
+    image: "/projects/professional/servicebolt.png",
+    source: "https://myservicebolt.com/",
+    duration: "Nov 2024 - Nov 2024",
+  },
+
+  {
+    title: "Cochranfirm",
+    description:
+      "A portfolio website of a lawyer who is from the California, USA.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
+    image: "/projects/professional/law.png",
+    source: "https://briandunnlaw.com/",
+    duration: "May 2024 - May 2024",
+  },
+
+  {
+    title: "Jet Thruster",
+    description:
+      "The Official Website of Jet Thruster America. They provide the best thruster for boats.",
+    tags: ["React", "Redux", "React Router", "CSS", "Bootstrap", "Typescript"],
+    image: "/projects/professional/jetthruster.png",
+    source: "https://jetthrusteramerica.com/",
+    duration: "May 2024 - May 2024",
+  },
+
+  // {
+  //   title: "DWP",
+  //   description:
+  //     "The Official Website of Jet Thruster America. They provide the best thruster for boats.",
+  //   tags: ["React", "Redux", "React Router", "CSS", "Bootstrap", "Typescript"],
+  //   image: "/projects/professional/jetthruster.png",
+  //   source: "https://jetthrusteramerica.com/",
+  //   duration: "May 2024 - May 2024",
+  // },
 
   {
     title: "Envoc",
