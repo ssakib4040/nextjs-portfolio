@@ -9,6 +9,23 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
+    title: "Keystone - A place for connection and growth",
+    description:
+      "A platform where users can connect with each other, share their thoughts, and grow together.",
+    tags: [
+      "Next",
+      "React",
+      "Shadcn",
+      "TailwindCSS",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "/projects/professional/keystone.png",
+    source: "#",
+    duration: "Feb 2025 - Current",
+  },
+
+  {
     title: "Clerkal AI",
     description:
       "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
@@ -22,7 +39,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/clerkal.png",
     source: "#",
-    duration: "Jan 2024 - Current",
+    duration: "Jan 2025 - Feb 2025",
   },
 
   {
