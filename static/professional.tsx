@@ -9,6 +9,23 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
+    title: "Teez - AI sales assistant",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
+    tags: [
+      "Next",
+      "React",
+      "Shadcn",
+      "TailwindCSS",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "/projects/professional/teez.png",
+    source: "#",
+    duration: "Mar 2025 - Current",
+  },
+
+  {
     title: "Keystone - A place for connection and growth",
     description:
       "A platform where users can connect with each other, share their thoughts, and grow together.",
