@@ -9,6 +9,33 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
+    title: "Basic Training - LMS",
+    description:
+      "A full-stack Learning Management System (LMS) where users can learn and get certified. Admin can manage courses, manage users, and manage certifications.",
+    tags: [
+      "Next",
+      "React",
+      "Shadcn",
+      "TailwindCSS",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "https://dummyimage.com/720x480",
+    source: "#",
+    duration: "Jul 2025 - Jul 2025",
+  },
+
+  {
+    title: "BadkamerVakman - Bathroom Renovation",
+    description:
+      "A full-stack bathroom renovation website where users can book appointments, manage their bookings, and get quotes. Admin can manage users, manage bookings, and manage quotes.",
+    tags: ["HTML", "CSS", "TailwindCSS", "Javascript", "Vite"],
+    image: "https://dummyimage.com/720x480",
+    source: "#",
+    duration: "Jul 2025 - Jul 2025",
+  },
+
+  {
     title: "Teez - AI sales assistant",
     description:
       "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
@@ -22,7 +49,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/teez.png",
     source: "#",
-    duration: "Mar 2025 - Current",
+    duration: "Mar 2025 - Jul 2025",
   },
 
   {
@@ -39,7 +66,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/keystone.png",
     source: "#",
-    duration: "Feb 2025 - Current",
+    duration: "Feb 2025 - Mar 2025",
   },
 
   {
