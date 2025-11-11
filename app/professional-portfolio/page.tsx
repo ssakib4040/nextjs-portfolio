@@ -1,7 +1,6 @@
-import React from "react";
 import Link from "next/link";
-import { Metadata } from "next";
 import Image from "next/image";
+import { Metadata } from "next";
 
 import { shimmer, toBase64 } from "@/utils/utils";
 import { portfolios, skills } from "../../static/professional";
@@ -19,7 +18,7 @@ export default function ProfessionalPage() {
       <hr className="my-3 border-gray-600" />
 
       {/* grid with 4 card */}
-      <div className="grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 my-6">
+      <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
         {portfolios.map((portfolio, i) => {
           const tags = skills.filter((skill) =>
             portfolio.tags?.includes(skill.name)

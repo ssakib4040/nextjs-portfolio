@@ -2,7 +2,6 @@ import { shimmer, toBase64 } from "@/utils/utils";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { portfolioList } from "../../static/personal";
 
 export const metadata: Metadata = {

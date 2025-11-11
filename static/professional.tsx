@@ -9,6 +9,16 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
+    title: "Reddit Automation Workflow",
+    description:
+      "An automation workflow that fetches Reddit posts based on specific keywords and sends them to a designated Slack channel using N8N.",
+    tags: ["N8N", "Reddit"],
+    image: "https://dummyimage.com/720x480",
+    source: "#",
+    duration: "Jul 2025 - Jul 2025",
+  },
+
+  {
     title: "Basic Training - LMS",
     description:
       "A full-stack Learning Management System (LMS) where users can learn and get certified. Admin can manage courses, manage users, and manage certifications.",
