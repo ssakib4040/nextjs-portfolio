@@ -20,7 +20,7 @@ export const portfolios: Portfolio[] = [
       "Typescript",
       "React Hook Form",
     ],
-    image: "https://dummyimage.com/720x480",
+    image: "/projects/professional/basic-lms.png",
     source: "#",
     duration: "Jul 2025 - Jul 2025",
   },
@@ -30,7 +30,7 @@ export const portfolios: Portfolio[] = [
     description:
       "A full-stack bathroom renovation website where users can book appointments, manage their bookings, and get quotes. Admin can manage users, manage bookings, and manage quotes.",
     tags: ["HTML", "CSS", "TailwindCSS", "Javascript", "Vite"],
-    image: "https://dummyimage.com/720x480",
+    image: "/projects/professional/badkamer.png",
     source: "#",
     duration: "Jul 2025 - Jul 2025",
   },
