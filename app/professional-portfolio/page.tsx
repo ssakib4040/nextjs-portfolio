@@ -121,5 +121,16 @@ export default function ProfessionalPage() {
 }
 
 function SuspenseFallback() {
-  return <div className="text-center py-20"></div>;
+  return (
+    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+      {Array(6)
+        .fill(0)
+        .map((_, i) => (
+          <div
+            className="bg-gray-200 border rounded-md overflow-hidden animate-pulse h-64"
+            key={i}
+          ></div>
+        ))}
+    </div>
+  );
 }
