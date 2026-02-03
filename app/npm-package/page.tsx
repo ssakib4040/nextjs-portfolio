@@ -16,14 +16,14 @@ export default function page() {
       <hr className="my-3 border-gray-600" />
 
       {/* grid with 4 card */}
-      <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 gap-6 my-6">
+      <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
         {npmPackageList.map((npm, i) => (
           <div className="bg-white border rounded-md overflow-hidden" key={i}>
             <Image
               src="/npm-placeholder.webp"
               className="object-cover w-full aspect-video"
               placeholder={`data:image/svg+xml;base64,${toBase64(
-                shimmer(700, 475)
+                shimmer(700, 475),
               )}`}
               alt=""
               width={1600}
