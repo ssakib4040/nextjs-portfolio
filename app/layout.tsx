@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { usePathname } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.scss";
 
@@ -115,6 +116,8 @@ export default function RootLayout({
             </div>
           </div>
         </div>
+
+        <Analytics />
       </body>
     </html>
   );
