@@ -12,14 +12,14 @@ export const portfolios: Portfolio[] = [
     title: "klearskill.com",
     description:
       "A full-stack AI based platform where company can screen candidates and manage their recruitment process, and hire the best candidates.",
-    tags: [],
+    tags: ["Nest", "Next", "Typescript", "TailwindCSS", "Shadcn"],
     image: "https://dummyimage.com/720x480",
     source: "https://app.klearskill.com/",
     duration: "Jan 2026 - Present",
   },
 
   {
-    title: "Make.com - Automation Workflow",
+    title: "Make.com - Wordpress Automation",
     description:
       "An automation workflow to mainly manage the orders and inventory of an e-commerce store using Make.com. It integrates with Airtable, Shopify API, and Wordpress API to automate the process of managing orders and inventory.",
     tags: ["Make.com", "Airtable", "Shopify API", "Wordpress API"],
@@ -32,7 +32,7 @@ export const portfolios: Portfolio[] = [
     title: "N8N - Reddit Automation Workflow",
     description:
       "An automation workflow that fetches Reddit posts based on specific keywords and sends them to a designated Slack channel using N8N.",
-    tags: ["N8N", "Reddit"],
+    tags: ["N8N", "Reddit API", "Twitter API"],
     image: "/projects/professional/n8n.png",
     source: "#",
     duration: "Aug 2025 - Sept 2025",
@@ -307,6 +307,16 @@ export const portfolios: Portfolio[] = [
 ];
 
 export const skills = [
+  // automation
+  { name: "Make.com", image: "/projects/skills/make.svg" },
+  { name: "N8N", image: "/projects/skills/n8n.svg" },
+
+  // backend
+  { name: "Nest", image: "/projects/skills/nest.svg" },
+  { name: "Node.js", image: "/projects/skills/node-js.svg" },
+  { name: "Express.js", image: "/projects/skills/express-js.svg" },
+
+  // frontend
   { name: "Next", image: "/projects/skills/next.svg" },
   { name: "React", image: "/projects/skills/react.svg" },
   { name: "React Native", image: "/projects/skills/react.svg" },
@@ -330,9 +340,22 @@ export const skills = [
   { name: "Bootstrap", image: "/projects/skills/bootstrap.svg" },
   { name: "Ant Design", image: "/projects/skills/ant-design.svg" },
   { name: "React Hook Form", image: "/projects/skills/react-hook-form.svg" },
-  { name: "Node.js", image: "/projects/skills/node-js.svg" },
-  { name: "Express.js", image: "/projects/skills/express-js.svg" },
   { name: "Enzyme.js", image: "/projects/skills/enzyme-js.svg" },
   { name: "JQuery", image: "/projects/skills/jquery.svg" },
   { name: "React Router", image: "/projects/skills/rrd.svg" },
+
+  // social media
+  { name: "X", image: "/projects/skills/x.svg" },
+  { name: "Twitter API", image: "/projects/skills/x.svg" },
+  { name: "Reddit", image: "/projects/skills/reddit.svg" },
+  { name: "Reddit API", image: "/projects/skills/reddit.svg" },
+
+  // database
+  { name: "Airtable", image: "/projects/skills/airtable.svg" },
+
+  // cms
+  { name: "Wordpress", image: "/projects/skills/wordpress.svg" },
+  { name: "Wordpress API", image: "/projects/skills/wordpress.svg" },
+  { name: "Shopify", image: "/projects/skills/shopify.svg" },
+  { name: "Shopify API", image: "/projects/skills/shopify.svg" },
 ];
