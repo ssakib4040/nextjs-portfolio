@@ -13,7 +13,7 @@ export const portfolios: Portfolio[] = [
     description:
       "A full-stack AI based platform where company can screen candidates and manage their recruitment process, and hire the best candidates.",
     tags: ["Nest", "Next", "Typescript", "TailwindCSS", "Shadcn"],
-    image: "https://dummyimage.com/720x480",
+    image: "/projects/professional/klearskill.png",
     source: "https://app.klearskill.com/",
     duration: "Jan 2026 - Present",
   },
