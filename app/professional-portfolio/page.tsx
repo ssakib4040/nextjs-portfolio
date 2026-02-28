@@ -11,6 +11,18 @@ export const metadata: Metadata = {
 };
 
 export default function ProfessionalPage() {
+  function getPortfolioTags(tagNames: string[] | undefined) {
+    return (
+      tagNames?.map(
+        (tagName) =>
+          skills.find((skill) => skill.name === tagName) || {
+            name: tagName,
+            image: undefined,
+          },
+      ) || []
+    );
+  }
+
   return (
     <div className="lg:px-8 lg:py-12 px-6 py-8">
       <h1 className=" text-4xl font-bold text-gray-800 ">
@@ -22,9 +34,7 @@ export default function ProfessionalPage() {
       <Suspense fallback={<SuspenseFallback />}>
         <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
           {portfolios.map((portfolio, i) => {
-            const tags = skills.filter((skill) =>
-              portfolio.tags?.includes(skill.name),
-            );
+            const tags = getPortfolioTags(portfolio.tags);
 
             return (
               <div className="bg-white border rounded-md flex flex-col" key={i}>

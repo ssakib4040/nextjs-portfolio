@@ -9,13 +9,33 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
-    title: "Reddit Automation Workflow",
+    title: "klearskill.com",
+    description:
+      "A full-stack AI based platform where company can screen candidates and manage their recruitment process, and hire the best candidates.",
+    tags: [],
+    image: "https://dummyimage.com/720x480",
+    source: "https://app.klearskill.com/",
+    duration: "Jan 2026 - Present",
+  },
+
+  {
+    title: "Make.com - Automation Workflow",
+    description:
+      "An automation workflow to mainly manage the orders and inventory of an e-commerce store using Make.com. It integrates with Airtable, Shopify API, and Wordpress API to automate the process of managing orders and inventory.",
+    tags: ["Make.com", "Airtable", "Shopify API", "Wordpress API"],
+    image: "/projects/professional/make.png",
+    source: "#",
+    duration: "Oct 2025 - Dec 2025",
+  },
+
+  {
+    title: "N8N - Reddit Automation Workflow",
     description:
       "An automation workflow that fetches Reddit posts based on specific keywords and sends them to a designated Slack channel using N8N.",
     tags: ["N8N", "Reddit"],
-    image: "https://dummyimage.com/720x480",
+    image: "/projects/professional/n8n.png",
     source: "#",
-    duration: "Jul 2025 - Jul 2025",
+    duration: "Aug 2025 - Sept 2025",
   },
 
   {
@@ -32,7 +52,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/basic-lms.png",
     source: "#",
-    duration: "Jul 2025 - Jul 2025",
+    duration: "Jul 2025 - Aug 2025",
   },
 
   {
@@ -113,7 +133,7 @@ export const portfolios: Portfolio[] = [
     ],
     image: "/projects/professional/swapshop.png",
     source: "https://swapshopnow.com/",
-    duration: "Apr 2024 - Current",
+    duration: "Apr 2024 - Dec 2025",
   },
 
   {
