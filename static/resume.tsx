@@ -118,12 +118,7 @@ export const resumeItems: ResumeItem[] = [
 
   {
     category: "CI/CD & DevOps",
-    skills: [
-      "GitHub Actions",
-      "GitLab CI",
-      "Husky",
-      "Pre-commit Hooks",
-    ],
+    skills: ["GitHub Actions", "GitLab CI", "Husky", "Pre-commit Hooks"],
   },
 
   {
