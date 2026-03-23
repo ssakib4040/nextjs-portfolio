@@ -62,7 +62,15 @@ export const resumeItems: ResumeItem[] = [
 
   {
     category: "Backend Frameworks & Runtime",
-    skills: ["Node.js", "Express.js", "Fastify", "NestJS", "GraphQL", "Apollo Server", "tRPC"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Fastify",
+      "NestJS",
+      "GraphQL",
+      "Apollo Server",
+      "tRPC",
+    ],
   },
 
   {
@@ -94,14 +102,7 @@ export const resumeItems: ResumeItem[] = [
 
   {
     category: "APIs & Protocols",
-    skills: [
-      "RESTful APIs",
-      "GraphQL",
-      "WebSockets",
-      "JWT",
-      "OAuth",
-      "tRPC",
-    ],
+    skills: ["RESTful APIs", "GraphQL", "WebSockets", "JWT", "OAuth", "tRPC"],
   },
 
   {
@@ -110,8 +111,6 @@ export const resumeItems: ResumeItem[] = [
       "Azure (App Service, Functions, CosmosDB)",
       "Vercel",
       "Netlify",
-      "AWS",
-      "Google Cloud",
       "Docker",
       "Docker Compose",
     ],
@@ -121,7 +120,6 @@ export const resumeItems: ResumeItem[] = [
     category: "CI/CD & DevOps",
     skills: [
       "GitHub Actions",
-      "Azure DevOps",
       "GitLab CI",
       "Husky",
       "Pre-commit Hooks",
