@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense } from "react";
+import { FaExternalLinkAlt, FaNpm } from "react-icons/fa";
 import { npmPackageList } from "../../static/npm";
 
 export const metadata: Metadata = {
@@ -11,100 +12,96 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="lg:px-8 lg:py-12 px-6 py-8">
-      <h1 className=" text-4xl font-bold text-gray-800 ">NPM Package</h1>
-      <hr className="my-3 border-gray-600" />
+    <div className="min-h-screen px-6 py-8 lg:px-12 lg:py-16">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-12 animate-fadeIn">
+          <div className="mb-4 flex items-center gap-2">
+            <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">Open Source</span>
+          </div>
+          <h1 className="section-title mb-4">NPM Packages</h1>
+          <p className="text-gray-600 text-lg max-w-2xl">
+            I've published several npm packages to help developers build better applications. These are open-source projects available for the community.
+          </p>
+        </div>
 
-      {/* grid with 4 card */}
-      <Suspense fallback={<SuspenseFallback />}>
-        <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
-          {npmPackageList.map((npm, i) => (
-            <div className="bg-white border rounded-md overflow-hidden" key={i}>
-              <Image
-                src="/npm-placeholder.webp"
-                className="object-cover w-full aspect-video"
-                placeholder={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(700, 475),
-                )}`}
-                alt=""
-                width={1600}
-                height={900}
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-bold text-gray-800">{npm.title}</h2>
-                <p className="text-gray-600 mt-2">{npm.description}</p>
+        {/* Packages Grid */}
+        <Suspense fallback={<SuspenseFallback />}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {npmPackageList.map((npm, i) => (
+              <div
+                key={i}
+                className="card-glass group overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-2 animate-fadeIn"
+                style={{ animationDelay: `${i * 50}ms` }}
+              >
+                {/* Image Container */}
+                <div className="relative h-56 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100">
+                  <Image
+                    src="/npm-placeholder.webp"
+                    alt={npm.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    placeholder={`data:image/svg+xml;base64,${toBase64(
+                      shimmer(700, 475),
+                    )}`}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                    <FaNpm className="w-8 h-8 text-red-600" />
+                  </div>
+                </div>
 
-                {/* tags */}
-                {/* 
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {Array(6)
-                    .fill(0)
-                    .map((_, i) => (
-                      <span
-                        className="bg-white text-[#0D6EFD] border-[1px] border-[#0D6EFD] text-xs px-2 py-1 rounded-md inline-block"
-                        key={i}
-                      >
-                        #HTML 5
-                      </span>
-                    ))}
-                </div> */}
+                {/* Content */}
+                <div className="p-6 flex flex-col h-full">
+                  {/* Title */}
+                  <h2 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                    {npm.title}
+                  </h2>
 
-                <div className="flex gap-1">
-                  <Link
-                    href={npm.link}
-                    target="_blank"
-                    className="bg-[#0D6EFD] text-white px-3 py-2 rounded-md flex items-center text-sm font-bold"
-                  >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 512 512"
-                      className="mr-1 mt-[2px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
+                  {/* Description */}
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+                    {npm.description}
+                  </p>
+
+                  {/* CTA Button */}
+                  <div className="mt-auto">
+                    <Link
+                      href={npm.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary-modern inline-flex items-center gap-2 justify-center w-full"
                     >
-                      <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
-                    </svg>
-                    View Source
-                  </Link>
-                  {/* 
-                  <button className="bg-white border-[1px] border-[#0D6EFD] text-[#0D6EFD] px-3 py-2 rounded-md flex items-center font-bold">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 496 512"
-                      className="mr-1 mt-[2px]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-                    </svg>
-                    View Demo
-                  </button> */}
+                      View Package
+                      <FaExternalLinkAlt className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </Suspense>
+            ))}
+          </div>
+        </Suspense>
+      </div>
     </div>
   );
 }
 
 function SuspenseFallback() {
   return (
-    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {Array(6)
         .fill(0)
         .map((_, i) => (
           <div
-            className="bg-gray-200 border rounded-md overflow-hidden animate-pulse h-64"
+            className="card-glass overflow-hidden animate-pulse"
             key={i}
-          ></div>
+          >
+            <div className="h-56 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+            <div className="p-6 space-y-4">
+              <div className="h-6 bg-gray-200 rounded w-3/4"></div>
+              <div className="h-4 bg-gray-200 rounded w-full"></div>
+              <div className="h-10 bg-gray-200 rounded w-full mt-4"></div>
+            </div>
+          </div>
         ))}
     </div>
   );

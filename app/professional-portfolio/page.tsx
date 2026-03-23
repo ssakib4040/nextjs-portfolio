@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { FaExternalLinkAlt, FaCalendar } from "react-icons/fa";
 
 import { shimmer, toBase64 } from "@/utils/utils";
 import { portfolios, skills } from "../../static/professional";
@@ -24,122 +25,137 @@ export default function ProfessionalPage() {
   }
 
   return (
-    <div className="lg:px-8 lg:py-12 px-6 py-8">
-      <h1 className=" text-4xl font-bold text-gray-800 ">
-        Professional Portfolio
-      </h1>
-      <hr className="my-3 border-gray-600" />
+    <div className="min-h-screen px-6 py-8 lg:px-12 lg:py-16">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-12 animate-fadeIn">
+          <div className="mb-4 flex items-center gap-2">
+            <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">Professional Work</span>
+          </div>
+          <h1 className="section-title mb-4">Professional Portfolio</h1>
+          <p className="text-gray-600 text-lg max-w-2xl">
+            Explore my recent professional projects and technical implementations. Each project represents my commitment to building scalable, innovative solutions.
+          </p>
+        </div>
 
-      {/* grid with 4 card */}
-      <Suspense fallback={<SuspenseFallback />}>
-        <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
-          {portfolios.map((portfolio, i) => {
-            const tags = getPortfolioTags(portfolio.tags);
+        {/* Portfolio Grid */}
+        <Suspense fallback={<SuspenseFallback />}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {portfolios.map((portfolio, i) => {
+              const tags = getPortfolioTags(portfolio.tags);
 
-            return (
-              <div className="bg-white border rounded-md flex flex-col" key={i}>
-                <Image
-                  src={portfolio.image}
-                  alt=""
-                  width={1600}
-                  height={1200}
-                  className="object-fill aspect-video rounded-t-lg"
-                  placeholder={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(700, 475),
-                  )}`}
-                />
-                <hr />
-
-                {/* content */}
-                <div className="p-4 flex flex-col h-[-webkit-fill-available]">
-                  {/* title */}
-                  <h2 className="text-xl font-bold text-gray-800 mb-3">
-                    {portfolio.title}
-                  </h2>
-
-                  {/* description */}
-                  <p
-                    className="text-gray-600 text-sm line-clamp-3 mt-0 tooltip text-left"
-                    title={portfolio?.description}
-                  >
-                    {portfolio?.description}
-                  </p>
-
-                  {/* duration */}
-                  <p className="text-gray-600 text-sm mt-2">
-                    {portfolio?.duration && (
-                      <>
-                        <span className="font-bold">Duration:</span>{" "}
-                        {portfolio?.duration}
-                      </>
-                    )}
-                  </p>
-
-                  {/* tags */}
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {tags?.map((tag, i) => {
-                      return (
-                        <span
-                          key={i}
-                          className="bg-white text-[#0D6EFD] border-[1px] border-[#0D6EFD] text-xs px-2 py-1 rounded-md flex gap-1 justify-center items-center"
-                        >
-                          {tag?.image && (
-                            <Image
-                              src={tag?.image}
-                              alt={tag?.name}
-                              width={20}
-                              height={20}
-                              className="object-fill"
-                            />
-                          )}
-                          {tag?.name}
-                        </span>
-                      );
-                    })}
+              return (
+                <div
+                  key={i}
+                  className="card-glass group overflow-hidden transition-all duration-300 hover:shadow-card-hover hover:-translate-y-2 animate-fadeIn"
+                  style={{ animationDelay: `${i * 50}ms` }}
+                >
+                  {/* Image Container */}
+                  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-blue-100 to-purple-100">
+                    <Image
+                      src={portfolio.image}
+                      alt={portfolio.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      placeholder={`data:image/svg+xml;base64,${toBase64(
+                        shimmer(700, 475),
+                      )}`}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
 
-                  {/* links  */}
-                  <div className="mt-auto">
-                    <Link
-                      href={portfolio.source}
-                      target="_blank"
-                      className="bg-[#0D6EFD] text-white px-3 py-2 rounded-lg flex items-center text-sm font-bold justify-center btn min-h-10 h-10"
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        viewBox="0 0 512 512"
-                        className="mr-1 mt-[2px]"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
+                  {/* Content */}
+                  <div className="p-6 flex flex-col h-full">
+                    {/* Title & Duration */}
+                    <div className="mb-4">
+                      <h2 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                        {portfolio.title}
+                      </h2>
+                      {portfolio.duration && (
+                        <div className="flex items-center gap-2 text-sm text-gray-500">
+                          <FaCalendar className="w-4 h-4" />
+                          {portfolio.duration}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3 flex-grow">
+                      {portfolio.description}
+                    </p>
+
+                    {/* Tags */}
+                    {tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {tags.slice(0, 4).map((tag, idx) => (
+                          <div
+                            key={idx}
+                            className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200/50 rounded-full text-xs font-medium text-gray-700 hover:bg-blue-100 transition-colors"
+                            title={tag.name}
+                          >
+                            {tag.image && (
+                              <Image
+                                src={tag.image}
+                                alt={tag.name}
+                                width={16}
+                                height={16}
+                                className="object-contain"
+                              />
+                            )}
+                            <span>{tag.name}</span>
+                          </div>
+                        ))}
+                        {tags.length > 4 && (
+                          <div className="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200/50 rounded-full text-xs font-medium text-gray-700">
+                            +{tags.length - 4} more
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    {/* CTA Button */}
+                    <div className="mt-auto">
+                      <Link
+                        href={portfolio.source}
+                        target={portfolio.source !== "#" ? "_blank" : undefined}
+                        rel={portfolio.source !== "#" ? "noopener noreferrer" : undefined}
+                        className={`btn-primary-modern inline-flex items-center gap-2 justify-center w-full ${
+                          portfolio.source === "#" ? "opacity-50 cursor-not-allowed" : ""
+                        }`}
                       >
-                        <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path>
-                      </svg>
-                      Visit URL
-                    </Link>
+                        {portfolio.source === "#" ? "Coming Soon" : "Visit Project"}
+                        {portfolio.source !== "#" && <FaExternalLinkAlt className="w-4 h-4" />}
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-      </Suspense>
+              );
+            })}
+          </div>
+        </Suspense>
+      </div>
     </div>
   );
 }
 
 function SuspenseFallback() {
   return (
-    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {Array(6)
         .fill(0)
         .map((_, i) => (
           <div
-            className="bg-gray-200 border rounded-md overflow-hidden animate-pulse h-64"
+            className="card-glass overflow-hidden animate-pulse"
             key={i}
-          ></div>
+          >
+            <div className="h-56 bg-gradient-to-r from-gray-200 to-gray-300"></div>
+            <div className="p-6 space-y-4">
+              <div className="h-6 bg-gray-200 rounded w-3/4"></div>
+              <div className="h-4 bg-gray-200 rounded w-full"></div>
+              <div className="h-10 bg-gray-200 rounded w-full mt-4"></div>
+            </div>
+          </div>
         ))}
     </div>
   );
