@@ -31,14 +31,17 @@ export default function Resume() {
       {/* Skills Sections */}
       <div className="space-y-6">
         {resumeItems.map((item, index) => (
-          <div key={index} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+          <div
+            key={index}
+            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+          >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
               <h3 className="text-xl font-bold text-gray-800">
                 {item.category}
               </h3>
             </div>
-            
+
             <div className="flex flex-wrap gap-2">
               {item.skills.map((skill, i) => (
                 <span
