@@ -182,4 +182,15 @@ export const resumeItems: ResumeItem[] = [
       "Design Patterns",
     ],
   },
+
+  {
+    category: "AI & Machine Learning",
+    skills: [
+      "OpenAI API",
+      "Claude API",
+      "Deepseek API",
+      "Ollama",
+      "Vector Databases",
+    ],
+  },
 ];
