@@ -31,11 +31,15 @@ export default function ProfessionalPage() {
         <div className="mb-12 animate-fadeIn">
           <div className="mb-4 flex items-center gap-2">
             <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">Professional Work</span>
+            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+              Professional Work
+            </span>
           </div>
           <h1 className="section-title mb-4">Professional Portfolio</h1>
           <p className="text-gray-600 text-lg max-w-2xl">
-            Explore my recent professional projects and technical implementations. Each project represents my commitment to building scalable, innovative solutions.
+            Explore my recent professional projects and technical
+            implementations. Each project represents my commitment to building
+            scalable, innovative solutions.
           </p>
         </div>
 
@@ -119,13 +123,23 @@ export default function ProfessionalPage() {
                       <Link
                         href={portfolio.source}
                         target={portfolio.source !== "#" ? "_blank" : undefined}
-                        rel={portfolio.source !== "#" ? "noopener noreferrer" : undefined}
+                        rel={
+                          portfolio.source !== "#"
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                         className={`btn-primary-modern inline-flex items-center gap-2 justify-center w-full ${
-                          portfolio.source === "#" ? "opacity-50 cursor-not-allowed" : ""
+                          portfolio.source === "#"
+                            ? "opacity-50 cursor-not-allowed"
+                            : ""
                         }`}
                       >
-                        {portfolio.source === "#" ? "Coming Soon" : "Visit Project"}
-                        {portfolio.source !== "#" && <FaExternalLinkAlt className="w-4 h-4" />}
+                        {portfolio.source === "#"
+                          ? "Coming Soon"
+                          : "Visit Project"}
+                        {portfolio.source !== "#" && (
+                          <FaExternalLinkAlt className="w-4 h-4" />
+                        )}
                       </Link>
                     </div>
                   </div>
@@ -145,10 +159,7 @@ function SuspenseFallback() {
       {Array(6)
         .fill(0)
         .map((_, i) => (
-          <div
-            className="card-glass overflow-hidden animate-pulse"
-            key={i}
-          >
+          <div className="card-glass overflow-hidden animate-pulse" key={i}>
             <div className="h-56 bg-gradient-to-r from-gray-200 to-gray-300"></div>
             <div className="p-6 space-y-4">
               <div className="h-6 bg-gray-200 rounded w-3/4"></div>

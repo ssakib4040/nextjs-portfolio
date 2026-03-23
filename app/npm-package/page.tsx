@@ -18,11 +18,15 @@ export default function page() {
         <div className="mb-12 animate-fadeIn">
           <div className="mb-4 flex items-center gap-2">
             <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">Open Source</span>
+            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+              Open Source
+            </span>
           </div>
           <h1 className="section-title mb-4">NPM Packages</h1>
           <p className="text-gray-600 text-lg max-w-2xl">
-            I've published several npm packages to help developers build better applications. These are open-source projects available for the community.
+            I've published several npm packages to help developers build better
+            applications. These are open-source projects available for the
+            community.
           </p>
         </div>
 
@@ -91,10 +95,7 @@ function SuspenseFallback() {
       {Array(6)
         .fill(0)
         .map((_, i) => (
-          <div
-            className="card-glass overflow-hidden animate-pulse"
-            key={i}
-          >
+          <div className="card-glass overflow-hidden animate-pulse" key={i}>
             <div className="h-56 bg-gradient-to-r from-gray-200 to-gray-300"></div>
             <div className="p-6 space-y-4">
               <div className="h-6 bg-gray-200 rounded w-3/4"></div>

@@ -15,10 +15,12 @@ export default function Resume() {
         <div className="mb-12 animate-fadeIn">
           <div className="mb-4 flex items-center gap-2">
             <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
-            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">Professional Summary</span>
+            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+              Professional Summary
+            </span>
           </div>
           <h1 className="section-title mb-6">My Resume</h1>
-          
+
           {/* Download Button */}
           <a
             href="https://drive.google.com/file/d/1BSCtHCzQsz7q8NiYfHY2qKOz77nTyyvM/view?usp=sharing"
@@ -36,13 +38,20 @@ export default function Resume() {
           <div className="card-glass p-6 animate-fadeIn">
             <h3 className="text-lg font-bold text-gray-800 mb-3">About Me</h3>
             <p className="text-gray-600 leading-relaxed">
-              Hello! My name is Sadman Sakib, and I am a dedicated full-stack web developer seeking new opportunities to enhance my skills and take my career to the next level.
+              Hello! My name is Sadman Sakib, and I am a dedicated full-stack
+              web developer seeking new opportunities to enhance my skills and
+              take my career to the next level.
             </p>
           </div>
-          <div className="card-glass p-6 animate-fadeIn" style={{ animationDelay: "50ms" }}>
+          <div
+            className="card-glass p-6 animate-fadeIn"
+            style={{ animationDelay: "50ms" }}
+          >
             <h3 className="text-lg font-bold text-gray-800 mb-3">Approach</h3>
             <p className="text-gray-600 leading-relaxed">
-              As someone who is constantly learning and improving, I am excited to bring my expertise to a dynamic and challenging work environment with diverse and evolving skill sets.
+              As someone who is constantly learning and improving, I am excited
+              to bring my expertise to a dynamic and challenging work
+              environment with diverse and evolving skill sets.
             </p>
           </div>
         </div>
@@ -82,13 +91,22 @@ export default function Resume() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 card-glass p-8 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200/50 text-center animate-fadeIn" style={{ animationDelay: "300ms" }}>
-          <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to Work Together?</h3>
+        <div
+          className="mt-12 card-glass p-8 bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200/50 text-center animate-fadeIn"
+          style={{ animationDelay: "300ms" }}
+        >
+          <h3 className="text-2xl font-bold text-gray-800 mb-3">
+            Ready to Work Together?
+          </h3>
           <p className="text-gray-600 mb-6">
-            Let's connect and discuss how I can contribute to your team and projects.
+            Let's connect and discuss how I can contribute to your team and
+            projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="btn-primary-modern inline-flex items-center gap-2 justify-center">
+            <a
+              href="/contact"
+              className="btn-primary-modern inline-flex items-center gap-2 justify-center"
+            >
               Get In Touch
             </a>
             <a

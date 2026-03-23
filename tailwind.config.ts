@@ -13,8 +13,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-hero":
-          "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "gradient-hero": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         "gradient-card":
           "linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 100%)",
       },

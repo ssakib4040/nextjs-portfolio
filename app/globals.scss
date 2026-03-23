@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,12 @@
     border: 1px solid red;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold tracking-tight;
   }
 
@@ -69,9 +74,9 @@
 
   .nav-link-modern {
     @apply relative px-4 py-2 text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium;
-    
+
     &::after {
-      content: '';
+      content: "";
       @apply absolute bottom-0 left-4 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300;
     }
 

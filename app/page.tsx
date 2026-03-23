@@ -26,8 +26,14 @@ export default function Home() {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: "2s" }}></div>
-        <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: "4s" }}></div>
+        <div
+          className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+          style={{ animationDelay: "4s" }}
+        ></div>
       </div>
 
       {/* Content */}
@@ -42,8 +48,7 @@ export default function Home() {
         {/* Main Title */}
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold">
-            Hi, I'm{" "}
-            <span className="gradient-text">MD Sadman Sakib</span>
+            Hi, I'm <span className="gradient-text">MD Sadman Sakib</span>
           </h1>
 
           {/* Typing Animation */}
@@ -59,15 +64,23 @@ export default function Home() {
 
         {/* Description */}
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          I craft beautiful, scalable web applications using modern technologies. Passionate about building exceptional digital experiences and solving complex problems.
+          I craft beautiful, scalable web applications using modern
+          technologies. Passionate about building exceptional digital
+          experiences and solving complex problems.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-          <Link href="/professional-portfolio" className="btn-primary-modern flex items-center gap-2 justify-center">
+          <Link
+            href="/professional-portfolio"
+            className="btn-primary-modern flex items-center gap-2 justify-center"
+          >
             View My Work <FaArrowRight className="w-4 h-4" />
           </Link>
-          <Link href="/contact" className="btn-secondary-modern flex items-center gap-2 justify-center">
+          <Link
+            href="/contact"
+            className="btn-secondary-modern flex items-center gap-2 justify-center"
+          >
             Get in Touch
           </Link>
         </div>
@@ -104,8 +117,18 @@ export default function Home() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        <svg
+          className="w-6 h-6 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          />
         </svg>
       </div>
     </div>

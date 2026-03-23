@@ -4,7 +4,14 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { Analytics } from "@vercel/analytics/next";
-import { FaHome, FaFileAlt, FaBriefcase, FaWindowMaximize, FaBox, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaFileAlt,
+  FaBriefcase,
+  FaWindowMaximize,
+  FaBox,
+  FaEnvelope,
+} from "react-icons/fa";
 
 import "./globals.scss";
 
@@ -74,7 +81,7 @@ export default function RootLayout({
           <div className="drawer-content flex flex-col">
             {/* Page content here */}
             {children}
-            
+
             {/* Mobile Menu Button */}
             <label
               htmlFor="my-drawer-2"
@@ -109,7 +116,9 @@ export default function RootLayout({
               {/* Navigation Links */}
               <div className="py-8">
                 <div className="px-6 mb-8">
-                  <h2 className="text-2xl font-bold text-white mb-1">MD Sadman</h2>
+                  <h2 className="text-2xl font-bold text-white mb-1">
+                    MD Sadman
+                  </h2>
                   <p className="text-blue-100 text-sm">Full Stack Developer</p>
                 </div>
 
