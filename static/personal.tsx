@@ -9,6 +9,16 @@ interface Portfolio {
 
 export const portfolioList: Portfolio[] = [
   {
+    title: "Bootstrap Blocks",
+    description:
+      "Collection of reusable Bootstrap components built with React, providing a library of pre-designed UI elements for seamless integration into web projects.",
+    tags: ["Next.js", "React.JS", "Bootstrap"],
+    image: "/projects/bootstrap-blocks.png",
+    source: "https://bootstrap-blocks.vercel.app/",
+    demo: "https://github.com/ssakib4040/bootstrap-blocks",
+  },
+
+  {
     title: "Marketing Agency",
     description:
       "Attractive website for a marketing agency, showcasing services and attracting clients with a modern design.",
