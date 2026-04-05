@@ -17,10 +17,12 @@ A modern, fully optimized portfolio website showcasing 3+ years of professional 
 ## 💼 Showcase
 
 ### Professional Experience
+
 - **Software Engineer** at Mediusware LTD (May 2025 - Present)
 - **Software Developer** at Mediusware LTD (Jul 2023 - Apr 2025)
 
 ### Key Projects
+
 - **KlearSkill** - AI Recruitment Platform
 - **Automation Workflows** - Make.com & N8N integrations
 - **Basic Training LMS** - Full-stack learning management system
@@ -28,6 +30,7 @@ A modern, fully optimized portfolio website showcasing 3+ years of professional 
 - And 6+ more professional projects
 
 ### Core Skills
+
 - **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Shadcn/ui
 - **Backend**: Node.js, Express.js, NestJS, GraphQL
 - **Automation & AI**: Make.com, N8N, OpenAI API, Claude API
@@ -37,7 +40,8 @@ A modern, fully optimized portfolio website showcasing 3+ years of professional 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
@@ -115,12 +119,14 @@ nextjs-portfolio/
 ## 📊 Page Structure
 
 ### Home (`/`)
+
 - Hero section with gradient text
 - Animated specializations
 - CTA buttons (View Work, Resume, Contact)
 - Stats display (20+ Projects, 3+ Years, Full-Stack)
 
 ### Resume (`/resume`)
+
 - Professional summary
 - Work experience (2 roles)
 - Technical skills (11 categories with color coding)
@@ -128,16 +134,19 @@ nextjs-portfolio/
 - Languages
 
 ### Professional Portfolio (`/professional-portfolio`)
+
 - 10+ featured projects
 - Live project links
 - Tech stack tags
 - Project descriptions
 
 ### Personal Portfolio (`/personal-portfolio`)
+
 - Personal projects showcase
 - Demo and source code links
 
 ### Contact (`/contact`)
+
 - Contact information
 - Social links
 

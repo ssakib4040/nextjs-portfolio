@@ -41,7 +41,7 @@ export const portfolios: Portfolio[] = [
       "Full-stack Learning Management System with course management, user roles, and certification features. Built responsive UI using React, Next.js, and Tailwind CSS. Integrated backend APIs to manage user progress, content delivery, and admin controls for instructors and students.",
     tags: [
       "Next.js",
-      "React",
+      "React.js",
       "TypeScript",
       "TailwindCSS",
       "Shadcn/ui",
@@ -58,7 +58,7 @@ export const portfolios: Portfolio[] = [
       "Full-stack e-commerce platform enabling business owners to swap and trade products. Built responsive marketplace with product listings, user profiles, and swap management. Developed comprehensive admin dashboard for managing products, users, and transactions.",
     tags: [
       "Next.js",
-      "React",
+      "React.js",
       "RTK Query",
       "TypeScript",
       "TailwindCSS",
@@ -73,7 +73,7 @@ export const portfolios: Portfolio[] = [
     title: "Wiggle - Dating App",
     description:
       "Sweden-based dating application with real-time chat functionality. Users can swipe, match, and communicate with other users. Implemented responsive UI, notification system, and user profile management. Admin dashboard for user and chat moderation.",
-    tags: ["Next.js", "React", "Redux", "TypeScript", "TailwindCSS"],
+    tags: ["Next.js", "React.js", "Redux", "TypeScript", "TailwindCSS"],
     image: "/projects/professional/wiggle.png",
     source: "https://thewiggleapp.com",
     duration: "Dec 2024 - Dec 2024",
@@ -83,7 +83,7 @@ export const portfolios: Portfolio[] = [
     title: "Bulk.ly - Social Media Management",
     description:
       "Social media management platform for scheduling posts, managing multiple accounts, and tracking performance. Built with attention to UX with intuitive scheduling interface and analytics dashboard.",
-    tags: ["Next.js", "React", "Redux", "TypeScript", "NextAuth", "Bootstrap"],
+    tags: ["Next.js", "React.js", "Redux", "TypeScript", "NextAuth", "Bootstrap"],
     image: "/projects/professional/bulkly.png",
     source: "https://bulk.ly",
     duration: "Jan 2024 - Jan 2024",
@@ -93,15 +93,7 @@ export const portfolios: Portfolio[] = [
     title: "Success.ai - AI Tools Platform",
     description:
       "Full-stack AI-powered platform providing users with AI and automation tools for personal and professional use. Integrated with OpenAI and other AI APIs for content generation, automation, and analysis.",
-    tags: [
-      "React",
-      "MUI",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "OpenAI API",
-    ],
+    tags: ["React.js", "MUI", "TypeScript", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
     image: "/projects/professional/successai.png",
     source: "https://success.ai",
     duration: "Jan 2024 - Mar 2024",
@@ -111,7 +103,7 @@ export const portfolios: Portfolio[] = [
     title: "Jet Thruster America",
     description:
       "Official website for a premium boat thruster manufacturer. Showcases products, specifications, and ordering capabilities with responsive design.",
-    tags: ["React", "TypeScript", "Redux", "Bootstrap", "CSS"],
+    tags: ["React.js", "TypeScript", "Redux", "Bootstrap", "CSS"],
     image: "/projects/professional/jetthruster.png",
     source: "https://jetthrusteramerica.com",
     duration: "May 2024 - May 2024",
@@ -144,13 +136,13 @@ export const skills = [
   { name: "N8N", image: "/projects/skills/n8n.svg" },
 
   // backend
-  { name: "Nest", image: "/projects/skills/nest.svg" },
+  { name: "NestJS", image: "/projects/skills/nest.svg" },
   { name: "Node.js", image: "/projects/skills/node-js.svg" },
   { name: "Express.js", image: "/projects/skills/express-js.svg" },
 
   // frontend
-  { name: "Next", image: "/projects/skills/next.svg" },
-  { name: "React", image: "/projects/skills/react.svg" },
+  { name: "Next.js", image: "/projects/skills/next.svg" },
+  { name: "React.js", image: "/projects/skills/react.svg" },
   { name: "React Native", image: "/projects/skills/react.svg" },
   { name: "Redux", image: "/projects/skills/redux.svg" },
   { name: "RTK Query", image: "/projects/skills/redux.svg" },
@@ -160,20 +152,20 @@ export const skills = [
   { name: "MUI", image: "/projects/skills/mui.svg" },
   { name: "DaisyUI", image: "/projects/skills/daisyui.svg" },
   { name: "TailwindCSS", image: "/projects/skills/tailwindcss.svg" },
-  { name: "Typescript", image: "/projects/skills/ts.svg" },
+  { name: "TypeScript", image: "/projects/skills/ts.svg" },
   { name: "Vue", image: "/projects/skills/vue.svg" },
   { name: "Lottie", image: "/projects/skills/lottie.svg" },
   { name: "Sass", image: "/projects/skills/sass.svg" },
   { name: "Echo", image: "/projects/skills/laravel.svg" },
-  { name: "Shadcn", image: "/projects/skills/shadcn.svg" },
+  { name: "Shadcn/ui", image: "/projects/skills/shadcn.svg" },
   { name: "HTML", image: "/projects/skills/html.svg" },
   { name: "CSS", image: "/projects/skills/css.svg" },
-  { name: "Javascript", image: "/projects/skills/js.svg" },
+  { name: "JavaScript", image: "/projects/skills/js.svg" },
   { name: "Bootstrap", image: "/projects/skills/bootstrap.svg" },
   { name: "Ant Design", image: "/projects/skills/ant-design.svg" },
   { name: "React Hook Form", image: "/projects/skills/react-hook-form.svg" },
   { name: "Enzyme.js", image: "/projects/skills/enzyme-js.svg" },
-  { name: "JQuery", image: "/projects/skills/jquery.svg" },
+  { name: "jQuery", image: "/projects/skills/jquery.svg" },
   { name: "React Router", image: "/projects/skills/rrd.svg" },
 
   // social media
