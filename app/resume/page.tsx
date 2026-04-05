@@ -35,6 +35,39 @@ export default function Resume() {
         </p>
       </div>
 
+      {/* Technical Skills Section */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          Technical Skills
+        </h2>
+        <div className="space-y-6">
+          {resumeItems.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {item.category}
+                </h3>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {item.skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Work Experience Section */}
       <section className="mb-12">
         <div className="flex items-center gap-3 mb-6">
@@ -118,39 +151,6 @@ export default function Resume() {
           </div>
         </section>
       </div>
-
-      {/* Technical Skills Section */}
-      <section>
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Technical Skills
-        </h2>
-        <div className="space-y-6">
-          {resumeItems.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
-                <h3 className="text-xl font-bold text-gray-800">
-                  {item.category}
-                </h3>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {item.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-200 rounded-full text-sm font-medium hover:bg-blue-100 transition-colors"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
   );
 }
