@@ -9,139 +9,300 @@ interface Portfolio {
 
 export const portfolios: Portfolio[] = [
   {
-    title: "KlearSkill - AI Recruitment Platform",
+    title: "klearskill.com",
     description:
-      "Full-stack AI-based recruitment platform enabling companies to screen candidates and manage their entire recruitment process. Contributed to developing candidate management features using Next.js, TypeScript, and modern APIs. Implemented automation workflows to streamline recruitment operations.",
-    tags: ["Next.js", "TypeScript", "NestJS", "TailwindCSS", "Shadcn/ui"],
+      "A full-stack AI based platform where company can screen candidates and manage their recruitment process, and hire the best candidates.",
+    tags: ["Nest", "Next", "Typescript", "TailwindCSS", "Shadcn"],
     image: "/projects/professional/klearskill.png",
-    source: "https://klearskill.com",
-    duration: "May 2025 - Present",
+    source: "https://app.klearskill.com/",
+    duration: "Jan 2026 - Present",
   },
 
   {
-    title: "Automation Workflows - Make.com & N8N",
+    title: "Make.com - Wordpress Automation",
     description:
-      "Designed and implemented automation workflows integrating Shopify, Airtable, Reddit, Twitter, and Slack APIs. Automated order management, data synchronization, notification systems, and social media monitoring. Improved operational efficiency by reducing manual tasks through intelligent workflow automation.",
-    tags: [
-      "Make.com",
-      "N8N",
-      "Shopify API",
-      "Airtable",
-      "Reddit API",
-      "Slack API",
-    ],
+      "An automation workflow to mainly manage the orders and inventory of an e-commerce store using Make.com. It integrates with Airtable, Shopify API, and Wordpress API to automate the process of managing orders and inventory.",
+    tags: ["Make.com", "Airtable", "Shopify API", "Wordpress API"],
     image: "/projects/professional/make.png",
     source: "#",
-    duration: "Aug 2025 - Dec 2025",
+    duration: "Oct 2025 - Dec 2025",
   },
 
   {
-    title: "Basic Training - Learning Management System (LMS)",
+    title: "N8N - Reddit Automation Workflow",
     description:
-      "Full-stack Learning Management System with course management, user roles, and certification features. Built responsive UI using React, Next.js, and Tailwind CSS. Integrated backend APIs to manage user progress, content delivery, and admin controls for instructors and students.",
+      "An automation workflow that fetches Reddit posts based on specific keywords and sends them to a designated Slack channel using N8N.",
+    tags: ["N8N", "Reddit API", "Twitter API"],
+    image: "/projects/professional/n8n.png",
+    source: "#",
+    duration: "Aug 2025 - Sept 2025",
+  },
+
+  {
+    title: "Basic Training - LMS",
+    description:
+      "A full-stack Learning Management System (LMS) where users can learn and get certified. Admin can manage courses, manage users, and manage certifications.",
     tags: [
-      "Next.js",
-      "React.js",
-      "TypeScript",
+      "Next",
+      "React",
+      "Shadcn",
       "TailwindCSS",
-      "Shadcn/ui",
+      "Typescript",
       "React Hook Form",
     ],
     image: "/projects/professional/basic-lms.png",
-    source: "https://tccbasictraining.com",
+    source: "#",
     duration: "Jul 2025 - Aug 2025",
   },
 
   {
-    title: "Swapshop - E-commerce Platform",
+    title: "BadkamerVakman - Bathroom Renovation",
     description:
-      "Full-stack e-commerce platform enabling business owners to swap and trade products. Built responsive marketplace with product listings, user profiles, and swap management. Developed comprehensive admin dashboard for managing products, users, and transactions.",
+      "A full-stack bathroom renovation website where users can book appointments, manage their bookings, and get quotes. Admin can manage users, manage bookings, and manage quotes.",
+    tags: ["HTML", "CSS", "TailwindCSS", "Javascript", "Vite"],
+    image: "/projects/professional/badkamer.png",
+    source: "#",
+    duration: "Jul 2025 - Jul 2025",
+  },
+
+  {
+    title: "Teez - AI sales assistant",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
     tags: [
-      "Next.js",
-      "React.js",
-      "RTK Query",
-      "TypeScript",
+      "Next",
+      "React",
+      "Shadcn",
       "TailwindCSS",
-      "Redis",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "/projects/professional/teez.png",
+    source: "#",
+    duration: "Mar 2025 - Jul 2025",
+  },
+
+  {
+    title: "Keystone - A place for connection and growth",
+    description:
+      "A platform where users can connect with each other, share their thoughts, and grow together.",
+    tags: [
+      "Next",
+      "React",
+      "Shadcn",
+      "TailwindCSS",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "/projects/professional/keystone.png",
+    source: "#",
+    duration: "Feb 2025 - Mar 2025",
+  },
+
+  {
+    title: "Clerkal AI",
+    description:
+      "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
+    tags: [
+      "Next",
+      "React",
+      "Shadcn",
+      "TailwindCSS",
+      "Typescript",
+      "React Hook Form",
+    ],
+    image: "/projects/professional/clerkal.png",
+    source: "#",
+    duration: "Jan 2025 - Feb 2025",
+  },
+
+  {
+    title: "Swapshop - E-commerce Website",
+    description:
+      "A full-stack e-commerce website where shopowners can swap products. Users can add products to the list and swap. Admin can add products, manage orders, and manage users.",
+    tags: [
+      "Next",
+      "NextAuth",
+      "React",
+      "React Native",
+      "RTK Query",
+      "DaisyUI",
+      "TailwindCSS",
+      "Echo",
+      "React Hook Form",
     ],
     image: "/projects/professional/swapshop.png",
-    source: "https://swapshopnow.com",
+    source: "https://swapshopnow.com/",
     duration: "Apr 2024 - Dec 2025",
   },
 
   {
     title: "Wiggle - Dating App",
     description:
-      "Sweden-based dating application with real-time chat functionality. Users can swipe, match, and communicate with other users. Implemented responsive UI, notification system, and user profile management. Admin dashboard for user and chat moderation.",
-    tags: ["Next.js", "React.js", "Redux", "TypeScript", "TailwindCSS"],
+      "A Swiden based dating app where users can swipe left or right to like or dislike. Users can chat with each other. Admin can manage users, manage chat, and manage users.",
+    tags: ["Next", "React", "Redux", "Netlify"],
     image: "/projects/professional/wiggle.png",
-    source: "https://thewiggleapp.com",
+    source: "https://thewiggleapp.com/",
     duration: "Dec 2024 - Dec 2024",
   },
 
   {
-    title: "Bulk.ly - Social Media Management",
+    title: "ServiceBolt",
     description:
-      "Social media management platform for scheduling posts, managing multiple accounts, and tracking performance. Built with attention to UX with intuitive scheduling interface and analytics dashboard.",
-    tags: [
-      "Next.js",
-      "React.js",
-      "Redux",
-      "TypeScript",
-      "NextAuth",
-      "Bootstrap",
-    ],
-    image: "/projects/professional/bulkly.png",
-    source: "https://bulk.ly",
-    duration: "Jan 2024 - Jan 2024",
-  },
-
-  {
-    title: "Success.ai - AI Tools Platform",
-    description:
-      "Full-stack AI-powered platform providing users with AI and automation tools for personal and professional use. Integrated with OpenAI and other AI APIs for content generation, automation, and analysis.",
-    tags: [
-      "React.js",
-      "MUI",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "OpenAI API",
-    ],
-    image: "/projects/professional/successai.png",
-    source: "https://success.ai",
-    duration: "Jan 2024 - Mar 2024",
-  },
-
-  {
-    title: "Jet Thruster America",
-    description:
-      "Official website for a premium boat thruster manufacturer. Showcases products, specifications, and ordering capabilities with responsive design.",
-    tags: ["React.js", "TypeScript", "Redux", "Bootstrap", "CSS"],
-    image: "/projects/professional/jetthruster.png",
-    source: "https://jetthrusteramerica.com",
-    duration: "May 2024 - May 2024",
-  },
-
-  {
-    title: "ServiceBolt - Field Service Platform",
-    description:
-      "All-inclusive solution for HVAC, Plumbing, Electrical, lawn care, and other field service businesses. Simplifies platform transition with easy setup and training.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+      "Simple pricing & all-inclusive solution for your HVAC, Plumbing, Electrical, lawn care, or other field service business. We take care of all the heavy lifting in set-up & training to make the transition from another platform or no platform easy.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
     image: "/projects/professional/servicebolt.png",
-    source: "https://myservicebolt.com",
+    source: "https://myservicebolt.com/",
     duration: "Nov 2024 - Nov 2024",
   },
 
   {
-    title: "Envoc - Software Development Company",
+    title: "Cochranfirm",
     description:
-      "Corporate website showcasing software development, web development, and mobile app development services.",
-    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+      "A portfolio website of a lawyer who is from the California, USA.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
+    image: "/projects/professional/law.png",
+    source: "https://briandunnlaw.com/",
+    duration: "May 2024 - May 2024",
+  },
+
+  {
+    title: "Jet Thruster",
+    description:
+      "The Official Website of Jet Thruster America. They provide the best thruster for boats.",
+    tags: ["React", "Redux", "React Router", "CSS", "Bootstrap", "Typescript"],
+    image: "/projects/professional/jetthruster.png",
+    source: "https://jetthrusteramerica.com/",
+    duration: "May 2024 - May 2024",
+  },
+
+  // {
+  //   title: "DWP",
+  //   description:
+  //     "The Official Website of Jet Thruster America. They provide the best thruster for boats.",
+  //   tags: ["React", "Redux", "React Router", "CSS", "Bootstrap", "Typescript"],
+  //   image: "/projects/professional/jetthruster.png",
+  //   source: "https://jetthrusteramerica.com/",
+  //   duration: "May 2024 - May 2024",
+  // },
+
+  {
+    title: "Envoc",
+    description:
+      "A Software Developmeny Company in USA. They provide custom software development, web development, and mobile app development services.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap", "JQuery"],
     image: "/projects/professional/envoc.png",
-    source: "https://envoc.com",
+    source: "https://envoc.com/",
     duration: "Mar 2024 - Apr 2024",
+  },
+
+  {
+    title: "Soflyy",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    image: "/projects/professional/soflyy.png",
+    source: "https://success.ai/",
+    duration: "Mar 2024 - Apr 2024",
+  },
+
+  {
+    title: "Korra.ai",
+    description:
+      "AI powered i18n search engine where users can search for anything and get the best results.",
+    tags: ["React", "Preact", "Redux", "Enzyme.js", "Sass"],
+    image: "/projects/professional/korraai.png",
+    source: "https://success.ai/",
+    duration: "Jan 2024 - Mar 2024",
+  },
+
+  {
+    title: "Success.ai",
+    description:
+      "A full-stack AI based platform where users can get lots of AI and Automation tools for both personal and professional use.",
+    tags: ["React", "MUI", "Typescript", "Node.js", "Express.js", "MongoDB"],
+    image: "/projects/professional/successai.png",
+    source: "https://success.ai/",
+    duration: "Jan 2024 - Mar 2024",
+  },
+
+  {
+    title: "Bulk.ly",
+    description:
+      "A Social Media Management Platform where users can schedule posts, manage social media accounts, and track social media performance.",
+    tags: [
+      "Next",
+      "React",
+      "Redux",
+      "Netlify",
+      "NextAuth",
+      "Lottie",
+      "Bootstrap",
+    ],
+    image: "/projects/professional/bulkly.png",
+    source: "https://bulk.ly/",
+    duration: "Jan 2024 - Jan 2024",
+  },
+
+  {
+    title: "Smugglers Alcohol",
+    description:
+      "Admin dashboard for Smugglers Alcohol where admin can manage products, manage orders, and manage users.",
+    tags: [
+      "Next",
+      "React",
+      "Redux",
+      "Ant Design",
+      "Typescript",
+      "TailwindCSS",
+      "RTK Query",
+      "NextAuth",
+      "Sass",
+      "React Hook Form",
+      "Lottie",
+    ],
+    image: "/projects/professional/smugglers.png",
+    source: "#",
+    duration: "Jan 2024 - Jan 2024",
+  },
+
+  {
+    title: "Mediusware Jobs",
+    description:
+      "Job portal for Mediusware.com where users can apply for jobs.",
+    tags: ["Vue", "Redux", "Lottie", "Sass"],
+    image: "/projects/professional/mw-jobs.png",
+    source: "https://job.mediusware.com",
+    duration: "July 2023 - Oct 2023",
+  },
+
+  {
+    title: "Mediusware.com",
+    description: "A Custom Software and Web Development Company in Bangladesh.",
+    tags: ["Next", "React", "Sass", "DaisyUI", "Typescript", "Lottie"],
+    image: "/projects/professional/mediusware.png",
+    source: "https://mediusware.com/",
+    duration: "July 2023 - Oct 2023",
+  },
+
+  {
+    title: "TCDB - Admin Dashboard",
+    description:
+      "A full-stack admin dashboard for handling the scrap data from the web. Admin can manage users, manage scrap data, and manage users.",
+    tags: ["HTML", "CSS", "Javascript", "Bootstrap"],
+    image: "/projects/professional/tcdb.png",
+    source: "#",
+    duration: "Dec 2023 - Dec 2023",
+  },
+
+  {
+    title: "Growtoro - Email Marketing Platform",
+    description:
+      "A full-stack email marketing platform where users can create email campaigns, manage subscribers, and track email campaigns. Admin can manage users, manage email templates, and manage email campaigns.",
+    tags: ["React", "Redux", "Vite", "MUI"],
+    image: "/projects/professional/growtoro.png",
+    source: "https://growtoro.com/",
+    duration: "July 2023 - Oct 2023",
   },
 ];
 
@@ -151,13 +312,13 @@ export const skills = [
   { name: "N8N", image: "/projects/skills/n8n.svg" },
 
   // backend
-  { name: "NestJS", image: "/projects/skills/nest.svg" },
+  { name: "Nest", image: "/projects/skills/nest.svg" },
   { name: "Node.js", image: "/projects/skills/node-js.svg" },
   { name: "Express.js", image: "/projects/skills/express-js.svg" },
 
   // frontend
-  { name: "Next.js", image: "/projects/skills/next.svg" },
-  { name: "React.js", image: "/projects/skills/react.svg" },
+  { name: "Next", image: "/projects/skills/next.svg" },
+  { name: "React", image: "/projects/skills/react.svg" },
   { name: "React Native", image: "/projects/skills/react.svg" },
   { name: "Redux", image: "/projects/skills/redux.svg" },
   { name: "RTK Query", image: "/projects/skills/redux.svg" },
@@ -167,20 +328,20 @@ export const skills = [
   { name: "MUI", image: "/projects/skills/mui.svg" },
   { name: "DaisyUI", image: "/projects/skills/daisyui.svg" },
   { name: "TailwindCSS", image: "/projects/skills/tailwindcss.svg" },
-  { name: "TypeScript", image: "/projects/skills/ts.svg" },
+  { name: "Typescript", image: "/projects/skills/ts.svg" },
   { name: "Vue", image: "/projects/skills/vue.svg" },
   { name: "Lottie", image: "/projects/skills/lottie.svg" },
   { name: "Sass", image: "/projects/skills/sass.svg" },
   { name: "Echo", image: "/projects/skills/laravel.svg" },
-  { name: "Shadcn/ui", image: "/projects/skills/shadcn.svg" },
+  { name: "Shadcn", image: "/projects/skills/shadcn.svg" },
   { name: "HTML", image: "/projects/skills/html.svg" },
   { name: "CSS", image: "/projects/skills/css.svg" },
-  { name: "JavaScript", image: "/projects/skills/js.svg" },
+  { name: "Javascript", image: "/projects/skills/js.svg" },
   { name: "Bootstrap", image: "/projects/skills/bootstrap.svg" },
   { name: "Ant Design", image: "/projects/skills/ant-design.svg" },
   { name: "React Hook Form", image: "/projects/skills/react-hook-form.svg" },
   { name: "Enzyme.js", image: "/projects/skills/enzyme-js.svg" },
-  { name: "jQuery", image: "/projects/skills/jquery.svg" },
+  { name: "JQuery", image: "/projects/skills/jquery.svg" },
   { name: "React Router", image: "/projects/skills/rrd.svg" },
 
   // social media
