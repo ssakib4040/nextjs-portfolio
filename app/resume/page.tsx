@@ -14,22 +14,74 @@ export const metadata: Metadata = {
 
 export default function Resume() {
   // Color mapping for skill categories
-  const categoryColors: { [key: string]: { bg: string; text: string; border: string } } = {
-    "Frontend": { bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" },
-    "Backend & Runtime": { bg: "bg-green-50", text: "text-green-700", border: "border-green-200" },
-    "State Management & Data Fetching": { bg: "bg-purple-50", text: "text-purple-700", border: "border-purple-200" },
-    "Databases & ORMs": { bg: "bg-yellow-50", text: "text-yellow-700", border: "border-yellow-200" },
-    "Automation & AI Integration": { bg: "bg-pink-50", text: "text-pink-700", border: "border-pink-200" },
-    "Build Tools & Package Managers": { bg: "bg-indigo-50", text: "text-indigo-700", border: "border-indigo-200" },
-    "Cloud & Deployment": { bg: "bg-orange-50", text: "text-orange-700", border: "border-orange-200" },
-    "Version Control & Collaboration": { bg: "bg-red-50", text: "text-red-700", border: "border-red-200" },
-    "Testing": { bg: "bg-cyan-50", text: "text-cyan-700", border: "border-cyan-200" },
-    "Development Practices": { bg: "bg-teal-50", text: "text-teal-700", border: "border-teal-200" },
-    "Developer Tools": { bg: "bg-slate-50", text: "text-slate-700", border: "border-slate-200" },
+  const categoryColors: {
+    [key: string]: { bg: string; text: string; border: string };
+  } = {
+    Frontend: {
+      bg: "bg-blue-50",
+      text: "text-blue-700",
+      border: "border-blue-200",
+    },
+    "Backend & Runtime": {
+      bg: "bg-green-50",
+      text: "text-green-700",
+      border: "border-green-200",
+    },
+    "State Management & Data Fetching": {
+      bg: "bg-purple-50",
+      text: "text-purple-700",
+      border: "border-purple-200",
+    },
+    "Databases & ORMs": {
+      bg: "bg-yellow-50",
+      text: "text-yellow-700",
+      border: "border-yellow-200",
+    },
+    "Automation & AI Integration": {
+      bg: "bg-pink-50",
+      text: "text-pink-700",
+      border: "border-pink-200",
+    },
+    "Build Tools & Package Managers": {
+      bg: "bg-indigo-50",
+      text: "text-indigo-700",
+      border: "border-indigo-200",
+    },
+    "Cloud & Deployment": {
+      bg: "bg-orange-50",
+      text: "text-orange-700",
+      border: "border-orange-200",
+    },
+    "Version Control & Collaboration": {
+      bg: "bg-red-50",
+      text: "text-red-700",
+      border: "border-red-200",
+    },
+    Testing: {
+      bg: "bg-cyan-50",
+      text: "text-cyan-700",
+      border: "border-cyan-200",
+    },
+    "Development Practices": {
+      bg: "bg-teal-50",
+      text: "text-teal-700",
+      border: "border-teal-200",
+    },
+    "Developer Tools": {
+      bg: "bg-slate-50",
+      text: "text-slate-700",
+      border: "border-slate-200",
+    },
   };
 
   const getColorForCategory = (category: string) => {
-    return categoryColors[category] || { bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" };
+    return (
+      categoryColors[category] || {
+        bg: "bg-blue-50",
+        text: "text-blue-700",
+        border: "border-blue-200",
+      }
+    );
   };
 
   return (
@@ -101,28 +153,28 @@ export default function Resume() {
           {resumeItems.map((item, index) => {
             const colors = getColorForCategory(item.category);
             return (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
-                <h3 className="text-xl font-bold text-gray-800">
-                  {item.category}
-                </h3>
-              </div>
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
+                  <h3 className="text-xl font-bold text-gray-800">
+                    {item.category}
+                  </h3>
+                </div>
 
-              <div className="flex flex-wrap gap-2">
-                {item.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className={`px-3 py-1.5 ${colors.bg} ${colors.text} border ${colors.border} rounded-full text-sm font-medium hover:shadow-sm transition-all`}
-                  >
-                    {skill}
-                  </span>
-                ))}
+                <div className="flex flex-wrap gap-2">
+                  {item.skills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className={`px-3 py-1.5 ${colors.bg} ${colors.text} border ${colors.border} rounded-full text-sm font-medium hover:shadow-sm transition-all`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
             );
           })}
         </div>
