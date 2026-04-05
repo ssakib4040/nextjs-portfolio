@@ -83,7 +83,14 @@ export const portfolios: Portfolio[] = [
     title: "Bulk.ly - Social Media Management",
     description:
       "Social media management platform for scheduling posts, managing multiple accounts, and tracking performance. Built with attention to UX with intuitive scheduling interface and analytics dashboard.",
-    tags: ["Next.js", "React.js", "Redux", "TypeScript", "NextAuth", "Bootstrap"],
+    tags: [
+      "Next.js",
+      "React.js",
+      "Redux",
+      "TypeScript",
+      "NextAuth",
+      "Bootstrap",
+    ],
     image: "/projects/professional/bulkly.png",
     source: "https://bulk.ly",
     duration: "Jan 2024 - Jan 2024",
@@ -93,7 +100,15 @@ export const portfolios: Portfolio[] = [
     title: "Success.ai - AI Tools Platform",
     description:
       "Full-stack AI-powered platform providing users with AI and automation tools for personal and professional use. Integrated with OpenAI and other AI APIs for content generation, automation, and analysis.",
-    tags: ["React.js", "MUI", "TypeScript", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
+    tags: [
+      "React.js",
+      "MUI",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "OpenAI API",
+    ],
     image: "/projects/professional/successai.png",
     source: "https://success.ai",
     duration: "Jan 2024 - Mar 2024",
