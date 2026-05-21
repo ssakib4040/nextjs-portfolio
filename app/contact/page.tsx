@@ -61,7 +61,7 @@ export default function page() {
       <div className="max-w-4xl w-full">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-3">
+          <h1 className="lg:text-4xl text-3xl md:text-5xl font-bold text-gray-800 mb-3">
             Get In Touch
           </h1>
           <p className="text-lg text-gray-600">

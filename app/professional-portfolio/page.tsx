@@ -25,7 +25,7 @@ export default function ProfessionalPage() {
 
   return (
     <div className="lg:px-8 lg:py-12 px-6 py-8">
-      <h1 className=" text-4xl font-bold text-gray-800 ">
+      <h1 className="lg:text-4xl text-2xl font-bold text-gray-800 ">
         Professional Portfolio
       </h1>
       <hr className="my-3 border-gray-600" />
