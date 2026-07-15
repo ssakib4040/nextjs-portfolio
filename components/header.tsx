@@ -34,9 +34,9 @@ export default function Header() {
             <li key={menu.href}>
               <Link
                 href={menu.href}
-                className={
-                  isActive(menu.href) ? "bg-[#0D6EFD] text-white" : ""
-                }
+                className={`btn btn-ghost min-h-10 h-10 ${
+                  isActive(menu.href) ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white" : ""
+                }`}
               >
                 {menu.name}
               </Link>
@@ -72,7 +72,9 @@ export default function Header() {
                 <Link
                   href={menu.href}
                   className={
-                    isActive(menu.href) ? "bg-[#0D6EFD] text-white" : ""
+                    isActive(menu.href)
+                      ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white"
+                      : ""
                   }
                 >
                   {menu.name}
