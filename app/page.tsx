@@ -49,7 +49,7 @@ export default function Home() {
       {/* CTA Buttons */}
       <div className="mt-8 flex w-full max-w-xs flex-col gap-3 md:w-auto md:max-w-none md:flex-row md:gap-4">
         <Link
-          href="/professional-portfolio"
+          href="/work"
           className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
         >
           View My Work
