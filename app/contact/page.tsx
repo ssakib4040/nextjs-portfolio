@@ -15,7 +15,7 @@ const urls = {
   facebook: "https://www.facebook.com/ssakib4040",
   twitter: "https://twitter.com/ssakib4040",
   mailto: "mailto:ssakib4040@gmail.com",
-  cv: "https://drive.google.com/file/d/1BSCtHCzQsz7q8NiYfHY2qKOz77nTyyvM/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1KJ0W2y--tv3nVN-FniCbVxXewbwKthnw/view?usp=sharing",
 };
 
 const socialLinks = [
@@ -59,45 +59,35 @@ export const metadata: Metadata = {
 
 export default function page() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center px-4 py-16">
-      <div className="max-w-4xl w-full">
-        {/* Header Section */}
-        <div className="text-center mb-12">
-          <h1 className="lg:text-4xl text-3xl md:text-5xl font-bold text-gray-800 mb-3">
-            Get In Touch
-          </h1>
-          <p className="text-lg text-gray-600">
-            Connect with me on social media or send an email
-          </p>
-        </div>
+    <div className="max-w-7xl mx-auto px-6 pt-6 lg:pt-12 pb-20 lg:px-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+        Contact
+      </h1>
+      <p className="mt-2 text-gray-500">
+        Reach out for projects, collabs, or just to say hi.
+      </p>
 
-        {/* Social Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          {socialLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-white border-2 border-gray-200 hover:border-[#0D6EFD] 
-                  rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg
-                  transform hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex flex-col items-center justify-center text-center">
-                  <Icon
-                    className="text-5xl md:text-6xl text-gray-700 group-hover:text-[#0D6EFD] 
-                    transform group-hover:scale-110 transition-all duration-300 mb-3"
-                  />
-                  <h3 className="text-lg font-semibold text-gray-800 group-hover:text-[#0D6EFD] transition-colors duration-300">
-                    {link.name}
-                  </h3>
-                </div>
-              </a>
-            );
-          })}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+        {socialLinks.map((link) => {
+          const Icon = link.icon;
+          return (
+            <a
+              key={link.name}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative bg-white border border-gray-100 rounded-2xl p-6 text-center hover:border-blue-100 hover:shadow-lg hover:shadow-blue-50 transition-all duration-300"
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative">
+                <Icon className="text-4xl text-gray-400 group-hover:text-[#0D6EFD] transition-colors mx-auto mb-3" />
+                <p className="text-sm font-semibold text-gray-800 group-hover:text-[#0D6EFD] transition-colors">
+                  {link.name}
+                </p>
+              </div>
+            </a>
+          );
+        })}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
 [cmd]: https://commandcode.ai/
 
 # workflow
-- Present the complete plan and analysis before writing any code. Don't jump to implementation until the plan is approved. Confidence: 0.75
+- Present the complete plan and analysis before writing any code. Don't jump to implementation until the plan is approved. Confidence: 0.80
 - Only implement what was explicitly requested — do not add unsolicited features, UI elements, or content beyond the scope of the ask. Confidence: 0.80
 
 # daisyui
