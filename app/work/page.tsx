@@ -18,28 +18,37 @@ export default function WorkPage() {
           skills.find((skill) => skill.name === tagName) || {
             name: tagName,
             image: undefined,
-          }
+          },
       ) || []
     );
   }
 
   return (
-    <div className="lg:px-8 lg:py-12 px-6 py-8">
-      <h1 className="lg:text-4xl text-2xl font-bold text-gray-800">Work</h1>
-      <hr className="my-3 border-gray-600" />
+    <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 lg:px-8 lg:pt-20">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Work</h1>
+      <p className="mt-2 text-gray-500">
+        Professional projects and side experiments I&apos;ve built over the
+        years.
+      </p>
 
-      <div role="tablist" className="tabs tabs-bordered my-6">
+      <div className="mt-6 flex items-center gap-1">
         <button
-          role="tab"
-          className={`tab ${activeTab === "professional" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("professional")}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            activeTab === "professional"
+              ? "bg-[#0D6EFD] text-white"
+              : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          }`}
         >
           Professional
         </button>
         <button
-          role="tab"
-          className={`tab ${activeTab === "personal" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("personal")}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            activeTab === "personal"
+              ? "bg-[#0D6EFD] text-white"
+              : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          }`}
         >
           Personal
         </button>
@@ -47,7 +56,7 @@ export default function WorkPage() {
 
       <Suspense fallback={<SuspenseFallback />}>
         {activeTab === "professional" ? (
-          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-6">
             {portfolios.map((portfolio, i) => (
               <PortfolioCard
                 key={i}
@@ -62,16 +71,14 @@ export default function WorkPage() {
             ))}
           </div>
         ) : (
-          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-6">
             {portfolioList.map((portfolio, i) => (
               <PortfolioCard
                 key={i}
                 title={portfolio.title}
                 description={portfolio.description}
                 image={portfolio.image}
-                tags={
-                  portfolio.tags?.map((t) => ({ name: t })) || []
-                }
+                tags={portfolio.tags?.map((t) => ({ name: t })) || []}
                 sourceUrl={portfolio.source}
                 sourceLabel="View Source"
                 demoUrl={portfolio.demo}
@@ -86,7 +93,7 @@ export default function WorkPage() {
 
 function SuspenseFallback() {
   return (
-    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-8">
       {Array(6)
         .fill(0)
         .map((_, i) => (

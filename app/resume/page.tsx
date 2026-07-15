@@ -87,10 +87,12 @@ export default function Resume() {
   };
 
   return (
-    <div className="lg:px-8 lg:py-12 px-6 py-8">
-      {/* Header */}
-      <h1 className="lg:text-4xl text-2xl font-bold text-gray-800">Resume</h1>
-      <hr className="my-3 border-gray-600 mb-6" />
+    <div className="max-w-4xl mx-auto px-6 py-12 lg:px-8">
+      <div className="mb-10">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+          Resume
+        </h1>
+      </div>
 
       {/* Professional Summary Section */}
       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 rounded-lg mb-10">

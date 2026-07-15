@@ -21,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow px-4 lg:px-8 sticky top-0 z-50">
       <div className="navbar-start">
         <Link href="/" className="text-xl font-bold text-blue-600">
           Sadman Sakib
@@ -35,7 +35,9 @@ export default function Header() {
               <Link
                 href={menu.href}
                 className={`btn btn-ghost min-h-10 h-10 ${
-                  isActive(menu.href) ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white" : ""
+                  isActive(menu.href)
+                    ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white"
+                    : ""
                 }`}
               >
                 {menu.name}

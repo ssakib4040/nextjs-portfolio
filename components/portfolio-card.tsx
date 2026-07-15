@@ -29,7 +29,7 @@ export default function PortfolioCard({
   demoUrl,
 }: PortfolioCardProps) {
   return (
-    <div className="bg-white border rounded-md flex flex-col">
+    <div className="bg-white border rounded-md flex flex-col shadow-md">
       <Image
         src={image}
         alt=""

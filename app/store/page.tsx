@@ -12,11 +12,14 @@ export default function StorePage() {
   const filtered = storeProducts.filter((p) => p.category === activeTab);
 
   return (
-    <div className="lg:px-8 lg:py-12 px-6 py-8">
-      <h1 className="lg:text-4xl text-2xl font-bold text-gray-800">Store</h1>
-      <hr className="my-3 border-gray-600" />
+    <div className="max-w-7xl mx-auto px-6 py-12 lg:px-8">
+      <div className="mb-10">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+          Store
+        </h1>
+      </div>
 
-      <div role="tablist" className="tabs tabs-bordered my-6">
+      <div role="tablist" className="tabs tabs-boxed mb-8">
         <button
           role="tab"
           className={`tab ${activeTab === "templates" ? "tab-active" : ""}`}
