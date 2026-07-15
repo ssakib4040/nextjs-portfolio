@@ -13,12 +13,13 @@ export const metadata: Metadata = {
 
 export default function PackagesPage() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 lg:px-8">
-      <div className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
-          Packages
-        </h1>
-      </div>
+    <div className="max-w-7xl mx-auto px-6 pt-6 lg:pt-12 pb-20 lg:px-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+        Packages
+      </h1>
+      <p className="mt-2 text-gray-500">
+        Open-source NPM packages and utilities — free to use, MIT licensed.
+      </p>
 
       <Suspense fallback={<SuspenseFallback />}>
         <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6">
