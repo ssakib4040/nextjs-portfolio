@@ -56,7 +56,7 @@ export default function WorkPage() {
 
       <Suspense fallback={<SuspenseFallback />}>
         {activeTab === "professional" ? (
-          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-6">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-6">
             {portfolios.map((portfolio, i) => (
               <PortfolioCard
                 key={i}
@@ -71,7 +71,7 @@ export default function WorkPage() {
             ))}
           </div>
         ) : (
-          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-6">
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-6">
             {portfolioList.map((portfolio, i) => (
               <PortfolioCard
                 key={i}
