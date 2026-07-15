@@ -10,6 +10,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Resume",
+  description:
+    "Software Engineer with 3+ years of experience in Next.js, TypeScript, NestJS, AI platforms, and automation workflows. Currently at Mediusware Ltd building full-stack SaaS applications.",
 };
 
 export default function Resume() {

@@ -52,7 +52,9 @@ const socialLinks = [
 ];
 
 export const metadata: Metadata = {
-  title: "Contact Me",
+  title: "Contact",
+  description:
+    "Get in touch with Sadman Sakib — software engineer and full-stack developer. Available for freelance projects, collaborations, and consulting. Find me on LinkedIn, GitHub, Twitter, or email.",
 };
 
 export default function page() {

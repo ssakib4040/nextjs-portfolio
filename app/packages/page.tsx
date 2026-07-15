@@ -6,7 +6,9 @@ import React, { Suspense } from "react";
 import { npmPackageList } from "@/static/npm";
 
 export const metadata: Metadata = {
-  title: "Packages",
+  title: "NPM Packages",
+  description:
+    "Open-source NPM packages by Sadman Sakib — utilities, libraries, and tools for React, Next.js, TypeScript, and Node.js development. Free and MIT licensed.",
 };
 
 export default function PackagesPage() {

@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
@@ -16,10 +15,6 @@ const typeAnimationSequence = [
 ];
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Home Page";
-  }, []);
-
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 md:py-0">
       {/* Subtle background dots */}
