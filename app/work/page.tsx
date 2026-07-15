@@ -24,7 +24,7 @@ export default function WorkPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 lg:px-8 lg:pt-20">
+    <div className="max-w-7xl mx-auto px-6 pt-6 lg:pt-12 pb-20 lg:px-8">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Work</h1>
       <p className="mt-2 text-gray-500">
         Professional projects and side experiments I&apos;ve built over the

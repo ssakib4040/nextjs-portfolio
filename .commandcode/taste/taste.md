@@ -12,5 +12,5 @@
 - Use btn btn-ghost class on nav menu items (Link elements) inside DaisyUI navbars for consistent hover behavior (background + text color change). Confidence: 0.60
 
 # ui
-- For tab/pill toggles, use custom buttons (rounded-lg, bg-gray-900 text-white active, gray hover inactive) instead of DaisyUI tabs (tabs-boxed or tabs-bordered). Confidence: 0.60
+- For tab/pill toggles, use custom buttons (rounded-lg, bg-[#0D6EFD] text-white active, gray hover inactive) instead of DaisyUI tabs (tabs-boxed or tabs-bordered). Confidence: 0.70
 

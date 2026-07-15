@@ -12,32 +12,41 @@ export default function StorePage() {
   const filtered = storeProducts.filter((p) => p.category === activeTab);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 lg:px-8">
-      <div className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
-          Store
-        </h1>
-      </div>
-
-      <div role="tablist" className="tabs tabs-boxed mb-8">
+    <div className="max-w-7xl mx-auto px-6 pt-16 pb-20 lg:px-8 lg:pt-20">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+        Store
+      </h1>
+      <p className="mt-2 text-gray-500">
+        Premium templates, plugins, and mobile app kits — clean code, ready to ship.
+      </p>
+      <div className="mt-6 flex items-center gap-1">
         <button
-          role="tab"
-          className={`tab ${activeTab === "templates" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("templates")}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            activeTab === "templates"
+              ? "bg-[#0D6EFD] text-white"
+              : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          }`}
         >
           Templates
         </button>
         <button
-          role="tab"
-          className={`tab ${activeTab === "plugins" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("plugins")}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            activeTab === "plugins"
+              ? "bg-[#0D6EFD] text-white"
+              : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          }`}
         >
           Plugins
         </button>
         <button
-          role="tab"
-          className={`tab ${activeTab === "mobile" ? "tab-active" : ""}`}
           onClick={() => setActiveTab("mobile")}
+          className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+            activeTab === "mobile"
+              ? "bg-[#0D6EFD] text-white"
+              : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          }`}
         >
           Mobile Templates
         </button>
@@ -68,7 +77,7 @@ export default function StorePage() {
             </p>
           </div>
         ) : (
-          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+          <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-8">
             {filtered.map((product, i) => (
               <StoreCard key={i} {...product} />
             ))}
@@ -81,7 +90,7 @@ export default function StorePage() {
 
 function SuspenseFallback() {
   return (
-    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 my-6">
+    <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 grid-cols-1 gap-6 mt-8">
       {Array(6)
         .fill(0)
         .map((_, i) => (
