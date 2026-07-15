@@ -4,6 +4,7 @@
 
 # workflow
 - Present the complete plan and analysis before writing any code. Don't jump to implementation until the plan is approved. Confidence: 0.75
+- Only implement what was explicitly requested — do not add unsolicited features, UI elements, or content beyond the scope of the ask. Confidence: 0.80
 
 # daisyui
 - Use DaisyUI components for UI elements (navbar, tabs, dropdowns, cards) rather than building custom implementations. Confidence: 0.65
