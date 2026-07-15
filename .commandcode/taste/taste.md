@@ -13,4 +13,5 @@
 
 # ui
 - For tab/pill toggles, use custom buttons (rounded-lg, bg-[#0D6EFD] text-white active, gray hover inactive) instead of DaisyUI tabs (tabs-boxed or tabs-bordered). Confidence: 0.70
+- When redesigning a page, reference and reuse existing design patterns from other pages (card styles, hover effects, spacing, widths) to maintain visual consistency across the site. Confidence: 0.80
 

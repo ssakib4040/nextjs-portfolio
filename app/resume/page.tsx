@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 };
 
 export default function Resume() {
-  // Color mapping for skill categories
-  const categoryColors: {
-    [key: string]: { bg: string; text: string; border: string };
-  } = {
+  const categoryColors: Record<
+    string,
+    { bg: string; text: string; border: string }
+  > = {
     Frontend: {
       bg: "bg-blue-50",
       text: "text-blue-700",
@@ -76,7 +76,7 @@ export default function Resume() {
     },
   };
 
-  const getColorForCategory = (category: string) => {
+  function getColors(category: string) {
     return (
       categoryColors[category] || {
         bg: "bg-blue-50",
@@ -84,18 +84,17 @@ export default function Resume() {
         border: "border-blue-200",
       }
     );
-  };
+  }
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 lg:px-8">
-      <div className="mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
-          Resume
-        </h1>
-      </div>
+    <div className="max-w-7xl mx-auto px-6 pt-6 lg:pt-12 pb-20 lg:px-8">
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Resume</h1>
+      <p className="mt-2 text-gray-500">
+        Software Engineer with 3+ years of experience. Currently at Mediusware
+        Ltd.
+      </p>
 
-      {/* Professional Summary Section */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 rounded-lg mb-10">
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 rounded-lg mt-8">
         <h2 className="text-xl font-bold text-gray-800 mb-3">
           Professional Summary
         </h2>
@@ -110,8 +109,7 @@ export default function Resume() {
         </p>
       </div>
 
-      {/* Work Experience Section */}
-      <section className="mb-12">
+      <section className="mt-12">
         <div className="flex items-center gap-3 mb-6">
           <FaBriefcase className="text-blue-600 text-2xl" />
           <h2 className="text-3xl font-bold text-gray-800">Work Experience</h2>
@@ -148,14 +146,13 @@ export default function Resume() {
         </div>
       </section>
 
-      {/* Technical Skills Section */}
-      <section className="mb-12">
+      <section className="mt-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Technical Skills
         </h2>
         <div className="space-y-6">
           {resumeItems.map((item, index) => {
-            const colors = getColorForCategory(item.category);
+            const colors = getColors(item.category);
             return (
               <div
                 key={index}
@@ -184,9 +181,7 @@ export default function Resume() {
         </div>
       </section>
 
-      {/* Education & Languages Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        {/* Education */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         <section>
           <div className="flex items-center gap-3 mb-6">
             <FaGraduationCap className="text-blue-600 text-2xl" />
@@ -209,7 +204,6 @@ export default function Resume() {
           </div>
         </section>
 
-        {/* Languages */}
         <section>
           <div className="flex items-center gap-3 mb-6">
             <FaGlobe className="text-blue-600 text-2xl" />
