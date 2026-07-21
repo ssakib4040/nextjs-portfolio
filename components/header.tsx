@@ -21,14 +21,14 @@ export default function Header() {
   }
 
   return (
-    <div className="navbar bg-base-100 shadow px-4 lg:px-8 sticky top-0 z-50">
+    <header className="navbar bg-base-100 shadow px-4 lg:px-8 sticky top-0 z-50">
       <div className="navbar-start">
         <Link href="/" className="text-xl font-bold text-blue-600">
           Sadman Sakib
         </Link>
       </div>
 
-      <div className="navbar-end hidden lg:flex">
+      <nav className="navbar-end hidden lg:flex" aria-label="Main navigation">
         <ul className="menu menu-horizontal px-1 gap-1">
           {menus.map((menu) => (
             <li key={menu.href}>
@@ -45,11 +45,15 @@ export default function Header() {
             </li>
           ))}
         </ul>
-      </div>
+      </nav>
 
-      <div className="navbar-end lg:hidden">
+      <nav className="navbar-end lg:hidden" aria-label="Mobile navigation">
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <button
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden"
+            aria-label="Toggle navigation menu"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -64,7 +68,7 @@ export default function Header() {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
-          </label>
+          </button>
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
@@ -85,7 +89,7 @@ export default function Header() {
             ))}
           </ul>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }

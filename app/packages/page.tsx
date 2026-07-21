@@ -31,9 +31,10 @@ export default function PackagesPage() {
                 placeholder={`data:image/svg+xml;base64,${toBase64(
                   shimmer(700, 475),
                 )}`}
-                alt=""
+                alt={npm.title}
                 width={1600}
                 height={900}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               />
               <div className="p-4">
                 <h2 className="text-xl font-bold text-gray-800">{npm.title}</h2>
@@ -43,6 +44,7 @@ export default function PackagesPage() {
                   <Link
                     href={npm.link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[#0D6EFD] text-white px-3 py-2 rounded-md flex items-center text-sm font-bold"
                   >
                     <svg

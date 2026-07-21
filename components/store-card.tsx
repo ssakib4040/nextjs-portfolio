@@ -23,10 +23,11 @@ export default function StoreCard({
     <div className="bg-white border rounded-md flex flex-col">
       <Image
         src={image}
-        alt=""
+        alt={title}
         width={1600}
         height={1200}
-        className="object-fill aspect-video rounded-t-lg"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className="object-cover aspect-video rounded-t-lg"
         placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
       />
 
@@ -62,6 +63,7 @@ export default function StoreCard({
               <Link
                 href={demoUrl}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white border-[1px] border-[#0D6EFD] text-[#0D6EFD] px-3 py-2 rounded-lg flex items-center text-sm font-bold justify-center btn min-h-10 h-10"
               >
                 Preview

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Header from "@/components/header";
 
 import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -32,6 +31,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Sadman Sakib", url: "https://ssakib.me" }],
   creator: "Sadman Sakib",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
       "Full-stack software engineer specializing in Next.js, TypeScript, AI-powered SaaS platforms, and premium TailwindCSS templates.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og",
         width: 1200,
         height: 630,
         alt: "Sadman Sakib — Software Engineer",
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     title: "Sadman Sakib — Software Engineer & Full-Stack Developer",
     description:
       "Full-stack software engineer specializing in Next.js, TypeScript, AI-powered SaaS platforms, and premium TailwindCSS templates.",
-    images: ["/og-image.png"],
+    images: ["/og"],
     creator: "@ssakib4040",
   },
   robots: {
@@ -78,7 +80,6 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <head>
-        <link rel="canonical" href="https://ssakib.me" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -110,8 +111,19 @@ export default function RootLayout({
         />
       </head>
       <body className={outfit.className}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-[#0D6EFD] focus:text-white focus:rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0D6EFD]"
+        >
+          Skip to content
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
+        <footer className="border-t border-gray-100 bg-gray-50 mt-auto">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 text-center text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} Sadman Sakib. All rights reserved.
+          </div>
+        </footer>
         <Analytics />
       </body>
     </html>

@@ -1,6 +1,7 @@
 # Taste (Continuously Learned by [CommandCode][cmd])
 
 [cmd]: https://commandcode.ai/
+
 
 # workflow
 - Present the complete plan and analysis before writing any code. Don't jump to implementation until the plan is approved. Confidence: 0.80
