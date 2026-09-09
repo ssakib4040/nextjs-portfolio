@@ -2,12 +2,21 @@ interface Portfolio {
   title: string;
   description?: string;
   image: string;
-  source: string;
+  source?: string;
   demo: string;
   tags?: string[];
 }
 
 export const portfolioList: Portfolio[] = [
+  {
+    title: "Resumely",
+    description:
+      "AI-powered ATS to help recruiters and hiring managers to screen resumes and shortlist candidates faster. It uses AI to analyze resumes and provide insights on candidates' skills, experience, and qualifications.",
+    tags: ["Next.js", "TypeScript", "AI", "Azure", "TailwindCSS"],
+    image: "/projects/resumely.png",
+    demo: "https://resumely.live",
+  },
+
   {
     title: "Bootstrap Blocks",
     description:

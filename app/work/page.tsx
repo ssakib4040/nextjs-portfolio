@@ -190,14 +190,16 @@ function CompactPersonalProject({ project }: { project: (typeof portfolioList)[n
         </div>
       </div>
       <div className="flex shrink-0 gap-3">
-        <Link
-          href={project.source}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-sm font-semibold text-[#0D6EFD] hover:underline"
-        >
-          <FiGithub aria-hidden="true" /> Source
-        </Link>
+        {project.source && (
+          <Link
+            href={project.source}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-[#0D6EFD] hover:underline"
+          >
+            <FiGithub aria-hidden="true" /> Source
+          </Link>
+        )}
         <Link
           href={project.demo}
           target="_blank"
