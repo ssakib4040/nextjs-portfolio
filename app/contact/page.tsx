@@ -15,7 +15,7 @@ const urls = {
   facebook: "https://www.facebook.com/ssakib4040",
   twitter: "https://twitter.com/ssakib4040",
   mailto: "mailto:ssakib4040@gmail.com",
-  cv: "https://drive.google.com/file/d/1KJ0W2y--tv3nVN-FniCbVxXewbwKthnw/view?usp=sharing",
+  cv: "https://canva.link/9hn5j7x84vjn90t",
 };
 
 const socialLinks = [
