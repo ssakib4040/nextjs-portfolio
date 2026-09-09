@@ -46,13 +46,17 @@ export default async function PackagesPage() {
                       className="mt-3 flex items-center justify-end gap-1 text-xs text-gray-500"
                       aria-label={`${downloadStats[npm.packageName].downloads.toLocaleString("en-US")} downloads last month`}
                     >
-                      <><FiDownload size={12} aria-hidden="true" />{formatDownloads(downloadStats[npm.packageName].downloads)} downloads</>
+                      <>
+                        <FiDownload size={12} aria-hidden="true" />
+                        {formatDownloads(downloadStats[npm.packageName].downloads)} downloads
+                      </>
                     </p>
                   )}
                 </div>
               </div>
               <h3 className="mt-6 text-xl font-bold text-gray-900">{npm.title}</h3>
               <p className="mt-2 leading-7 text-gray-600">{npm.description}</p>
+              <code className="mt-5 block rounded-md bg-gray-900 px-3 py-2.5 text-sm text-gray-100">npm install {npm.packageName}</code>
               <Link
                 href={npm.link}
                 target="_blank"
