@@ -1,228 +1,72 @@
-import React from "react";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { FaBriefcase, FaGraduationCap, FaGlobe } from "react-icons/fa";
-import {
-  resumeItems,
-  workExperience,
-  education,
-  languages,
-} from "../../static/resume";
+
+import { education, languages, resumeItems, workExperience } from "../../static/resume";
 
 export const metadata: Metadata = {
-  title: "Resume",
+  title: "Resume | Sadman Sakib",
   description:
-    "Software Engineer with 3+ years of experience in Next.js, TypeScript, NestJS, AI platforms, and automation workflows. Currently at Mediusware Ltd building full-stack SaaS applications.",
+    "Resume of Sadman Sakib, a full-stack Software Developer with 3.5+ years of experience in React, Next.js, TypeScript, Node.js, AI products, APIs, and automation.",
 };
 
-export default function Resume() {
-  const categoryColors: Record<
-    string,
-    { bg: string; text: string; border: string }
-  > = {
-    Frontend: {
-      bg: "bg-blue-50",
-      text: "text-blue-700",
-      border: "border-blue-200",
-    },
-    "Backend & Runtime": {
-      bg: "bg-green-50",
-      text: "text-green-700",
-      border: "border-green-200",
-    },
-    "State Management & Data Fetching": {
-      bg: "bg-purple-50",
-      text: "text-purple-700",
-      border: "border-purple-200",
-    },
-    "Databases & ORMs": {
-      bg: "bg-yellow-50",
-      text: "text-yellow-700",
-      border: "border-yellow-200",
-    },
-    "Automation & AI Integration": {
-      bg: "bg-pink-50",
-      text: "text-pink-700",
-      border: "border-pink-200",
-    },
-    "Build Tools & Package Managers": {
-      bg: "bg-indigo-50",
-      text: "text-indigo-700",
-      border: "border-indigo-200",
-    },
-    "Cloud & Deployment": {
-      bg: "bg-orange-50",
-      text: "text-orange-700",
-      border: "border-orange-200",
-    },
-    "Version Control & Collaboration": {
-      bg: "bg-red-50",
-      text: "text-red-700",
-      border: "border-red-200",
-    },
-    Testing: {
-      bg: "bg-cyan-50",
-      text: "text-cyan-700",
-      border: "border-cyan-200",
-    },
-    "Development Practices": {
-      bg: "bg-teal-50",
-      text: "text-teal-700",
-      border: "border-teal-200",
-    },
-    "Developer Tools": {
-      bg: "bg-slate-50",
-      text: "text-slate-700",
-      border: "border-slate-200",
-    },
-  };
+const priorityCategories = new Set([
+  "Frontend",
+  "Backend & Runtime",
+  "Databases & ORMs",
+  "Automation & AI Integration",
+  "Cloud & Deployment",
+]);
 
-  function getColors(category: string) {
-    return (
-      categoryColors[category] || {
-        bg: "bg-blue-50",
-        text: "text-blue-700",
-        border: "border-blue-200",
-      }
-    );
-  }
+export default function Resume() {
+  const primarySkills = resumeItems.filter((item) => priorityCategories.has(item.category));
+  const additionalSkills = resumeItems.filter((item) => !priorityCategories.has(item.category));
 
   return (
-    <div className="max-w-7xl mx-auto px-6 pt-6 lg:pt-12 pb-20 lg:px-8">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Resume</h1>
-      <p className="mt-2 text-gray-500">
-        Software Engineer with 3+ years of experience. Currently at Mediusware
-        Ltd.
-      </p>
-
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-6 rounded-lg mt-8">
-        <h2 className="text-xl font-bold text-gray-800 mb-3">
-          Professional Summary
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          Full-stack Software Engineer with 3+ years of experience building
-          scalable, production-ready applications using Next.js, Node.js, React,
-          and TypeScript. Specialized in developing AI-based platforms and
-          automation workflows (N8N, Make.com). Delivered 20+ professional
-          projects across SaaS platforms, dashboards, and automation systems.
-          Passionate about clean code, performance optimization, and delivering
-          user-focused solutions.
-        </p>
-      </div>
-
-      <section className="mt-12">
-        <div className="flex items-center gap-3 mb-6">
-          <FaBriefcase className="text-blue-600 text-2xl" />
-          <h2 className="text-3xl font-bold text-gray-800">Work Experience</h2>
+    <div className="mx-auto max-w-7xl px-6 pb-20 pt-10 sm:px-8 lg:px-8 lg:pt-16">
+      <header className="border-b border-gray-200 pb-10">
+        <p className="text-base font-semibold text-[#0D6EFD]">Sadman Sakib / Resume</p>
+        <div className="mt-3 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Resume</h1>
+            <p className="mt-3 text-xl font-medium text-gray-700">Software Developer</p>
+          </div>
+          <p className="max-w-md text-sm leading-6 text-gray-600 lg:text-right">3.5+ years building production web applications, AI-powered products, APIs, and workflow automation systems.</p>
         </div>
+      </header>
 
-        <div className="space-y-6">
-          {workExperience.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-800">
-                    {exp.role}
-                  </h3>
-                  <p className="text-blue-600 font-semibold">{exp.company}</p>
-                </div>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                  {exp.duration}
-                </span>
-              </div>
+      <section className="mt-10 rounded-lg border border-gray-200 bg-gray-50 p-6 sm:p-8" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" className="text-xl font-bold text-gray-900">Professional Summary</h2>
+        <p className="mt-4 max-w-4xl leading-7 text-gray-700">Full-stack Software Developer experienced in building and maintaining production applications with React, Next.js, TypeScript, Node.js, and modern APIs. I work across frontend interfaces, backend services, databases, deployment, third-party integrations, AI product features, and automation workflows. Delivered 20+ professional projects across SaaS platforms, recruitment systems, marketplaces, dashboards, and internal tools. Currently building Resumely, an AI-powered resume and career platform.</p>
+      </section>
 
-              <ul className="space-y-2">
-                {exp.description.map((item, i) => (
-                  <li key={i} className="text-gray-700 flex gap-3">
-                    <span className="text-blue-600 mt-1">•</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+      <section className="mt-14" aria-labelledby="experience-heading">
+        <div className="mb-6 flex items-center gap-3"><FaBriefcase className="text-[#0D6EFD]" aria-hidden="true" /><h2 id="experience-heading" className="text-3xl font-bold tracking-tight text-gray-900">Work Experience</h2></div>
+        <div className="space-y-5">
+          {workExperience.map((experience) => (
+            <article key={`${experience.company}-${experience.duration}`} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
+              <header className="flex flex-col gap-3 border-b border-gray-200 pb-5 sm:flex-row sm:items-start sm:justify-between"><div><h3 className="text-xl font-bold text-gray-900">{experience.role}</h3><p className="mt-1 font-semibold text-[#0D6EFD]">{experience.company}</p></div><p className="text-sm font-medium text-gray-500">{experience.duration}</p></header>
+              <ul className="mt-5 space-y-3">{experience.description.map((item) => <li key={item} className="flex gap-3 leading-7 text-gray-700"><span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0D6EFD]" aria-hidden="true" />{item}</li>)}</ul>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="mt-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Technical Skills
-        </h2>
-        <div className="space-y-6">
-          {resumeItems.map((item, index) => {
-            const colors = getColors(item.category);
-            return (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-1 h-6 bg-blue-500 rounded-full"></div>
-                  <h3 className="text-xl font-bold text-gray-800">
-                    {item.category}
-                  </h3>
-                </div>
-
-                <div className="flex flex-wrap gap-2">
-                  {item.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className={`px-3 py-1.5 ${colors.bg} ${colors.text} border ${colors.border} rounded-full text-sm font-medium hover:shadow-sm transition-all`}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+      <section className="mt-14" aria-labelledby="skills-heading">
+        <div className="mb-6"><h2 id="skills-heading" className="text-3xl font-bold tracking-tight text-gray-900">Technical Skills</h2><p className="mt-2 text-gray-600">Core technologies and practices used across professional projects.</p></div>
+        <div className="space-y-4">
+          {primarySkills.map((item) => <SkillGroup key={item.category} category={item.category} skills={item.skills} />)}
         </div>
+        <section className="mt-5 rounded-lg border border-gray-200 bg-gray-50 p-5 sm:p-6" aria-labelledby="additional-skills-heading"><h3 id="additional-skills-heading" className="font-semibold text-gray-800">Additional tools and practices</h3><div className="mt-5 space-y-4">{additionalSkills.map((item) => <SkillGroup key={item.category} category={item.category} skills={item.skills} />)}</div></section>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <FaGraduationCap className="text-blue-600 text-2xl" />
-            <h2 className="text-2xl font-bold text-gray-800">Education</h2>
-          </div>
-
-          <div className="space-y-4">
-            {education.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg p-4"
-              >
-                <h3 className="font-bold text-gray-800">{edu.degree}</h3>
-                <p className="text-gray-600 text-sm mb-2">{edu.school}</p>
-                <span className="inline-block px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">
-                  GPA: {edu.gpa}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <div className="flex items-center gap-3 mb-6">
-            <FaGlobe className="text-blue-600 text-2xl" />
-            <h2 className="text-2xl font-bold text-gray-800">Languages</h2>
-          </div>
-
-          <div className="space-y-4">
-            {languages.map((lang, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg p-4"
-              >
-                <h3 className="font-bold text-gray-800">{lang.name}</h3>
-                <p className="text-gray-600 text-sm">{lang.proficiency}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+      <div className="mt-14 grid gap-10 border-t border-gray-200 pt-10 md:grid-cols-2">
+        <section aria-labelledby="education-heading"><div className="mb-5 flex items-center gap-3"><FaGraduationCap className="text-[#0D6EFD]" aria-hidden="true" /><h2 id="education-heading" className="text-2xl font-bold text-gray-900">Education</h2></div><div className="space-y-4">{education.map((item) => <article key={item.degree} className="rounded-lg border border-gray-200 bg-white p-5"><h3 className="font-bold text-gray-900">{item.degree}</h3><p className="mt-1 text-sm text-gray-600">{item.school}</p><p className="mt-3 text-sm font-medium text-gray-600">GPA: {item.gpa}</p></article>)}</div></section>
+        <section aria-labelledby="languages-heading"><div className="mb-5 flex items-center gap-3"><FaGlobe className="text-[#0D6EFD]" aria-hidden="true" /><h2 id="languages-heading" className="text-2xl font-bold text-gray-900">Languages</h2></div><div className="space-y-4">{languages.map((item) => <article key={item.name} className="rounded-lg border border-gray-200 bg-white p-5"><h3 className="font-bold text-gray-900">{item.name}</h3><p className="mt-1 text-sm text-gray-600">{item.proficiency}</p></article>)}</div></section>
       </div>
     </div>
   );
+}
+
+function SkillGroup({ category, skills }: { category: string; skills: string[] }) {
+  return <section className="rounded-lg border border-gray-200 bg-white p-5 sm:p-6" aria-labelledby={`skill-${category}`}><h3 id={`skill-${category}`} className="text-lg font-bold text-gray-900">{category}</h3><div className="mt-4 flex flex-wrap gap-2">{skills.map((skill) => <span key={skill} className="rounded-md border border-gray-200 bg-gray-50 px-3 py-1.5 text-sm text-gray-700">{skill}</span>)}</div></section>;
 }
