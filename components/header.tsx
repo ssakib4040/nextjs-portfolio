@@ -23,7 +23,7 @@ export default function Header() {
     <header className="navbar bg-base-100 shadow px-4 lg:px-8 sticky top-0 z-50">
       <div className="navbar-start">
         <Link href="/" className="text-xl font-bold text-blue-600">
-          Sadman Sakib
+          ssakib.me
         </Link>
       </div>
 
