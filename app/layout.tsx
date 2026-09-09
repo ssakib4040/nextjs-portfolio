@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s — Sadman Sakib",
   },
   description:
-    "Full-stack software engineer specializing in Next.js, TypeScript, AI-powered SaaS platforms, automation workflows, and premium TailwindCSS templates. 3+ years of experience building scalable web applications.",
+    "Full-stack Software Developer building production web applications, AI-powered products, APIs, and automation workflows with React, Next.js, TypeScript, and Node.js.",
   keywords: [
     "Sadman Sakib",
     "software engineer",
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     "Next.js developer",
     "TypeScript",
     "React developer",
-    "TailwindCSS templates",
     "SaaS developer",
     "AI platforms",
     "automation workflows",
@@ -41,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Sadman Sakib",
     title: "Sadman Sakib — Software Engineer & Full-Stack Developer",
     description:
-      "Full-stack software engineer specializing in Next.js, TypeScript, AI-powered SaaS platforms, and premium TailwindCSS templates.",
+      "Full-stack Software Developer building production web applications, AI-powered products, APIs, and automation workflows.",
     images: [
       {
         url: "/og",
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sadman Sakib — Software Engineer & Full-Stack Developer",
     description:
-      "Full-stack software engineer specializing in Next.js, TypeScript, AI-powered SaaS platforms, and premium TailwindCSS templates.",
+      "Full-stack Software Developer building production web applications, AI-powered products, APIs, and automation workflows.",
     images: ["/og"],
     creator: "@ssakib4040",
   },
@@ -87,7 +86,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Sadman Sakib",
-              jobTitle: "Software Engineer",
+              jobTitle: "Software Developer",
               url: "https://ssakib.me",
               sameAs: [
                 "https://www.linkedin.com/in/ssakib4040/",

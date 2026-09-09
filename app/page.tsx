@@ -55,10 +55,10 @@ export default function Home() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-20">
             <div className="max-w-3xl">
               <p className="mb-5 text-base font-semibold text-[#0D6EFD]">Sadman Sakib / Software Developer</p>
-              <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-6xl">I build software that does real work.</h1>
+              <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-6xl">Sadman Sakib - Software Developer</h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-                Full-stack software developer with 3.5+ years of professional experience building web applications, AI-powered products, APIs, and automation
-                systems.
+                I build software that does real work. Full-stack software developer with 3.5+ years of professional experience building web applications,
+                AI-powered products, APIs, and automation systems.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link

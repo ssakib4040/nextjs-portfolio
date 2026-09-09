@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FaBriefcase, FaGraduationCap, FaGlobe } from "react-icons/fa";
+import { FaBriefcase, FaCode, FaGraduationCap, FaGlobe } from "react-icons/fa";
 
 import { education, languages, resumeItems, workExperience } from "../../static/resume";
 
@@ -44,7 +44,7 @@ export default function Resume() {
 
       <section className="mt-14" aria-labelledby="experience-heading">
         <div className="mb-6 flex items-center gap-3">
-          <FaBriefcase className="text-[#0D6EFD]" aria-hidden="true" />
+          <FaBriefcase className="h-7 w-7 shrink-0 text-[#0D6EFD]" aria-hidden="true" />
           <h2 id="experience-heading" className="text-3xl font-bold tracking-tight text-gray-900">
             Work Experience
           </h2>
@@ -74,7 +74,8 @@ export default function Resume() {
 
       <section className="mt-14" aria-labelledby="skills-heading">
         <div className="mb-6">
-          <h2 id="skills-heading" className="text-3xl font-bold tracking-tight text-gray-900">
+          <h2 id="skills-heading" className="flex items-center gap-3 text-3xl font-bold tracking-tight text-gray-900">
+            <FaCode className="h-7 w-7 shrink-0 text-[#0D6EFD]" aria-hidden="true" />
             Technical Skills
           </h2>
           <p className="mt-2 text-gray-600">Core technologies and practices used across professional projects.</p>
@@ -99,7 +100,7 @@ export default function Resume() {
       <div className="mt-14 grid gap-10 border-t border-gray-200 pt-10 md:grid-cols-2">
         <section aria-labelledby="education-heading">
           <div className="mb-5 flex items-center gap-3">
-            <FaGraduationCap className="text-[#0D6EFD]" aria-hidden="true" />
+            <FaGraduationCap className="h-7 w-7 shrink-0 text-[#0D6EFD]" aria-hidden="true" />
             <h2 id="education-heading" className="text-2xl font-bold text-gray-900">
               Education
             </h2>
@@ -116,7 +117,7 @@ export default function Resume() {
         </section>
         <section aria-labelledby="languages-heading">
           <div className="mb-5 flex items-center gap-3">
-            <FaGlobe className="text-[#0D6EFD]" aria-hidden="true" />
+            <FaGlobe className="h-7 w-7 shrink-0 text-[#0D6EFD]" aria-hidden="true" />
             <h2 id="languages-heading" className="text-2xl font-bold text-gray-900">
               Languages
             </h2>
