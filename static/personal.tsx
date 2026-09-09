@@ -14,18 +14,17 @@ export const portfolioList: Portfolio[] = [
       "Collection of reusable Bootstrap components built with React, providing a library of pre-designed UI elements for seamless integration into web projects.",
     tags: ["Next.js", "React.JS", "Bootstrap"],
     image: "/projects/bootstrap-blocks.png",
-    source: "https://bootstrap-blocks.vercel.app/",
-    demo: "https://github.com/ssakib4040/bootstrap-blocks",
+    source: "https://github.com/ssakib4040/bootstrap-blocks",
+    demo: "https://bootstrap-blocks.vercel.app/",
   },
 
   {
     title: "Marketing Agency",
-    description:
-      "Attractive website for a marketing agency, showcasing services and attracting clients with a modern design.",
+    description: "Attractive website for a marketing agency, showcasing services and attracting clients with a modern design.",
     tags: ["Next.js", "React.JS", "TailwindCSS"],
     image: "/projects/marketing-house.png",
-    source: "https://marketing-house.vercel.app",
-    demo: "https://github.com/ssakib4040/marketing-house",
+    source: "https://github.com/ssakib4040/marketing-house",
+    demo: "https://marketing-house.vercel.app",
   },
 
   {
@@ -70,15 +69,7 @@ export const portfolioList: Portfolio[] = [
     image: "/projects/chat-ui.png",
     demo: "https://chat-ui-smoky.vercel.app/",
     source: "https://github.com/ssakib4040/chat-ui",
-    tags: [
-      "HTML 5",
-      "CSS 3",
-      "Flexbox",
-      "Grid",
-      "Tailwind Css",
-      "React js",
-      "Next js",
-    ],
+    tags: ["HTML 5", "CSS 3", "Flexbox", "Grid", "Tailwind Css", "React js", "Next js"],
   },
 
   // {
@@ -151,14 +142,7 @@ export const portfolioList: Portfolio[] = [
     image: "/projects/nextjs-tailwind-auth.png",
     demo: "https://nextjs-tailwind-auth-lake.vercel.app/",
     source: "https://github.com/ssakib4040/nextjs-tailwind-auth",
-    tags: [
-      "HTML 5",
-      "CSS 3",
-      "Tailwind Css",
-      "React js",
-      "Next js",
-      "next-auth",
-    ],
+    tags: ["HTML 5", "CSS 3", "Tailwind Css", "React js", "Next js", "next-auth"],
   },
 
   {
