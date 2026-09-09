@@ -78,7 +78,7 @@ export default function WorkPage() {
         <section id="personal-projects" role="tabpanel" aria-labelledby="personal-tab" aria-label="Personal projects" className="pt-10">
           <div className="mb-6">
             <p className="text-sm font-semibold text-[#0D6EFD]">Personal projects</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900">Experiments, interfaces, and open-source work.</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900">Personal projects and side builds.</h2>
           </div>
           <div className="space-y-4">
             {portfolioList.map((project) => (
