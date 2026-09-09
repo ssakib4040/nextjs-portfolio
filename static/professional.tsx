@@ -51,7 +51,7 @@ export const portfolios: Portfolio[] = [
       "React Hook Form",
     ],
     image: "/projects/professional/basic-lms.png",
-    source: "#",
+    source: "https://tccbasictraining.com",
     duration: "Jul 2025 - Aug 2025",
   },
 
