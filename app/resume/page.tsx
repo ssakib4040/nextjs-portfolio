@@ -85,16 +85,19 @@ export default function Resume() {
             <SkillGroup key={item.category} category={item.category} skills={item.skills} />
           ))}
         </div>
-        <section className="mt-5 rounded-lg border border-gray-200 bg-gray-50 p-5 sm:p-6" aria-labelledby="additional-skills-heading">
-          <h3 id="additional-skills-heading" className="font-semibold text-gray-800">
+      </section>
+
+      <section className="mt-10 rounded-lg border border-gray-200 bg-gray-50 p-5 sm:p-6" aria-labelledby="additional-skills-heading">
+        <div className="mb-5">
+          <h2 id="additional-skills-heading" className="text-2xl font-bold tracking-tight text-gray-900">
             Additional tools and practices
-          </h3>
-          <div className="mt-5 space-y-4">
-            {additionalSkills.map((item) => (
-              <SkillGroup key={item.category} category={item.category} skills={item.skills} />
-            ))}
-          </div>
-        </section>
+          </h2>
+        </div>
+        <div className="space-y-4">
+          {additionalSkills.map((item) => (
+            <SkillGroup key={item.category} category={item.category} skills={item.skills} />
+          ))}
+        </div>
       </section>
 
       <div className="mt-14 grid gap-10 border-t border-gray-200 pt-10 md:grid-cols-2">
