@@ -38,6 +38,7 @@ export default function Header() {
                     ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white"
                     : ""
                 }`}
+                aria-current={isActive(menu.href) ? "page" : undefined}
               >
                 {menu.name}
               </Link>
@@ -81,6 +82,7 @@ export default function Header() {
                       ? "bg-[#0D6EFD] text-white hover:bg-[#0b5ed7] hover:text-white"
                       : ""
                   }
+                  aria-current={isActive(menu.href) ? "page" : undefined}
                 >
                   {menu.name}
                 </Link>
